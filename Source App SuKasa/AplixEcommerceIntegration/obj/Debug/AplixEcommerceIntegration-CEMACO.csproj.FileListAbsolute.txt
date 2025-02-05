@@ -1,0 +1,220 @@
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.exe.config
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.exe
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.pdb
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\bin\Debug\EPPlus.Core.dll
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\bin\Debug\MetroFramework.Design.dll
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\bin\Debug\MetroFramework.dll
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\bin\Debug\Newtonsoft.Json.dll
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\bin\Debug\RestSharp.dll
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\bin\Debug\EPPlus.Core.xml
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\bin\Debug\Newtonsoft.Json.xml
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\bin\Debug\RestSharp.xml
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.AssemblyReference.cache
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Login.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.MasterPage.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Activar_Articulos.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Agregar_Categorias.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Agregar_Marcas.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Atributos.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Categorias.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Marcas.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Padres.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Errores_Excel.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.frm_filtro_articulos.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.frm_filtro_pedidos.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Pedido_Linea.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.UC_Nidux_CEMACO.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Properties.Resources.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.AgregarColecciones.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.AgregarVariantes.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoArticulos.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.Metodos.AgregarArticulos.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoColecciones.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoEditarArticulos.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoVariantes.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MostrarPedidoLinea.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.UC_Shopify.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Agregar_Categoria_Woocomerce.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Agregar_Nuevo_Atributo.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Agregar_Terminos_Atributo.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Articulos_variaciones.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.AsignarCategoriasArticulos.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Asignar_Terminos_Variaciones.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Categorias_Padre_Woocomerce.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Envios.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Mostrar_Articulos.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Mostrar_Articulos_Envio.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Pedido_Linea.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.UC_Woocommerce.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Variaciones.resources
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.GenerateResource.cache
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.CoreCompileInputs.cache
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.CopyComplete
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.exe
+C:\Users\soporteti\Desktop\Sincronizadores\AplixEcommerceIntegration -CEMACO\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.pdb
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.AssemblyReference.cache
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Login.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.MasterPage.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Activar_Articulos.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Agregar_Categorias.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Agregar_Marcas.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Atributos.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Categorias.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Marcas.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Padres.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Errores_Excel.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.frm_filtro_articulos.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.frm_filtro_pedidos.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Pedido_Linea.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.UC_Nidux_CEMACO.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Properties.Resources.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.AgregarColecciones.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.AgregarVariantes.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoArticulos.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.Metodos.AgregarArticulos.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoColecciones.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoEditarArticulos.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoVariantes.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MostrarPedidoLinea.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.UC_Shopify.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Agregar_Categoria_Woocomerce.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Agregar_Nuevo_Atributo.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Agregar_Terminos_Atributo.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Articulos_variaciones.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.AsignarCategoriasArticulos.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Asignar_Terminos_Variaciones.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Categorias_Padre_Woocomerce.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Envios.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Mostrar_Articulos.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Mostrar_Articulos_Envio.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Pedido_Linea.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.UC_Woocommerce.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Variaciones.resources
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.GenerateResource.cache
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.CoreCompileInputs.cache
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.exe
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.pdb
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.exe.config
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.exe
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.pdb
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\EPPlus.Core.dll
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\MetroFramework.Design.dll
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\MetroFramework.dll
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\MetroFramework.Fonts.dll
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\Newtonsoft.Json.dll
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\RestSharp.dll
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\EPPlus.Core.xml
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\Newtonsoft.Json.xml
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\RestSharp.xml
+C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.CopyComplete
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.exe.config
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.exe
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.pdb
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\EPPlus.Core.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\MetroFramework.Design.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\MetroFramework.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\RestSharp.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\EPPlus.Core.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\RestSharp.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.AssemblyReference.cache
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Login.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.MasterPage.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Activar_Articulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Agregar_Categorias.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Agregar_Marcas.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Atributos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Categorias.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Marcas.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Padres.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Errores_Excel.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.frm_filtro_articulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.frm_filtro_pedidos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Pedido_Linea.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.UC_Nidux_CEMACO.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Properties.Resources.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.AgregarColecciones.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.AgregarVariantes.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoArticulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.Metodos.AgregarArticulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoColecciones.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoEditarArticulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoVariantes.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MostrarPedidoLinea.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.UC_Shopify.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Agregar_Categoria_Woocomerce.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Agregar_Nuevo_Atributo.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Agregar_Terminos_Atributo.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Articulos_variaciones.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.AsignarCategoriasArticulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Asignar_Terminos_Variaciones.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Categorias_Padre_Woocomerce.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Envios.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Mostrar_Articulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Mostrar_Articulos_Envio.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Pedido_Linea.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.UC_Woocommerce.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Variaciones.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.GenerateResource.cache
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEco.4598A9FD.Up2Date
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.exe
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App Cemaco\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.pdb
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.exe.config
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.exe
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.pdb
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\bin\Debug\EPPlus.Core.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\bin\Debug\MetroFramework.Design.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\bin\Debug\MetroFramework.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\bin\Debug\RestSharp.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\bin\Debug\EPPlus.Core.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\bin\Debug\RestSharp.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.AssemblyReference.cache
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Login.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.MasterPage.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Activar_Articulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Agregar_Categorias.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Agregar_Marcas.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Atributos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Categorias.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Marcas.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Asignar_Padres.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Errores_Excel.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.frm_filtro_articulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.frm_filtro_pedidos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.Pedido_Linea.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Nidux.UC_Nidux_CEMACO.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Properties.Resources.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.AgregarColecciones.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.AgregarVariantes.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoArticulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.Metodos.AgregarArticulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoColecciones.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoEditarArticulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MantenimientoVariantes.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.MostrarPedidoLinea.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.Shopify.UC_Shopify.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Agregar_Categoria_Woocomerce.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Agregar_Nuevo_Atributo.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Agregar_Terminos_Atributo.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Articulos_variaciones.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.AsignarCategoriasArticulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Asignar_Terminos_Variaciones.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Categorias_Padre_Woocomerce.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Envios.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Mostrar_Articulos.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Mostrar_Articulos_Envio.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Pedido_Linea.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.UC_Woocommerce.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.WooCommerce.Variaciones.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.GenerateResource.cache
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration-CEMACO.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEco.4598A9FD.Up2Date
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.exe
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source App SuKasa\AplixEcommerceIntegration\obj\Debug\AplixEcommerceIntegration.pdb

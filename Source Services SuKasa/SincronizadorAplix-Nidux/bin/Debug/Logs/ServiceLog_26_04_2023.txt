@@ -1,0 +1,6 @@
+Servicio de Sincronización Nidux Inicializado ( 26/04/2023 00:10:28 )
+Iniciando tareas de sincronizacion ( 26/04/2023 00:10:29 )
+Sincronizacion de la Vista de Oracle -> Sincronizador:
+Servicio de Sincronización Nidux Inicializado ( 26/04/2023 00:10:48 )
+Iniciando tareas de sincronizacion ( 26/04/2023 00:10:48 )
+Sincronizacion de la Vista de Oracle -> Sincronizador:

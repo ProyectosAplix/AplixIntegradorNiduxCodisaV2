@@ -1,0 +1,13 @@
+﻿Instalando ensamblado 'C:\APLIX\Production Sources\Source Services Cemaco\SincronizadorAplix-Nidux\bin\Release\SincronizadorAplix-Nidux.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\APLIX\Production Sources\Source Services Cemaco\SincronizadorAplix-Nidux\bin\Release\SincronizadorAplix-Nidux.exe
+   logfile = C:\APLIX\Production Sources\Source Services Cemaco\SincronizadorAplix-Nidux\bin\Release\SincronizadorAplix-Nidux.InstallLog
+Instalando el servicio Aplix Sincronizador CemacoV2.3...
+Creando el origen de EventLog Aplix Sincronizador CemacoV2.3 en el registro Application...
+Deshaciendo ensamblado 'C:\APLIX\Production Sources\Source Services Cemaco\SincronizadorAplix-Nidux\bin\Release\SincronizadorAplix-Nidux.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\APLIX\Production Sources\Source Services Cemaco\SincronizadorAplix-Nidux\bin\Release\SincronizadorAplix-Nidux.exe
+   logfile = C:\APLIX\Production Sources\Source Services Cemaco\SincronizadorAplix-Nidux\bin\Release\SincronizadorAplix-Nidux.InstallLog
+Restaurando el registro de eventos al estado anterior para el origen Aplix Sincronizador CemacoV2.3.

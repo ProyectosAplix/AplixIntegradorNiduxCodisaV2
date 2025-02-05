@@ -1,0 +1,32 @@
+Servicio de Sincronización Nidux Inicializado ( 2/11/2022 18:37:10 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:37:25 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:39:03 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:42:40 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:43:19 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:43:39 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:43:57 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:44:49 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:45:05 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:45:22 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:45:48 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:46:11 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:46:27 )
+Sincronizacion de la Vista de Oracle -> Sincronizador:
+Iniciando tareas de sincronizacion ( 2/11/2022 18:46:54 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:47:13 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:47:37 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:48:09 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:48:25 )
+Iniciando tareas de sincronizacion ( 2/11/2022 18:50:55 )
+Sincronizacion de la Vista de Oracle -> Sincronizador:
+Mensaje de error: Request failed with status code 429
+Sincronizacion de la Vista de Oracle -> Sincronizador:
+Mensaje de error: Request aborted
+Mensaje de error: El proceso no puede obtener acceso al archivo 'C:\APLIX\Production Sources\Source Services Cemaco\SincronizadorAplix-Nidux\bin\Debug\Logs\ServiceLog_2_11_2022.txt' porque está siendo utilizado en otro proceso.
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 2/11/2022 18:52:11 )
+Mensaje de error: Request aborted
+Mensaje de error: El proceso no puede obtener acceso al archivo 'C:\APLIX\Production Sources\Source Services Cemaco\SincronizadorAplix-Nidux\bin\Debug\Logs\ServiceLog_2_11_2022.txt' porque está siendo utilizado en otro proceso.
+Sincronizacion de la Vista de Oracle -> Sincronizador:
+Sincronizacion de la Vista de Oracle -> Sincronizador:
+Servicio de Sincronización Finalizado ( 2/11/2022 18:52:32 )

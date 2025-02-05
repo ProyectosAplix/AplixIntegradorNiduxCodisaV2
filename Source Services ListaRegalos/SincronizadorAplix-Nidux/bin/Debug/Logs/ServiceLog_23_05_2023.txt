@@ -1,0 +1,4 @@
+Servicio de Sincronización Nidux Inicializado ( 23/05/2023 09:15:36 )
+Iniciando tareas de sincronizacion ( 23/05/2023 09:15:36 )
+Servicio de Sincronización Nidux Inicializado ( 23/05/2023 09:16:59 )
+Iniciando tareas de sincronizacion ( 23/05/2023 09:17:00 )

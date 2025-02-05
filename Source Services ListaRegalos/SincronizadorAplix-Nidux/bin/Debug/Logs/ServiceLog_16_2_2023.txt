@@ -1,0 +1,1131 @@
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 18:50:07 )
+Iniciando tareas de sincronizacion ( 16/2/2023 18:50:22 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:50:43 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:50:58 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:51:15 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 18:51:30 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:51:46 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:52:02 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Servicio de Sincronización Finalizado ( 16/2/2023 18:52:13 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 18:52:36 )
+Iniciando tareas de sincronizacion ( 16/2/2023 18:52:51 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:53:09 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:53:25 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:53:41 )
+Mensaje de error: Request failed with status code 429
+Servicio de Sincronización Finalizado ( 16/2/2023 18:53:56 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 18:55:44 )
+Iniciando tareas de sincronizacion ( 16/2/2023 18:55:59 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:56:21 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:56:37 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:56:53 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 18:57:09 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:57:25 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Servicio de Sincronización Finalizado ( 16/2/2023 18:57:34 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 18:57:38 )
+Iniciando tareas de sincronizacion ( 16/2/2023 18:57:53 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:58:10 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:58:25 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:58:42 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:58:58 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 18:59:13 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:59:29 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 18:59:45 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 19:00:01 )
+Mensaje de error: Request failed with status code 429
+Servicio de Sincronización Finalizado ( 16/2/2023 19:00:11 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 19:00:14 )
+Iniciando tareas de sincronizacion ( 16/2/2023 19:00:29 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 19:01:32 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 19:02:23 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 19:02:56 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 19:19:43 )
+Iniciando tareas de sincronizacion ( 16/2/2023 19:19:58 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+INICIO LISTA REGALOS
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 20:02:42 )
+Iniciando tareas de sincronizacion ( 16/2/2023 20:02:58 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Servicio de Sincronización Finalizado ( 16/2/2023 20:03:29 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 20:04:23 )
+Iniciando tareas de sincronizacion ( 16/2/2023 20:04:38 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+INICIO LISTA REGALOS
+Servicio de Sincronización Finalizado ( 16/2/2023 20:06:35 )
+Error: Request failed with status code NotFound
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 20:10:13 )
+Iniciando tareas de sincronizacion ( 16/2/2023 20:10:28 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Servicio de Sincronización Finalizado ( 16/2/2023 20:10:49 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 20:11:12 )
+Iniciando tareas de sincronizacion ( 16/2/2023 20:11:27 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+INICIO LISTA REGALOS
+Error: No se puede enviar contenido textual con este tipo de verbo.
+Servicio de Sincronización Finalizado ( 16/2/2023 20:18:11 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 20:18:47 )
+Iniciando tareas de sincronizacion ( 16/2/2023 20:19:02 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+INICIO LISTA REGALOS
+Error: No se puede enviar contenido textual con este tipo de verbo.
+Servicio de Sincronización Finalizado ( 16/2/2023 20:22:25 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 20:47:32 )
+Iniciando tareas de sincronizacion ( 16/2/2023 20:47:47 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Servicio de Sincronización Finalizado ( 16/2/2023 20:48:11 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 20:51:44 )
+Iniciando tareas de sincronizacion ( 16/2/2023 20:51:59 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+INICIO LISTA REGALOS
+INICIO LISTA REGALOS
+Error: No se puede enviar contenido textual con este tipo de verbo.
+Servicio de Sincronización Finalizado ( 16/2/2023 21:01:22 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 21:04:44 )
+Iniciando tareas de sincronizacion ( 16/2/2023 21:04:59 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+INICIO LISTA REGALOS
+Error: No se puede enviar contenido textual con este tipo de verbo.
+Iniciando tareas de sincronizacion ( 16/2/2023 21:05:17 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Servicio de Sincronización Finalizado ( 16/2/2023 21:05:35 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 21:36:15 )
+Iniciando tareas de sincronizacion ( 16/2/2023 21:36:30 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Servicio de Sincronización Finalizado ( 16/2/2023 21:36:49 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 21:37:17 )
+Iniciando tareas de sincronizacion ( 16/2/2023 21:37:32 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+INICIO LISTA REGALOS
+Error: Referencia a objeto no establecida como instancia de un objeto.
+Iniciando tareas de sincronizacion ( 16/2/2023 21:47:24 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Servicio de Sincronización Finalizado ( 16/2/2023 21:47:33 )
+Servicio de Sincronización Nidux Inicializado ( 16/2/2023 21:49:03 )
+Iniciando tareas de sincronizacion ( 16/2/2023 21:49:18 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:49:35 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:49:51 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:50:07 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 21:50:22 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:50:38 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:50:55 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:51:11 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 21:51:26 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:51:42 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:51:58 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:52:13 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 21:52:29 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:52:45 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:53:00 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:53:16 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 21:53:31 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:53:47 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:54:03 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:54:19 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 21:54:34 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:54:50 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:55:06 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:55:22 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 21:55:38 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:55:54 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:56:10 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+INICIO LISTA REGALOS
+Error: No se puede enviar contenido textual con este tipo de verbo.
+Iniciando tareas de sincronizacion ( 16/2/2023 21:56:26 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 21:56:41 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:56:58 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:57:13 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:57:29 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 21:57:45 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:58:01 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:58:17 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:58:32 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 21:58:48 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:59:04 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:59:20 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 21:59:36 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 21:59:51 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:00:07 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:00:23 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:00:39 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:00:54 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:01:10 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:01:26 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:01:41 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:01:57 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:02:12 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:02:28 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:02:44 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:02:59 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:03:15 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:03:31 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:03:47 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:04:02 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:04:18 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:04:34 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:04:50 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:05:06 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:05:22 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:05:38 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:05:53 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:06:09 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:06:24 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:06:40 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:06:56 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:07:12 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:07:27 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:07:43 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:07:59 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:08:15 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:08:30 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:08:46 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:09:02 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:09:17 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:09:33 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:09:49 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:10:05 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:10:20 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:10:36 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:10:52 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:11:07 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:11:23 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:11:39 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:11:55 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:12:10 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:12:26 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:12:41 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:12:57 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:13:13 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:13:28 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:13:44 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:14:00 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:14:16 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:14:32 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:14:47 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:15:03 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:15:19 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:15:35 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:15:50 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:16:06 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:16:22 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:16:37 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:16:53 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:17:09 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:17:25 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:17:41 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:17:56 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:18:12 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:18:28 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:18:43 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:18:59 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:19:15 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:19:31 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:19:47 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:20:03 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:20:18 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:20:34 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:20:50 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:21:06 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:21:21 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:21:37 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:21:53 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:22:09 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:22:24 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:22:40 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:22:56 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:23:11 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:23:27 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:23:43 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:23:58 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:24:14 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:24:30 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:24:46 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:25:01 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:25:17 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:25:33 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:25:49 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:26:04 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:26:20 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:26:36 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:26:52 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:27:07 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:27:23 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:27:39 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:27:55 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:28:10 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:28:26 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:28:42 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:28:57 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:29:13 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:29:28 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:29:45 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:30:00 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:30:16 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:30:32 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:30:47 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:31:03 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:31:19 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:31:34 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:31:50 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:32:06 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:32:22 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:32:37 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:32:53 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:33:09 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:33:24 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:33:40 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:33:56 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:34:12 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:34:28 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:34:43 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:34:59 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:35:15 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:35:30 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:35:46 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:36:02 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:36:18 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:36:33 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:36:49 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:37:05 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:37:21 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:37:36 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:37:52 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:38:07 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:38:23 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:38:39 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:38:54 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:39:10 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:39:26 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:39:41 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:39:57 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:40:13 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:40:29 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:40:44 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:41:00 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:41:16 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:41:32 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:41:47 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:42:03 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:42:19 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:42:35 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:42:50 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:43:06 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:43:22 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:43:37 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:43:53 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:44:09 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:44:24 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:44:40 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:44:55 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:45:11 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:45:27 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:45:43 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:45:58 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:46:14 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:46:31 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:46:46 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:47:02 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:47:18 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:47:33 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:47:49 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:48:04 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:48:20 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:48:36 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:48:52 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:49:07 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:49:23 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:49:39 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:49:55 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:50:11 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:50:26 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:50:42 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:50:58 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:51:14 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:51:29 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:51:45 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:52:01 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:52:16 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:52:32 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:52:48 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:53:04 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:53:20 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:53:35 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:53:51 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:54:07 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:54:23 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:54:38 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:54:54 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:55:10 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:55:26 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:55:41 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:55:57 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:56:13 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:56:28 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:56:44 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:57:00 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:57:16 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:57:31 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:57:47 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:58:03 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:58:18 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:58:34 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:58:50 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:59:06 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:59:22 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 22:59:37 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 22:59:53 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:00:09 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:00:25 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:00:40 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:00:56 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:01:12 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:01:28 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:01:43 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:01:59 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:02:15 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:02:31 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:02:46 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:03:02 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:03:18 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:03:34 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:03:49 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:04:05 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:04:21 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:04:37 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:04:53 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:05:08 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:05:24 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:05:40 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:05:55 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:06:11 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:06:27 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:06:43 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:06:58 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:07:14 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:07:30 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:07:46 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:08:01 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:08:17 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:08:33 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:08:49 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:09:04 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:09:20 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:09:36 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:09:52 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:10:07 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:10:23 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:10:39 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:10:55 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:11:10 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:11:26 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:11:41 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:11:57 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:12:13 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:12:28 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:12:44 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:13:00 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:13:15 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:13:31 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:13:47 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:14:03 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:14:18 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:14:34 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:14:50 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:15:06 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:15:21 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:15:37 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:15:53 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:16:08 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:16:24 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:16:39 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:16:55 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:17:11 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:17:27 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:17:42 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:17:58 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:18:14 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:18:29 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:18:45 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:19:01 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:19:17 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:19:32 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:19:48 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:20:04 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:20:20 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:20:35 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:20:51 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:21:07 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:21:23 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:21:38 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:21:54 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:22:10 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:22:26 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:22:41 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:22:57 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:23:13 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:23:29 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:23:44 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:24:00 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:24:16 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:24:31 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:24:47 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:25:03 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:25:19 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:25:35 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:25:50 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:26:06 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:26:22 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:26:37 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:26:53 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:27:09 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:27:24 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:27:40 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:27:56 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:28:12 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:28:27 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:28:43 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:28:59 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:29:14 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:29:30 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:29:46 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:30:01 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:30:17 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:30:33 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:30:49 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:31:04 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:31:20 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:31:36 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:31:52 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:32:07 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:32:23 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:32:39 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:32:55 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:33:10 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:33:26 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:33:41 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:33:57 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:34:13 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:34:29 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:34:44 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:35:00 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:35:16 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:35:31 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:35:47 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:36:03 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:36:18 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:36:34 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:36:50 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:37:06 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:37:21 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:37:37 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:37:53 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:38:09 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:38:24 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:38:40 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:38:56 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:39:12 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:39:27 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:39:43 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:39:59 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:40:14 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:40:30 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:40:45 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:41:01 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:41:17 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:41:32 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:41:48 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:42:04 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:42:20 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:42:35 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:42:51 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:43:07 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:43:23 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:43:38 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:43:54 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:44:10 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:44:26 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:44:41 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:44:57 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:45:13 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:45:29 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:45:44 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:46:00 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:46:16 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:46:32 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:46:47 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:47:03 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:47:18 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:47:34 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:47:50 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:48:06 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:48:21 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:48:37 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:48:53 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:49:08 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:49:24 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:49:40 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:49:55 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:50:11 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:50:27 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:50:43 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:50:58 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:51:14 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:51:30 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:51:45 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:52:01 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:52:17 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:52:32 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:52:48 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:53:03 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:53:19 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:53:35 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:53:51 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:54:06 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:54:22 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:54:38 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:54:54 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:55:09 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:55:25 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:55:40 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:55:56 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:56:12 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:56:28 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:56:43 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:56:59 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:57:15 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:57:30 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:57:46 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:58:02 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:58:17 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:58:33 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:58:49 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:59:05 )
+Mensaje de error: Request failed with status code 429
+Iniciando tareas de sincronizacion ( 16/2/2023 23:59:20 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:59:36 )
+Sincronizacion de Pedidos de Nidux -> Oracle:
+Iniciando tareas de sincronizacion ( 16/2/2023 23:59:51 )
+Sincronizacion de Pedidos de Nidux -> Oracle:

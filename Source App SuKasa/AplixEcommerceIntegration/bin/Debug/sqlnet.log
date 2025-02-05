@@ -1,0 +1,57 @@
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=cemacoscan.cemaco.co.cr)(PORT=1521))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=admin.cemaco.co.cr)(CID=(PROGRAM=C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.exe)(HOST=VIR-DESARROLLO)(USER=soporteti))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.1.0.5.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.1.0.5.0 - Production
+  Time: 18-ABR-2023 23:20:17
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: La conexión ha fallado porque el host destino o el objeto no existen
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: La conexión ha fallado porque el host destino o el objeto no existen
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=cemacoscan.cemaco.co.cr)(PORT=1521))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=admin.cemaco.co.cr)(CID=(PROGRAM=C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.exe)(HOST=VIR-DESARROLLO)(USER=soporteti))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.1.0.5.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.1.0.5.0 - Production
+  Time: 18-ABR-2023 23:20:47
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: La conexión ha fallado porque el host destino o el objeto no existen
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: La conexión ha fallado porque el host destino o el objeto no existen
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=cemacoscan.cemaco.co.cr)(PORT=1521))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=admin.cemaco.co.cr)(CID=(PROGRAM=C:\APLIX\Production Sources\Source App Cemaco\AplixEcommerceIntegration\bin\Debug\AplixEcommerceIntegration.exe)(HOST=VIR-DESARROLLO)(USER=soporteti))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.1.0.5.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.1.0.5.0 - Production
+  Time: 18-ABR-2023 23:21:16
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: La conexión ha fallado porque el host destino o el objeto no existen
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: La conexión ha fallado porque el host destino o el objeto no existen
+    nt secondary err code: 1001
+    nt OS err code: 0
