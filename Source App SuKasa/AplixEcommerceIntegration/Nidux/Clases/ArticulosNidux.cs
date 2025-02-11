@@ -237,4 +237,93 @@ namespace AplixEcommerceIntegration.Nidux.Clases
     {
         public string SKU { get; set; }
     }
+
+
+    public class ProductosResponse
+    {
+        public int Total { get; set; }
+        public int Pagina { get; set; }
+        public int productos_por_pagina { get; set; }
+        public int paginas_disponibles { get; set; }
+        public Dictionary<string, Product> Products { get; set; }
+    }
+
+    public class Product
+    {
+        public int id { get; set; }
+        public int brand_id { get; set; }
+        public string product_code { get; set; }
+        public string product_name { get; set; }
+        public string product_desc_short { get; set; }
+        public string product_description { get; set; }
+        public decimal product_price { get; set; }
+        public DateTime product_date { get; set; }
+        public DateTime product_last_updated { get; set; }
+        public decimal product_shipping { get; set; }
+        public decimal product_weight { get; set; }
+        public decimal product_sale { get; set; }
+        public int product_status { get; set; }
+        public int product_home { get; set; }
+        public int product_stock { get; set; }
+        public string product_video { get; set; }
+        public int product_hidestock { get; set; }
+        public int product_reserve { get; set; }
+        public int? product_reserve_limit { get; set; }
+        public decimal? product_reserve_percentage { get; set; }
+        public decimal? product_tax { get; set; }
+        public int product_priority { get; set; }
+        public int product_gif_enable { get; set; }
+        public int product_gif_transition { get; set; }
+        public string package_id { get; set; }
+        public string measured_code_package { get; set; }
+        public string measured_package_total { get; set; }
+        public string measured_sale_mode { get; set; }
+        public string measured_code_sale { get; set; }
+        public string measured_sale_unit { get; set; }
+        public string measured_sale_min { get; set; }
+        public string measured_sale_max { get; set; }
+        public Dictionary<string, string> product_tags { get; set; }
+        public Dictionary<string, string> product_keywords { get; set; }
+        public Dictionary<string, Variation> variations { get; set; }
+        public CabysL cabys { get; set; }
+        public Dictionary<string, string> codigos_alternos { get; set; }
+        public Dictionary<string, string> categorias { get; set; }
+        public Dictionary<string, string> imagenes { get; set; }
+        public int stockVariation { get; set; }
+        public Dictionary<string, TraduccionA> traducciones { get; set; }
+    }
+
+    public class CabysL
+    {
+        public string Cabys { get; set; }
+        public string CodigoTarifa { get; set; }
+        public int SkipFactura { get; set; }
+    }
+
+    public class TraduccionA
+    {
+        public int product_id { get; set; }
+        public int lang_id { get; set; }
+        public string product_name { get; set; }
+        public string product_desc_short { get; set; }
+        public string product_description { get; set; }
+    }
+
+    public class Variation
+    {
+        public int VariationId { get; set; }
+        public string Sku { get; set; }
+        public decimal Price { get; set; }
+        public int Stock { get; set; }
+        public string Substring { get; set; }
+        public Dictionary<string, Attribute> Attributes { get; set; }
+    }
+
+    public class Attribute
+    {
+        public int attribute_id { get; set; }
+        public string attribute_name { get; set; }
+        public string attribute_style { get; set; }
+        public string value_name { get; set; }
+    }
 }

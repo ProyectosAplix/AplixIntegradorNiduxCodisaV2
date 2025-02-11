@@ -1396,7 +1396,7 @@ namespace AplixEcommerceIntegration.Nidux
             else
             {
                 // Inicio de Articulos
-                var client = new RestClient("https://api.nidux.dev/v1/products/");
+                var client = new RestClient("https://api.nidux.dev/v3/products/");
                 client.Timeout = -1;
                 var request = new RestRequest(Method.GET);
                 request.AddHeader("Authorization", "Bearer " + token);
@@ -1404,13 +1404,14 @@ namespace AplixEcommerceIntegration.Nidux
 
                 if ((int)response.StatusCode == 200)
                 {
-                    Clases.productos lista_articulos = JsonConvert.DeserializeObject<Clases.productos>(response.Content);
-                    if (lista_articulos.products.Count > 0)
+                    ProductosResponse lista_articulos = JsonConvert.DeserializeObject<ProductosResponse>(response.Content);
+                    if (lista_articulos.Products.Count > 0)
                     {
                         try
                         {
                             int n = 0;
-                            while (n < lista_articulos.products.Count)
+                            int i = 0;
+                            while (n < lista_articulos.Products.Count)
                             {
                                 SqlCommand cmd = new SqlCommand();
                                 cmd.Connection = cnn.AbrirConexion();
@@ -1418,152 +1419,111 @@ namespace AplixEcommerceIntegration.Nidux
                                 cmd.CommandTimeout = 0;
                                 cmd.CommandType = CommandType.StoredProcedure;
 
-                                cmd.Parameters.AddWithValue("@ID", lista_articulos.products[n].id);
-                                if (lista_articulos.products[n].id_marca == null)
+                                var product = lista_articulos.Products.ElementAt(n).Value;
+
+                                cmd.Parameters.AddWithValue("@ID", product.id);
+                                if (lista_articulos.Products[n].id_marca == null)
                                 {
                                     cmd.Parameters.AddWithValue("@ID_MARCA", "0");
                                 }
                                 else
                                 {
-                                    cmd.Parameters.AddWithValue("@ID_MARCA", lista_articulos.products[n].id_marca);
+                                    cmd.Parameters.AddWithValue("@ID_MARCA", (object)product.brand_id ?? 0);
                                 }
-                                cmd.Parameters.AddWithValue("@SKU", lista_articulos.products[n].sku);
-                                cmd.Parameters.AddWithValue("@NOMBRE", lista_articulos.products[n].nombre);
-                                if (lista_articulos.products[n].descripcion == null)
+                                cmd.Parameters.AddWithValue("@SKU", product.product_code);
+                                cmd.Parameters.AddWithValue("@NOMBRE", product.product_name);
+                                if (lista_articulos.Products[n].descripcion == null)
                                 {
                                     cmd.Parameters.AddWithValue("@DESCRIPCION", "");
                                 }
                                 else
                                 {
-                                    string nombre = (Regex.Replace((lista_articulos.products[n].descripcion), @"<[^>]+>|&nbsp;", String.Empty));
-                                    string descripcion = Regex.Replace(nombre.Replace("\t", " "), reduceMultiSpace, " ");
-                                    cmd.Parameters.AddWithValue("@DESCRIPCION", descripcion);
+                                    string description = string.IsNullOrEmpty(product.product_description) ? "" :
+                                    Regex.Replace(Regex.Replace(product.product_description, @"<[^>]+>|&nbsp;", string.Empty).Replace("\t", " "), reduceMultiSpace, " ");
+                                    cmd.Parameters.AddWithValue("@DESCRIPCION", description);
                                 }
 
 
-                                cmd.Parameters.AddWithValue("@PRECIO", lista_articulos.products[n].precio);
-                                cmd.Parameters.AddWithValue("@COSTO_SHIPPING", lista_articulos.products[n].costo_shipping_individual);
-                                cmd.Parameters.AddWithValue("@PESO", lista_articulos.products[n].peso_producto);
-                                cmd.Parameters.AddWithValue("@OFERTA", lista_articulos.products[n].porcentaje_oferta);
-                                cmd.Parameters.AddWithValue("@ESTADO", lista_articulos.products[n].estado_de_producto);
-                                cmd.Parameters.AddWithValue("@DESTACADO", lista_articulos.products[n].es_destacado);
-                                cmd.Parameters.AddWithValue("@STOCK", lista_articulos.products[n].stock_principal);
-                                if (lista_articulos.products[n].video_youtube_url == null)
-                                {
-                                    cmd.Parameters.AddWithValue("@VIDEO", "");
-                                }
-                                else
-                                {
-                                    cmd.Parameters.AddWithValue("@VIDEO", lista_articulos.products[n].video_youtube_url);
-                                }
-                                cmd.Parameters.AddWithValue("@INDICADOR", lista_articulos.products[n].ocultar_indicador_stock);
-                                cmd.Parameters.AddWithValue("@RESERVA", lista_articulos.products[n].producto_permite_reservacion);
-                                cmd.Parameters.AddWithValue("@CARRITO", lista_articulos.products[n].limite_para_reservar_en_carrito);
-                                cmd.Parameters.AddWithValue("@POR_RESERVA", lista_articulos.products[n].porcentaje_para_reservar);
-                                cmd.Parameters.AddWithValue("@USAR_GIF", lista_articulos.products[n].usar_gif_en_homepage);
-                                cmd.Parameters.AddWithValue("@TIEMPO_GIF", lista_articulos.products[n].gif_tiempo_transicion);
-                                cmd.Parameters.AddWithValue("@IMPUESTO", lista_articulos.products[n].impuesto_producto);
+                                cmd.Parameters.AddWithValue("@PRECIO", product.product_price);
+                                cmd.Parameters.AddWithValue("@COSTO_SHIPPING", product.product_shipping);
+                                cmd.Parameters.AddWithValue("@PESO", product.product_weight);
+                                cmd.Parameters.AddWithValue("@OFERTA", product.product_sale);
+                                cmd.Parameters.AddWithValue("@ESTADO", product.product_status);
+                                cmd.Parameters.AddWithValue("@DESTACADO", product.product_home);
+                                cmd.Parameters.AddWithValue("@STOCK", product.product_stock);
+                                cmd.Parameters.AddWithValue("@VIDEO", product.product_video ?? "");
+                                cmd.Parameters.AddWithValue("@INDICADOR", product.product_hidestock);
+                                cmd.Parameters.AddWithValue("@RESERVA", product.product_reserve);
+                                cmd.Parameters.AddWithValue("@CARRITO", product.product_reserve_limit ?? 0);
+                                cmd.Parameters.AddWithValue("@POR_RESERVA", product.product_reserve_percentage ?? 0);
+                                cmd.Parameters.AddWithValue("@USAR_GIF", product.product_gif_enable);
+                                cmd.Parameters.AddWithValue("@TIEMPO_GIF", product.product_gif_transition);
+                                cmd.Parameters.AddWithValue("@IMPUESTO", product.product_tax ?? 0);
 
-                                if (lista_articulos.products[n].categorias == null)
-                                {
-                                    cmd.Parameters.AddWithValue("@CATEGORIAS", "0");
-                                }
-                                else
-                                {
-                                    string categorias = String.Join(",", lista_articulos.products[n].categorias.Select(p => p.ToString()).ToArray());
-                                    cmd.Parameters.AddWithValue("@CATEGORIAS", categorias);
-                                }
+                                cmd.Parameters.AddWithValue("@CATEGORIAS", product.categorias == null ? "0" : string.Join(",", product.categorias.Values));
 
-                                if (lista_articulos.products[n].traducciones.Count > 0)
+               
+                                if (product.traducciones.Count > 0)
                                 {
-                                    cmd.Parameters.AddWithValue("@LANG_NOMBRE", lista_articulos.products[n].traducciones[0].nombre);
-                                    string lang_nombre = (Regex.Replace((lista_articulos.products[n].traducciones[0].descripcion), @"<[^>]+>|&nbsp;", String.Empty));
-                                    string lang_descripcion = Regex.Replace(lang_nombre.Replace("\t", " "), reduceMultiSpace, " ");
-                                    cmd.Parameters.AddWithValue("@LANG_DESCRIP", lang_descripcion);
+                                    var translation = product.traducciones.Values.First(); // Assuming only one translation
+                                    cmd.Parameters.AddWithValue("@LANG_NOMBRE", translation.product_name);
+                                    string langDescription = Regex.Replace(translation.product_description, @"<[^>]+>|&nbsp;", string.Empty);
+                                    langDescription = Regex.Replace(langDescription.Replace("\t", " "), reduceMultiSpace, " ");
+                                    cmd.Parameters.AddWithValue("@LANG_DESCRIP", langDescription);
                                 }
                                 else
                                 {
                                     cmd.Parameters.AddWithValue("@LANG_NOMBRE", "Default Name");
-                                    cmd.Parameters.AddWithValue("@LANG_DESCRIP", "Default Descripcion");
+                                    cmd.Parameters.AddWithValue("@LANG_DESCRIP", "Default Description");
                                 }
 
-                                string cadena_tags = "";
-
-                                if (lista_articulos.products[n].tags.Count() <= 0)
-                                {
-                                    cadena_tags = "";
-                                }
-                                else
-                                {
-
-                                    foreach (string tag in lista_articulos.products[n].tags)
-                                    {
-                                        cadena_tags = cadena_tags + tag + ",";
-                                    }
-
-                                    cadena_tags = cadena_tags.TrimEnd(',');
-
-                                }
-
+                                string cadena_tags = product.product_tags != null ? string.Join(",", product.product_tags.Values) : "";
                                 cmd.Parameters.AddWithValue("@TAGS", cadena_tags);
 
-                                string cadena_seotags = "";
-
-                                if (lista_articulos.products[n].seo_tags.Count() <= 0)
-                                {
-                                    cadena_seotags = "";
-                                }
-                                else
-                                {
-
-                                    foreach (string tag in lista_articulos.products[n].seo_tags)
-                                    {
-                                        cadena_seotags = cadena_seotags + tag + ",";
-                                    }
-
-                                    cadena_seotags = cadena_seotags.TrimEnd(',');
-
-                                }
-
+                                // Handle product keywords (SEO tags)
+                                string cadena_seotags = product.product_keywords != null ? string.Join(",", product.product_keywords.Values) : "";
                                 cmd.Parameters.AddWithValue("@SEO_TAGS", cadena_seotags);
+
+
+
+
+                                cmd.Parameters.AddWithValue("@CABYS", product.cabys?.Cabys ?? "");
+                                cmd.Parameters.AddWithValue("@CODIGOTARIFA", product.cabys?.CodigoTarifa ?? "");
+                                cmd.Parameters.AddWithValue("@SkipFactura", product.cabys?.SkipFactura ?? 0);
 
                                 cmd.ExecuteNonQuery();
                                 cnn.CerrarConexion();
                                 //INSERTAR VARIACIONES de articulo
 
-                                if (lista_articulos.products[n].variations == null)
+                                if (product.variations != null && product.variations.Count > 0)
                                 {
-
-                                }
-                                else
-                                {
-                                    if (lista_articulos.products[n].variations.Count > 0)
+                                    while (i < product.variations.Count)
                                     {
-                                        int i = 0;
-                                        while (i < lista_articulos.products[n].variations.Count)
+                                        var variation = product.variations.Values.ElementAt(i); // Access variation via dictionary
+                                        SqlCommand cmd_va = new SqlCommand
                                         {
-                                            SqlCommand cmd_va = new SqlCommand();
-                                            cmd_va.Connection = cnn.AbrirConexion();
-                                            cmd_va.CommandText = "" + com + ".INSERTAR_ARTICULOS_VARIACIONES_TIENDA_APP";
-                                            cmd_va.CommandTimeout = 0;
-                                            cmd_va.CommandType = CommandType.StoredProcedure;
+                                            Connection = cnn.AbrirConexion(),
+                                            CommandText = "" + com + ".INSERTAR_ARTICULOS_VARIACIONES_TIENDA_APP",
+                                            CommandTimeout = 0,
+                                            CommandType = CommandType.StoredProcedure
+                                        };
 
-                                            cmd_va.Parameters.AddWithValue("@SKU_PADRE", lista_articulos.products[n].sku);
-                                            cmd_va.Parameters.AddWithValue("@ID", lista_articulos.products[n].variations[i].variationId);
-                                            cmd_va.Parameters.AddWithValue("@NOMBRE", lista_articulos.products[n].variations[i].nombre);
-                                            cmd_va.Parameters.AddWithValue("@ATRIBUTOS", lista_articulos.products[n].variations[i].variationSubstring);//se tiene que cambiar por lo que se hizo en el server porque ahora no está funcionando
-                                            cmd_va.Parameters.AddWithValue("@SKU", lista_articulos.products[n].variations[i].sku);
-                                            cmd_va.Parameters.AddWithValue("@PRECIO", lista_articulos.products[n].variations[i].precio);
-                                            cmd_va.Parameters.AddWithValue("@STOCK", lista_articulos.products[n].variations[i].stock);
-                                            cmd_va.Parameters.AddWithValue("@PESO", lista_articulos.products[n].variations[i].peso);
-                                            cmd_va.Parameters.AddWithValue("@IMPUESTO", lista_articulos.products[n].impuesto_producto);
-                                            cmd_va.ExecuteNonQuery();
-                                            cnn.CerrarConexion();
-                                            i++;
-                                        }
+                                        cmd_va.Parameters.AddWithValue("@SKU_PADRE", product.product_code);
+                                        cmd_va.Parameters.AddWithValue("@ID", variation.VariationId);
+                                        cmd_va.Parameters.AddWithValue("@ATRIBUTOS", string.Join(",", variation.Attributes.Values.Select(a => a.value_name)));
+                                        cmd_va.Parameters.AddWithValue("@SKU", variation.Sku);
+                                        cmd_va.Parameters.AddWithValue("@PRECIO", variation.Price);
+                                        cmd_va.Parameters.AddWithValue("@STOCK", variation.Stock);
+                                        cmd_va.Parameters.AddWithValue("@PESO", variation.Price); // Assuming Peso is stored in Price property
+                                        cmd_va.Parameters.AddWithValue("@IMPUESTO", product.product_tax ?? 0);
+                                        cmd_va.ExecuteNonQuery();
+                                        cnn.CerrarConexion();
+                                        i++;
                                     }
                                 }
+
                                 n++;
+
                             }
                             MessageBox.Show("Artículos agregada con éxito", "Mensaje de Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             dgvArticulos.Rows.Clear();
@@ -1571,8 +1531,9 @@ namespace AplixEcommerceIntegration.Nidux
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message.ToString(), "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Error al procesar los artículos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
+                        
                     }
                 }
                 else
@@ -2007,7 +1968,7 @@ namespace AplixEcommerceIntegration.Nidux
                 else
                 {
                     //Nos traemos las categorias
-                    var client = new RestClient("https://api.nidux.dev/v1/categories/");
+                    var client = new RestClient("https://api.nidux.dev/v3/categories/");
                     client.Timeout = -1;
                     var request = new RestRequest(Method.GET);
                     request.AddHeader("Authorization", "Bearer " + token);
@@ -2468,7 +2429,7 @@ namespace AplixEcommerceIntegration.Nidux
                 else
                 {
                     //Nos traemos las categorias
-                    var client = new RestClient("https://api.nidux.dev/v1/brands/");
+                    var client = new RestClient("https://api.nidux.dev/v3/brands/");
                     client.Timeout = -1;
                     var request = new RestRequest(Method.GET);
                     request.AddHeader("Authorization", "Bearer " + token);
@@ -2881,7 +2842,7 @@ namespace AplixEcommerceIntegration.Nidux
                 else
                 {
                     //Nos traemos los atributos
-                    var client = new RestClient("https://api.nidux.dev/v1/attributes/");
+                    var client = new RestClient("https://api.nidux.dev/v3/attributes/");
                     client.Timeout = -1;
                     var request = new RestRequest(Method.GET);
                     request.AddHeader("Authorization", "Bearer " + token);
@@ -2910,7 +2871,7 @@ namespace AplixEcommerceIntegration.Nidux
                             Clases.Atributos_Nidux atributos = JsonConvert.DeserializeObject<Clases.Atributos_Nidux>(response.Content);
                             while (n < atributos.atributos.Count)
                             {
-                                var client3 = new RestClient("https://api.nidux.dev/v1/attributes/" + atributos.atributos[n].id + "/values");
+                                var client3 = new RestClient("https://api.nidux.dev/v3/attributes/" + atributos.atributos[n].id + "/values");
                                 client3.Timeout = -1;
                                 var request3 = new RestRequest(Method.GET);
                                 request3.AddHeader("Authorization", "Bearer " + token);

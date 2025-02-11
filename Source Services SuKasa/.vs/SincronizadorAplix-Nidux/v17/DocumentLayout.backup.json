@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\",
+  "WorkspaceRootPath": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|c:\\users\\diego\\desktop\\mega\\aplix proyectos bitbucket\\cemaco-bebemundo\\production sources\\source services sukasa\\sincronizadoraplix-nidux\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|c:\\users\\ljriv\\documents\\aplix\\repos\\aplixintegradorniduxcodisav3\\source services sukasa\\sincronizadoraplix-nidux\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\sincronizadoraplix-nidux\\nidux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\sincronizadoraplix-nidux\\nidux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\nidux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\sincronizadoraplix-nidux\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\sincronizadoraplix-nidux\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\sincronizadoraplix-nidux\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\sincronizadoraplix-nidux\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\sincronizadoraplix-nidux\\logsfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\sincronizadoraplix-nidux\\logsfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\logsfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,21 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Service1.cs",
-              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Service1.cs",
+              "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Service1.cs",
               "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\Service1.cs",
-              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Service1.cs",
+              "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Service1.cs",
               "RelativeToolTip": "SincronizadorAplix-Nidux\\Service1.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAowEwAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwEwAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-07T01:47:02.171Z",
               "EditorCaption": ""
@@ -53,10 +49,10 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Service1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Service1.cs",
+              "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Service1.cs",
               "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\Service1.cs",
               "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services Cemaco\\SincronizadorAplix-Nidux\\Service1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\Source Services Cemaco\\SincronizadorAplix-Nidux\\Service1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services Cemaco\\SincronizadorAplix-Nidux\\Service1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-07T01:46:57.929Z"
             },
@@ -64,9 +60,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "LogsFile.cs",
-              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\SincronizadorAplix-Nidux\\LogsFile.cs",
+              "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\LogsFile.cs",
               "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\LogsFile.cs",
-              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\SincronizadorAplix-Nidux\\LogsFile.cs",
+              "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\LogsFile.cs",
               "RelativeToolTip": "SincronizadorAplix-Nidux\\LogsFile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -76,9 +72,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Nidux.cs",
-              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Nidux.cs",
+              "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Nidux.cs",
               "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\Nidux.cs",
-              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Nidux.cs",
+              "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Nidux.cs",
               "RelativeToolTip": "SincronizadorAplix-Nidux\\Nidux.cs",
               "ViewState": "AgIAAJoDAAAAAAAAAAAAAJ8DAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -88,9 +84,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Program.cs",
               "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\Program.cs",
-              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Program.cs",
+              "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Program.cs",
               "RelativeToolTip": "SincronizadorAplix-Nidux\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
