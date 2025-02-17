@@ -1024,7 +1024,6 @@ namespace AplixEcommerceIntegration.Nidux
                 //BEBEMUNDO
                 try
                 {
-
                     var client = new RestClient("http://" + ConfigurationManager.AppSettings["Ip"].ToString() + "/api/actualizar_articulos_editados_simple");
                     client.Timeout = -1;
                     var request = new RestRequest(Method.GET);
@@ -1039,7 +1038,41 @@ namespace AplixEcommerceIntegration.Nidux
                             string Exitopaso = "";
                             string errorNoPAso = "";
                             while (contador1 < lista.Count())
-                            {
+                            {                              
+                                #region Se consulta la Descripcion de NIDUX
+                                //para poder conservar el formato de la descripcion se va a consultar el
+                                //articulo para sacar la descripcion tal cual esta en NIDUX
+                                if (!String.IsNullOrEmpty(lista[contador1].id))
+                                {
+                                    if (contadorPeticionesArticulos == 99)
+                                    {
+                                        Thread.Sleep(60000);
+                                        contadorPeticionesArticulos = 0;
+                                    }
+
+                                    string id = lista[contador1].id;
+
+                                    var clientget = new RestClient("https://api.nidux.dev/v3/products/" + id);
+                                    clientget.Timeout = -1;
+                                    var requestget = new RestRequest(Method.GET);
+                                    requestget.AddHeader("Authorization", "Bearer " + token);
+                                    IRestResponse responseget = clientget.Execute(requestget);
+
+                                    if ((int)responseget.StatusCode == 200)
+                                    {
+                                        //MessageBox.Show(responseget.Content);
+                                        Articulos2 lista_articulosget = JsonConvert.DeserializeObject<Articulos2>(responseget.Content);
+                                        //logsFile.WriteLogs($"Categorias a asignar: {lista_articulosget.Producto.Categorias}");
+                                        lista[contador1].descripcion = lista_articulosget.Producto.product_description;
+
+                                    }
+                                    else
+                                    {
+                                        //logsFile.WriteLogs($"Fallo al obtener la Categoria de NIDUX del articulo: {lista[contador1].id}");
+                                    }
+                                }
+                                #endregion
+
                                 if (contadorPeticionesArticulos == 295)
                                 {
                                     Thread.Sleep(60000);
@@ -1050,58 +1083,39 @@ namespace AplixEcommerceIntegration.Nidux
                                 //si el id viene vacio es porque hay que insertarlo
                                 if (lista[contador1].id == "")
                                 {
+                                    string jsonBody = $@"{{
+                                        ""add"": [
+                                            {{
+                                                ""brand_id"": {lista[contador1].id_marca},
+                                                ""categorias"": [{string.Join(",", lista[contador1].categorias)}],
+                                                ""product_code"": ""{lista[contador1].sku}"",
+                                                ""product_name"": ""{lista[contador1].nombre}"",
+                                                ""product_description"": ""{lista[contador1].descripcion}"",
+                                                ""product_price"": ""{lista[contador1].precio}"",
+                                                ""product_shipping"": {lista[contador1].costo_shipping_individual ?? "0"},
+                                                ""product_weight"": {lista[contador1].peso_producto ?? "0"},
+                                                ""product_sale"": {lista[contador1].porcentaje_oferta ?? "0"},
+                                                ""product_status"": {lista[contador1].estado_de_producto ?? "0"},
+                                                ""product_home"": {lista[contador1].es_destacado ?? "0"},
+                                                ""product_stock"": {lista[contador1].stock_principal},
+                                                ""product_video"": ""{lista[contador1].video_youtube_url}"",
+                                                ""product_hidestock"": {lista[contador1].ocultar_indicador_stock ?? "0"},
+                                                ""product_reserve"": {lista[contador1].producto_permite_reservacion ?? "0"},
+                                                ""product_reserve_limit"": {lista[contador1].limite_para_reservar_en_carrito ?? "0"},
+                                                ""product_reserve_percentage"": {lista[contador1].porcentaje_para_reservar ?? "0"},
+                                                ""product_tax"": {lista[contador1].impuesto_producto},
+                                                ""seo_tags"": [{string.Join(",", lista[contador1].seo_tags.Select(tag => $"\"{tag}\""))}],
+                                                ""tags"": [{string.Join(",", lista[contador1].tags.Select(tag => $"\"{tag}\""))}]   
+                                            }}
+                                        ]
+                                    }}";
 
-                                    var client1 = new RestClient("https://api.nidux.dev/v1/products/");
+                                    var client1 = new RestClient("https://api.nidux.dev/v3/products/batch");
                                     client1.Timeout = -1;
-                                    string cadena_categoria = "[" + String.Join(",", lista[contador1].categorias.Select(p => p.ToString()).ToArray()) + "]";
-
-                                    string cadena_tags = "[";
-
-                                    if (lista[contador1].tags.Count() <= 0)
-                                    {
-                                        cadena_tags = "[]";
-                                    }
-                                    else
-                                    {
-
-                                        foreach (string tag in lista[contador1].tags)
-                                        {
-                                            cadena_tags = cadena_tags + "\"" + tag + "\" " + ",";
-                                        }
-
-                                        cadena_tags = cadena_tags.TrimEnd(',');
-
-                                        cadena_tags = cadena_tags + "]";
-
-                                    }
-
-                                    string cadena_seotags = "[";
-
-                                    if (lista[contador1].seo_tags.Count() <= 0)
-                                    {
-                                        cadena_seotags = "[]";
-                                    }
-                                    else
-                                    {
-
-                                        foreach (string seo in lista[contador1].seo_tags)
-                                        {
-                                            cadena_seotags = cadena_seotags + "\"" + seo + "\" " + ",";
-                                        }
-
-                                        cadena_seotags = cadena_seotags.TrimEnd(',');
-
-                                        cadena_seotags = cadena_seotags + "]";
-
-                                    }
-
-
-
                                     var request1 = new RestRequest(Method.POST);
                                     request1.AddHeader("Authorization", "Bearer " + token);
                                     request1.AddHeader("Content-Type", "application/json");
-                                    request1.AddParameter("application/json", "{\r\n        \"id_marca\": " + lista[contador1].id_marca + ",\r\n        \"categorias\": " + cadena_categoria + ",\r\n        \"sku\": \"" + lista[contador1].sku + "\",\r\n        \"nombre\": \"" + lista[contador1].nombre + "\",\r\n        \"descripcion\": \"<p>" + lista[contador1].descripcion + "</p>\",\r\n        \"precio\": \"" + lista[contador1].precio + "\",\r\n        \"costo_shipping_individual\": " + lista[contador1].costo_shipping_individual + ",\r\n        \"peso_producto\": " + lista[contador1].peso_producto + ",\r\n        \"porcentaje_oferta\": " + lista[contador1].porcentaje_oferta + ",\r\n        \"estado_de_producto\": " + lista[contador1].estado_de_producto + ",\r\n        \"es_destacado\": " + lista[contador1].es_destacado + ",\r\n        \"stock_principal\": " + lista[contador1].stock_principal + ",\r\n        \"video_youtube_url\": \"" + lista[contador1].video_youtube_url + "\",\r\n        \"ocultar_indicador_stock\": " + lista[contador1].ocultar_indicador_stock + ",\r\n        \"producto_permite_reservacion\": " + lista[contador1].producto_permite_reservacion + ",\r\n        \"limite_para_reservar_en_carrito\": " + lista[contador1].limite_para_reservar_en_carrito + ",\r\n        \"porcentaje_para_reservar\": " + lista[contador1].porcentaje_para_reservar + ",\r\n        \"usar_gif_en_homepage\": " + lista[contador1].usar_gif_en_homepage + ",\r\n        \"gif_tiempo_transicion\": " + lista[contador1].gif_tiempo_transicion + ",\r\n  \"impuesto_producto\":  " + lista[contador1].impuesto_producto + ",\r\n  \"tags\":  " + cadena_tags + ",\r\n  \"seo_tags\":  " + cadena_seotags + ",\r\n        \"traducciones\": [\r\n            {\r\n                \"lang_id\": " + lista[contador1].traducciones[0].lang_id + ",\r\n                \"nombre\": \"" + lista[contador1].traducciones[0].nombre + "\",\r\n                \"descripcion\": \"<p>" + lista[contador1].traducciones[0].descripcion + "</p>\"\r\n            }\r\n        ]\r\n}", ParameterType.RequestBody);
-                                    //string a = "{\r\n        \"id_marca\": " + lista[contador1].id_marca + ",\r\n        \"categorias\": " + cadena_categoria + ",\r\n        \"sku\": \"" + lista[contador1].sku + "\",\r\n        \"nombre\": \"" + lista[contador1].nombre + "\",\r\n        \"descripcion\": \"<p>" + lista[contador1].descripcion + "</p>\",\r\n        \"precio\": \"" + lista[contador1].precio + "\",\r\n        \"costo_shipping_individual\": " + lista[contador1].costo_shipping_individual + ",\r\n        \"peso_producto\": " + lista[contador1].peso_producto + ",\r\n        \"porcentaje_oferta\": " + lista[contador1].porcentaje_oferta + ",\r\n        \"estado_de_producto\": " + lista[contador1].estado_de_producto + ",\r\n        \"es_destacado\": " + lista[contador1].es_destacado + ",\r\n        \"stock_principal\": " + lista[contador1].stock_principal + ",\r\n        \"video_youtube_url\": \"" + lista[contador1].video_youtube_url + "\",\r\n        \"ocultar_indicador_stock\": " + lista[contador1].ocultar_indicador_stock + ",\r\n        \"producto_permite_reservacion\": " + lista[contador1].producto_permite_reservacion + ",\r\n        \"limite_para_reservar_en_carrito\": " + lista[contador1].limite_para_reservar_en_carrito + ",\r\n        \"porcentaje_para_reservar\": " + lista[contador1].porcentaje_para_reservar + ",\r\n        \"usar_gif_en_homepage\": " + lista[contador1].usar_gif_en_homepage + ",\r\n        \"gif_tiempo_transicion\": " + lista[contador1].gif_tiempo_transicion + ",\r\n  \"impuesto_producto\":  " + lista[contador1].impuesto_producto + ",\r\n  \"tags\":  " + l + ",\r\n  \"seo_tags\":  " + cadena_seotags + ",\r\n        \"traducciones\": [\r\n            {\r\n                \"lang_id\": " + lista[contador1].traducciones[0].lang_id + ",\r\n                \"nombre\": \"" + lista[contador1].traducciones[0].nombre + "\",\r\n                \"descripcion\": \"<p>" + lista[contador1].traducciones[0].descripcion + "</p>\"\r\n            }\r\n        ]\r\n}";
+                                    request1.AddParameter("application/json", jsonBody, ParameterType.RequestBody);
                                     IRestResponse response2 = client1.Execute(request1);
 
                                     if ((int)response2.StatusCode == 200)
@@ -1112,11 +1126,7 @@ namespace AplixEcommerceIntegration.Nidux
                                         res.sku = lista[contador1].sku;
                                         string json_respuesta = JsonConvert.SerializeObject(res, Formatting.Indented);
 
-                                        if (res.id == "" || res.id == null)
-                                        {
-
-                                        }
-                                        else
+                                        if (!string.IsNullOrEmpty(res.id))
                                         {
                                             var client2 = new RestClient("http://" + ConfigurationManager.AppSettings["Ip"].ToString() + "/api/actualizar_id_articulos");
                                             client2.Timeout = -1;
@@ -1141,16 +1151,40 @@ namespace AplixEcommerceIntegration.Nidux
                                 }
                                 else
                                 {
-                                    var client4 = new RestClient("https://api.nidux.dev/v1/products/" + lista[contador1].id);
-                                    //if () { }
+                                    string jsonBody = $@"{{
+                                        ""id"": {lista[contador1].id},
+                                        ""brand_id"": {lista[contador1].id_marca},
+                                        ""categorias"": [{string.Join(",", lista[contador1].categorias)}],
+                                        ""product_code"": ""{lista[contador1].sku}"",
+                                        ""product_name"": ""{lista[contador1].nombre}"",
+                                        ""product_description"": ""{lista[contador1].descripcion}"",
+                                        ""product_desc_short"": ""{lista[contador1].descripcion}"",
+                                        ""product_price"": ""{lista[contador1].precio}"",
+                                        ""product_shipping"": {lista[contador1].costo_shipping_individual ?? "0"},
+                                        ""product_weight"": {lista[contador1].peso_producto ?? "0"},
+                                        ""product_sale"": {lista[contador1].porcentaje_oferta ?? "0"},
+                                        ""product_status"": {lista[contador1].estado_de_producto ?? "0"},g
+                                        ""product_home"": {lista[contador1].es_destacado ?? "0"},
+                                        ""product_stock"": {lista[contador1].stock_principal},
+                                        ""product_video"": ""{lista[contador1].video_youtube_url}"",
+                                        ""product_hidestock"": {lista[contador1].ocultar_indicador_stock ?? "0"},
+                                        ""product_reserve"": {lista[contador1].producto_permite_reservacion ?? "0"},
+                                        ""product_reserve_limit"": {lista[contador1].limite_para_reservar_en_carrito ?? "0"},
+                                        ""product_reserve_percentage"": {lista[contador1].porcentaje_para_reservar ?? "0"},
+                                        ""product_tax"": {lista[contador1].impuesto_producto},
+                                        ""seo_tags"": [{string.Join(",", lista[contador1].seo_tags.Select(tag => $"\"{tag}\""))}],
+                                        ""tags"": [{string.Join(",", lista[contador1].tags.Select(tag => $"\"{tag}\""))}],
+                                        }}
+                                        ]
+                                    }}";
+
+                                    var client4 = new RestClient("https://api.nidux.dev/v3/products/"); // nidux pregunta
                                     client4.Timeout = -1;
-                                    var request4 = new RestRequest(Method.PUT);
+                                    var request4 = new RestRequest(Method.PATCH);
                                     request4.AddHeader("Authorization", "Bearer " + token);
                                     request4.AddHeader("Content-Type", "application/json");
-                                    request4.AddParameter("application/json", json, ParameterType.RequestBody);
+                                    request4.AddParameter("application/json", jsonBody, ParameterType.RequestBody);
                                     IRestResponse response4 = client4.Execute(request4);
-
-                                    System.Diagnostics.Debug.WriteLine(contador1 + " Pase por " + lista[contador1].id);
 
                                     if ((int)response4.StatusCode == 200)
                                     {
@@ -1422,6 +1456,7 @@ namespace AplixEcommerceIntegration.Nidux
                                 var product = lista_articulos.Products.ElementAt(n).Value;
 
                                 cmd.Parameters.AddWithValue("@ID", product.id);
+
                                 if (lista_articulos.Products[n].id_marca == null)
                                 {
                                     cmd.Parameters.AddWithValue("@ID_MARCA", "0");
