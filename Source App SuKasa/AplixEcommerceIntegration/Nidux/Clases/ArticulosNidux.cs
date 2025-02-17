@@ -236,6 +236,7 @@ namespace AplixEcommerceIntegration.Nidux.Clases
     public class articulos_eliminados
     {
         public string SKU { get; set; }
+        public string ID { get; set; }
     }
 
 

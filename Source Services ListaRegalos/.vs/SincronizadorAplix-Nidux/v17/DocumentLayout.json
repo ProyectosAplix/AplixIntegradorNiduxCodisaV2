@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\nidux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|c:\\users\\ljriv\\documents\\aplix\\repos\\aplixintegradorniduxcodisav3\\source services listaregalos\\sincronizadoraplix-nidux\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\sincronizadoraplix-nidux\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,8 +42,7 @@
               "RelativeToolTip": "SincronizadorAplix-Nidux\\models\\Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T14:55:44.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T14:55:44.282Z"
             },
             {
               "$type": "Document",
@@ -53,7 +52,7 @@
               "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\Nidux.cs",
               "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\Nidux.cs",
               "RelativeToolTip": "SincronizadorAplix-Nidux\\Nidux.cs",
-              "ViewState": "AgIAAEUBAAAAAAAAAAAqwMcAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAKMAAAAAAAAAAADwv7UAAAB8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T14:38:49.809Z",
               "EditorCaption": ""
@@ -68,8 +67,7 @@
               "RelativeToolTip": "SincronizadorAplix-Nidux\\Service1.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAhwEYAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T14:38:49.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T14:38:49.89Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\Service1.cs [Design]",
               "RelativeToolTip": "SincronizadorAplix-Nidux\\Service1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T14:38:49.892Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-14T14:38:49.892Z"
             },
             {
               "$type": "Document",

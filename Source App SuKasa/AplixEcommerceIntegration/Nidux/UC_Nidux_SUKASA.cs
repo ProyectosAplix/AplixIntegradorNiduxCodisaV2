@@ -1390,7 +1390,7 @@ namespace AplixEcommerceIntegration.Nidux
                                 contadorArticulosEliminados = 0;
                             }
 
-                            var client = new RestClient("https://api.nidux.dev/v1/products/sku/" + lista_eliminar[contador_elimanados].SKU);
+                            var client = new RestClient("https://api.nidux.dev/v3/products/" + lista_eliminar[contador_elimanados].ID);
                             client.Timeout = -1;
                             var request = new RestRequest(Method.DELETE);
                             request.AddHeader("Authorization", "Bearer " + token);
@@ -1972,12 +1972,30 @@ namespace AplixEcommerceIntegration.Nidux
                         {
                             while (cont_cat < lista_categorias.Count)
                             {
-                                var client2 = new RestClient("https://api.nidux.dev/v1/categories/" + lista_categorias[cont_cat].codigo_categoria);
+
+                                string jsonBody = $@"
+                                {{
+                                   ""category_name"":""{lista_categorias[cont_cat].nombre}"",
+                                   ""category_father"":{lista_categorias[cont_cat].categoria_padre},
+                                   ""category_description"":""<p>{lista_categorias[cont_cat].descripcion}</p>"",
+                                   ""category_status"":1,
+                                   ""category_weight"":0,
+                                   ""mallId"":0,
+                                   ""traducciones"":[
+                                      {{
+                                         ""idioma"":1,
+                                         ""nombre"":""Name Default"",
+                                         ""descripcion"":""<p>Description Default</p>""
+                                      }}
+                                   ]
+                                }}";
+
+                                var client2 = new RestClient("https://api.nidux.dev/v3/categories/" + lista_categorias[cont_cat].codigo_categoria);
                                 client2.Timeout = -1;
                                 var request2 = new RestRequest(Method.PUT);
                                 request2.AddHeader("Authorization", "Bearer " + token);
                                 request2.AddHeader("Content-Type", "application/json");
-                                request2.AddParameter("application/json", "{\r\n   \"nombre\":\"" + lista_categorias[cont_cat].nombre + "\",\r\n   \"categoria_padre\":" + lista_categorias[cont_cat].categoria_padre + ",\r\n   \"descripcion\":\"<p>" + lista_categorias[cont_cat].descripcion + "</p>\",\r\n   \"estado\":1,\r\n   \"peso_precedencia\":0,\r\n   \"categoria_en_malls\":0,\r\n   \"traducciones\":[\r\n      {\r\n         \"idioma\":1,\r\n         \"nombre\":\"Name Dafualt \",\r\n         \"descripcion\":\"<p>Description Dafualt</p>\"\r\n      }\r\n   ]\r\n}", ParameterType.RequestBody);
+                                request2.AddParameter("application/json", jsonBody, ParameterType.RequestBody);
                                 IRestResponse response2 = client2.Execute(request2);
                                 cont_cat++;
                             }
@@ -2099,7 +2117,7 @@ namespace AplixEcommerceIntegration.Nidux
                             foreach (string item in codigos_categorias)
                             {
                                 //Empezamos a Eliminar en Nidux
-                                var client = new RestClient("https://api.nidux.dev/v1/categories/" + item);
+                                var client = new RestClient("https://api.nidux.dev/v3/categories/" + item);
                                 client.Timeout = -1;
                                 var request = new RestRequest(Method.DELETE);
                                 request.AddHeader("Authorization", "Bearer " + token);
@@ -2432,12 +2450,12 @@ namespace AplixEcommerceIntegration.Nidux
                             while (cont_marcas < lista_marcas.Count)
                             {
                                 //Insertamos la marca en Nidux
-                                var client = new RestClient("https://api.nidux.dev/v1/brands/" + lista_marcas[cont_marcas].codigo_marca);
+                                var client = new RestClient("https://api.nidux.dev/v3/brands/" + lista_marcas[cont_marcas].codigo_marca);
                                 client.Timeout = -1;
                                 var request = new RestRequest(Method.PUT);
                                 request.AddHeader("Authorization", "Bearer " + token);
                                 request.AddHeader("Content-Type", "application/json");
-                                request.AddParameter("application/json", "{\r\n    \"nombre\": \"" + lista_marcas[cont_marcas].nombre + "\"\r\n }", ParameterType.RequestBody);
+                                request.AddParameter("application/json", "{\r\n    \"brand_name\t\": \"" + lista_marcas[cont_marcas].nombre + "\"\r\n }", ParameterType.RequestBody);
                                 IRestResponse response = client.Execute(request);
                                 cont_marcas++;
                             }
@@ -2583,7 +2601,7 @@ namespace AplixEcommerceIntegration.Nidux
                             foreach (string item in codigos_marcas)
                             {
                                 //Empezamos a Eliminar en Nidux
-                                var client = new RestClient("https://api.nidux.dev/v1/brands/" + item);
+                                var client = new RestClient("https://api.nidux.dev/v3/brands/" + item);
                                 client.Timeout = -1;
                                 var request = new RestRequest(Method.DELETE);
                                 request.AddHeader("Authorization", "Bearer " + token);
@@ -2801,12 +2819,12 @@ namespace AplixEcommerceIntegration.Nidux
                     {
                         foreach (DataRow item in dt.Rows)
                         {
-                            var client = new RestClient("https://api.nidux.dev/v1/brands/");
+                            var client = new RestClient("https://api.nidux.dev/v3/brands/");
                             client.Timeout = -1;
                             var request = new RestRequest(Method.POST);
                             request.AddHeader("Authorization", "Bearer " + token);
                             request.AddHeader("Content-Type", "application/json");
-                            request.AddParameter("application/json", "{\r\n   \"nombre\":\"" + item["descripcion"].ToString() + "\"\r\n}", ParameterType.RequestBody);
+                            request.AddParameter("application/json", "{\r\n   \"brand_name\":\"" + item["descripcion"].ToString() + "\"\r\n}", ParameterType.RequestBody);
                             IRestResponse response = client.Execute(request);
 
                             if ((int)response.StatusCode == 200)
@@ -3819,7 +3837,7 @@ namespace AplixEcommerceIntegration.Nidux
 
                                 token = obj_metodos.Obtener_Token();
                                 //Consulto direccion cliente 
-                                var client2 = new RestClient("https://api.nidux.dev/v1/customers/" + respuestaListaRegalos.Giftlist.OwnerId.ToString());
+                                var client2 = new RestClient("https://api.nidux.dev/v3/customers/" + respuestaListaRegalos.Giftlist.OwnerId.ToString());
                                 client2.Timeout = -1;
                                 var request2 = new RestRequest(Method.GET);
                                 request2.AddHeader("Authorization", "Bearer " + token);
@@ -3948,7 +3966,7 @@ namespace AplixEcommerceIntegration.Nidux
                 }
                 else
                 {
-                    var client = new RestClient("https://api.nidux.dev/v1/orders/");
+                    var client = new RestClient("https://api.nidux.dev/v3/orders/");
                     client.Timeout = -1;
                     var request = new RestRequest(Method.POST);
                     request.AddHeader("Authorization", "Bearer " + token);
@@ -4225,7 +4243,7 @@ namespace AplixEcommerceIntegration.Nidux
 
                             while (contador1 < lista.Count)
                             {
-                                var client = new RestClient("https://api.nidux.dev/v1/orders/" + lista[contador1].orderId.ToString() + "/orderStatus");
+                                var client = new RestClient("https://api.nidux.dev/v3/orders/" + lista[contador1].orderId.ToString() + "/orderStatus");
                                 client.Timeout = -1;
                                 var request = new RestRequest(Method.PUT);
                                 request.AddHeader("Authorization", "Bearer " + token);

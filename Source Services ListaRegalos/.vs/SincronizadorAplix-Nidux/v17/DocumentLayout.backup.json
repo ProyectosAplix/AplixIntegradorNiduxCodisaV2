@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\nidux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|c:\\users\\ljriv\\documents\\aplix\\repos\\aplixintegradorniduxcodisav3\\source services listaregalos\\sincronizadoraplix-nidux\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\sincronizadoraplix-nidux\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\models\\Cliente.cs",
+              "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\models\\Cliente.cs",
+              "RelativeToolTip": "SincronizadorAplix-Nidux\\models\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T14:55:44.282Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,37 +53,39 @@
               "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\Nidux.cs",
               "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\Nidux.cs",
               "RelativeToolTip": "SincronizadorAplix-Nidux\\Nidux.cs",
-              "ViewState": "AgIAAEgBAAAAAAAAAABBwEkBAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAEUBAAAAAAAAAAAqwMcAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T14:38:49.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Service1.cs",
               "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\Service1.cs",
               "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\Service1.cs",
               "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\Service1.cs",
               "RelativeToolTip": "SincronizadorAplix-Nidux\\Service1.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAASwEIAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000587|",
-              "WhenOpened": "2025-02-14T14:38:49.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Service1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\Service1.cs",
-              "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\Service1.cs",
-              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\Service1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Diego\\Desktop\\Mega\\Aplix Proyectos BitBucket\\CEMACO-BEBEMUNDO\\Production Sources\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\Service1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000587|",
-              "WhenOpened": "2025-02-14T14:38:49.892Z"
+              "ViewState": "AgIAACkAAAAAAAAAAAAhwEYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T14:38:49.89Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Service1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\Service1.cs",
+              "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\Service1.cs",
+              "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\Service1.cs [Design]",
+              "RelativeToolTip": "SincronizadorAplix-Nidux\\Service1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T14:38:49.892Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services ListaRegalos\\SincronizadorAplix-Nidux\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\Properties\\AssemblyInfo.cs",
