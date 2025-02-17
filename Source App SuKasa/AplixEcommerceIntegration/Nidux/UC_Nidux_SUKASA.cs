@@ -1022,6 +1022,7 @@ namespace AplixEcommerceIntegration.Nidux
             else
             {
                 //BEBEMUNDO
+                #region PADRES
                 try
                 {
 
@@ -1050,6 +1051,7 @@ namespace AplixEcommerceIntegration.Nidux
                                 //si el id viene vacio es porque hay que insertarlo
                                 if (lista[contador1].id == "")
                                 {
+
 
                                     var client1 = new RestClient("https://api.nidux.dev/v1/products/");
                                     client1.Timeout = -1;
@@ -1185,8 +1187,9 @@ namespace AplixEcommerceIntegration.Nidux
                 {
                     MessageBox.Show(ex.Message.ToString(), "Mensaje de Error v9", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
+                #endregion 
                 //agregar articulos hijos
+                #region VARIACIONES
                 try
                 {
 
@@ -1229,8 +1232,20 @@ namespace AplixEcommerceIntegration.Nidux
                                     {
 
                                         // Empieza el metodo de insertar atributos
-                                        string v_atributos_id = "[" + String.Join(",", lista2[0].id_atributos.Select(p => p.ToString()).ToArray()) + "]";
-                                        var client7 = new RestClient("https://api.nidux.dev/v1/products/" + lista_padres[contador_padres].ID + "/attribs");
+
+
+
+                                        var client_atributos = new RestClient($"https://api.nidux.dev/v3/products/{lista_padres[contador_padres].ID}/attribs");
+                                        client_atributos.Timeout = -1;
+                                        var request_atributos = new RestRequest(Method.DELETE);
+                                        request_atributos.AddHeader("Authorization", "Bearer " + token);
+                                        IRestResponse response_atributos = client_atributos.Execute(request_atributos);
+
+                                        if ((int)response_atributos.StatusCode == 200)
+                                    {
+
+                                            string v_atributos_id = "[" + String.Join(",", lista2[0].id_atributos.Select(p => p.ToString()).ToArray()) + "]";
+                                            var client7 = new RestClient("https://api.nidux.dev/v3/products/" + lista_padres[contador_padres].ID + "/attribs");
                                         client7.Timeout = -1;
                                         var request7 = new RestRequest(Method.POST);
                                         request7.AddHeader("Authorization", "Bearer " + token);
@@ -1248,15 +1263,26 @@ namespace AplixEcommerceIntegration.Nidux
                                             IRestResponse response8 = client8.Execute(request8);
                                             // richTextBox1.AppendText("\n" + response8.Content);
 
+
+
                                             if ((int)response8.StatusCode == 200)
                                             {
-                                                string res = response8.Content;
+                                                    string res = response8.Content;
+
+                                                    var encapsulador_json_variacion = new
+                                                    {
+                                                        action = "replace",
+                                                        variations = res
+                                                    };
+
+                                                    string json_variacion = JsonConvert.SerializeObject(encapsulador_json_variacion, Formatting.Indented);
+                      
                                                 //Inserta las variaciones en nidux
-                                                var client9 = new RestClient("https://api.nidux.dev/v1/products/" + lista_padres[contador_padres].ID + "/variations");
+                                                var client9 = new RestClient("https://api.nidux.dev/v3/products/" + lista_padres[contador_padres].ID + "/variations");
                                                 client9.Timeout = -1;
                                                 var request9 = new RestRequest(Method.POST);
                                                 request9.AddHeader("Authorization", "Bearer " + token);
-                                                request9.AddParameter("application/json", res, ParameterType.RequestBody);
+                                                request9.AddParameter("application/json", json_variacion, ParameterType.RequestBody);
                                                 IRestResponse response9 = client9.Execute(request9);
 
                                                 if ((int)response9.StatusCode == 200)
@@ -1279,6 +1305,11 @@ namespace AplixEcommerceIntegration.Nidux
                                             MessageBox.Show(response7.Content.ToString(), "Mensaje de Error v12", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                         }
                                     }
+                                    else
+                                    {
+                                            MessageBox.Show(response6.Content.ToString(), $"[ERR] ERROR AL LIMPIAR ATRIBUTOS: {response_atributos.Content}", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    }
+                                }
                                 }// fin del if de response6
                                 else
                                 {
@@ -1299,7 +1330,7 @@ namespace AplixEcommerceIntegration.Nidux
                 {
                     MessageBox.Show(ex.Message.ToString(), "Mensaje de Error v15", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
+                #endregion
                 //revisamos si algun articulo que no es padre se metio como tal para luego solo dejarlo como hijo
                 try
                 {
@@ -1422,28 +1453,13 @@ namespace AplixEcommerceIntegration.Nidux
                                 var product = lista_articulos.Products.ElementAt(n).Value;
 
                                 cmd.Parameters.AddWithValue("@ID", product.id);
-                                if (lista_articulos.Products[n].id_marca == null)
-                                {
-                                    cmd.Parameters.AddWithValue("@ID_MARCA", "0");
-                                }
-                                else
-                                {
-                                    cmd.Parameters.AddWithValue("@ID_MARCA", (object)product.brand_id ?? 0);
-                                }
+                                cmd.Parameters.AddWithValue("@ID_MARCA", (object)product.brand_id ?? 0);
                                 cmd.Parameters.AddWithValue("@SKU", product.product_code);
                                 cmd.Parameters.AddWithValue("@NOMBRE", product.product_name);
-                                if (lista_articulos.Products[n].descripcion == null)
-                                {
-                                    cmd.Parameters.AddWithValue("@DESCRIPCION", "");
-                                }
-                                else
-                                {
-                                    string description = string.IsNullOrEmpty(product.product_description) ? "" :
+
+                                string description = string.IsNullOrEmpty(product.product_description) ? "" :
                                     Regex.Replace(Regex.Replace(product.product_description, @"<[^>]+>|&nbsp;", string.Empty).Replace("\t", " "), reduceMultiSpace, " ");
-                                    cmd.Parameters.AddWithValue("@DESCRIPCION", description);
-                                }
-
-
+                                cmd.Parameters.AddWithValue("@DESCRIPCION", description);
                                 cmd.Parameters.AddWithValue("@PRECIO", product.product_price);
                                 cmd.Parameters.AddWithValue("@COSTO_SHIPPING", product.product_shipping);
                                 cmd.Parameters.AddWithValue("@PESO", product.product_weight);

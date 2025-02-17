@@ -11,6 +11,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Threading;
 using Newtonsoft.Json;
+using RestSharp.Serializers;
 
 namespace SincronizadorAplix_Nidux
 {
@@ -239,9 +240,38 @@ namespace SincronizadorAplix_Nidux
                         //revisamos el id del articulos, si ya tiene id hay que actualizarlo sino hay que ingresarlo como nuevo
                         if (lista[contadorInterno].id == "")
                         {
+                            string jsonBody = $@"{{
+                                ""add"": [
+                                    {{
+                                        ""brand_id"": {lista[contadorInterno].id_marca},
+                                        ""categorias"": [{string.Join(",", lista[contadorInterno].categorias)}],
+                                        ""product_code"": ""{lista[contadorInterno].sku}"",
+                                        ""product_name"": ""{lista[contadorInterno].nombre}"",
+                                        ""product_description"": ""{lista[contadorInterno].descripcion}"",
+                                        ""product_price"": ""{lista[contadorInterno].precio}"",
+                                        ""product_shipping"": {lista[contadorInterno].costo_shipping_individual ?? "0"},
+                                        ""product_weight"": {lista[contadorInterno].peso_producto ?? "0"},
+                                        ""product_sale"": {lista[contadorInterno].porcentaje_oferta ?? "0"},
+                                        ""product_status"": {lista[contadorInterno].estado_de_producto ?? "0"},
+                                        ""product_home"": {lista[contadorInterno].es_destacado ?? "0"},
+                                        ""product_stock"": {lista[contadorInterno].stock_principal},
+                                        ""product_video"": ""{lista[contadorInterno].video_youtube_url}"",
+                                        ""product_hidestock"": {lista[contadorInterno].ocultar_indicador_stock ?? "0"},
+                                        ""product_reserve"": {lista[contadorInterno].producto_permite_reservacion ?? "0"},
+                                        ""product_reserve_limit"": {lista[contadorInterno].limite_para_reservar_en_carrito ?? "0"},
+                                        ""product_reserve_percentage"": {lista[contadorInterno].porcentaje_para_reservar ?? "0"},
+                                        ""product_tax"": {lista[contadorInterno].impuesto_producto},
+                                        ""seo_tags"": [{string.Join(",", lista[contadorInterno].seo_tags.Select(tag => $"\"{tag}\""))}],
+                                        ""tags"": [{string.Join(",", lista[contadorInterno].tags.Select(tag => $"\"{tag}\""))}]
+                                    }}
+                                ]
+                            }}";
+
                             //post articulo
                             var urlPostArticulo = new RestClient(urlBaseNidux);
-                            var requestPostArticulo = new RestRequest("v1/products").AddHeader("Authorization", "Bearer " + token).AddJsonBody(lista[contadorInterno]);
+                            var requestPostArticulo = new RestRequest("v3/products")
+                                .AddHeader("Authorization", "Bearer " + token)
+                                .AddStringBody(jsonBody, ContentType.Json);
                             var responseArticulo = await urlPostArticulo.PostAsync(requestPostArticulo);
 
                             if (responseArticulo.StatusCode == System.Net.HttpStatusCode.OK)
@@ -266,11 +296,38 @@ namespace SincronizadorAplix_Nidux
                         }
                         else
                         {
+
+                            string jsonBody = $@"{{
+                                        ""id"": ""{lista[contadorInterno].id}"",
+                                        ""operation_type"": ""replace"",
+                                        ""brand_id"": {lista[contadorInterno].id_marca},
+                                        ""categorias"": [{string.Join(",", lista[contadorInterno].categorias)}],
+                                        ""product_code"": ""{lista[contadorInterno].sku}"",
+                                        ""product_name"": ""{lista[contadorInterno].nombre}"",
+                                        ""product_description"": ""{lista[contadorInterno].descripcion}"",
+                                        ""product_price"": ""{lista[contadorInterno].precio}"",
+                                        ""product_shipping"": {lista[contadorInterno].costo_shipping_individual ?? "0"},
+                                        ""product_weight"": {lista[contadorInterno].peso_producto ?? "0"},
+                                        ""product_sale"": {lista[contadorInterno].porcentaje_oferta ?? "0"},
+                                        ""product_status"": {lista[contadorInterno].estado_de_producto ?? "0"},
+                                        ""product_home"": {lista[contadorInterno].es_destacado ?? "0"},
+                                        ""product_stock"": {lista[contadorInterno].stock_principal},
+                                        ""product_video"": ""{lista[contadorInterno].video_youtube_url}"",
+                                        ""product_hidestock"": {lista[contadorInterno].ocultar_indicador_stock ?? "0"},
+                                        ""product_reserve"": {lista[contadorInterno].producto_permite_reservacion ?? "0"},
+                                        ""product_reserve_limit"": {lista[contadorInterno].limite_para_reservar_en_carrito ?? "0"},
+                                        ""product_reserve_percentage"": {lista[contadorInterno].porcentaje_para_reservar ?? "0"},
+                                        ""product_tax"": {lista[contadorInterno].impuesto_producto},
+                                        ""seo_tags"": [{string.Join(",", lista[contadorInterno].seo_tags.Select(tag => $"\"{tag}\""))}],
+                                        ""tags"": [{string.Join(",", lista[contadorInterno].tags.Select(tag => $"\"{tag}\""))}]
+                                                                 
+                            }}";
                             //put articulo
                             var urlPutArticulo = new RestClient(urlBaseNidux);
-                            var requestPutArticulo = new RestRequest("v1/products/" + lista[contadorInterno].id)
-                                .AddHeader("Authorization", "Bearer " + token).AddJsonBody(lista[contadorInterno]);
-                            var responseArticulo = await urlPutArticulo.PutAsync(requestPutArticulo);
+                            var requestPutArticulo = new RestRequest("v3/products/")
+                                .AddHeader("Authorization", "Bearer " + token)
+                                .AddStringBody(jsonBody, ContentType.Json);
+                            var responseArticulo = await urlPutArticulo.PatchAsync(requestPutArticulo);
 
                             if (responseArticulo.StatusCode != System.Net.HttpStatusCode.OK)
                             {
@@ -337,7 +394,7 @@ namespace SincronizadorAplix_Nidux
             {
                 token = await GetTokenNidux("", "", 0);
                 var client = new RestClient(urlBaseNidux);
-                var request = new RestRequest("v1/orders/").AddHeader("Authorization", "Bearer " + token).AddStringBody("{\r\n   \"pagina\":1,\r\n   \"cantidad_ordenes\":100,\r\n   \"estado_orden\" : 0\r\n}", "application/json");
+                var request = new RestRequest("v3/orders/").AddHeader("Authorization", "Bearer " + token).AddStringBody("{\r\n   \"pagina\":1,\r\n   \"cantidad_ordenes\":100,\r\n   \"estado_orden\" : 0\r\n}", "application/json");
                 var response = await client.PostAsync(request);
 
                 var envio = @"""envio"":[]";
@@ -602,7 +659,7 @@ namespace SincronizadorAplix_Nidux
                         while (n < listaPedidos.Count)
                         {
                             var clientEstado = new RestClient(urlBaseNidux);
-                            var requestEstado = new RestRequest("v1/orders/" + listaPedidos[n].orderId.ToString() + "/orderStatus")
+                            var requestEstado = new RestRequest("v3/orders/" + listaPedidos[n].orderId.ToString() + "/orderStatus")
                                 .AddHeader("Authorization", "Bearer " + token).AddStringBody("{\r\n        \"nuevo_estado\": " + listaPedidos[n].nuevo_estado.ToString() + "\r\n}", "application/json");
                             var responseEstado = await clientEstado.PutAsync(requestEstado);
 

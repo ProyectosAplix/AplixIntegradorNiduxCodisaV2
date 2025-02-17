@@ -157,7 +157,7 @@ namespace SincronizadorAplix_Nidux
                             logsFile.WriteLogs("INICIO LISTA REGALOS");
                             //post lISTA DE REGALOS
                             var urlGetListaRegalo = new RestClient(urlBaseNidux);
-                            var requestGetListaRegalo = new RestRequest("v2/giftlists/" + dtrEncabezado["WISH_ID"].ToString()).AddHeader("Authorization", "Bearer " + token);
+                            var requestGetListaRegalo = new RestRequest("v3/giftlists/" + dtrEncabezado["WISH_ID"].ToString()).AddHeader("Authorization", "Bearer " + token);
                             var responseListaRegalo = await urlGetListaRegalo.GetAsync(requestGetListaRegalo); //aqui se me esta pegando
 
                             ListaRegalos respuestaListaRegalos = new ListaRegalos();
@@ -197,7 +197,7 @@ namespace SincronizadorAplix_Nidux
 
                                 //Consulto direccion cliente 
                                 var urlGetCliente = new RestClient(urlBaseNidux);
-                                var requestGetCliente = new RestRequest("v2/customers/" + respuestaListaRegalos.Giftlist.OwnerId.ToString()).AddHeader("Authorization", "Bearer " + token);
+                                var requestGetCliente = new RestRequest("v3/customers/" + respuestaListaRegalos.Giftlist.OwnerId.ToString()).AddHeader("Authorization", "Bearer " + token);
                                 var responseGetCliente = await urlGetCliente.GetAsync(requestGetCliente);
 
                                 if (responseGetCliente.StatusCode == System.Net.HttpStatusCode.OK)
