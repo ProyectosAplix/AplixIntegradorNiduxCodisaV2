@@ -326,4 +326,59 @@ namespace AplixEcommerceIntegration.Nidux.Clases
         public string attribute_style { get; set; }
         public string value_name { get; set; }
     }
+
+    public partial class Articulos2
+    {
+        public Producto Producto { get; set; }
+    }
+    #region Para la consulta a NIDUX de datos en art padres
+    //Para la consulta a NIDUX de datos en art padres
+    //lo que esta comentado es para evitar errores ya que solo necesito en este caso el id y la descripcion
+    //lo dejo porque si se necesitara algun otro dato ya esta hecha la estructura de objetos y clases solo descomentar el que se necesita
+    public partial class Producto
+    {
+        public long id { get; set; }
+        //public long IdMarca { get; set; }
+        //public string Sku { get; set; }
+        //public string Nombre { get; set; }
+        public string product_description { get; set; }
+        //public string Precio { get; set; }
+        //public DateTimeOffset FechaCreacion { get; set; }
+        //public DateTimeOffset FechaModificacion { get; set; }
+        //public long CostoShippingIndividual { get; set; }
+        //public long PesoProducto { get; set; }
+        public long product_sale { get; set; }
+        //public long EstadoDeProducto { get; set; }
+        //public long EsDestacado { get; set; }
+        //public long StockPrincipal { get; set; }
+        //public Uri VideoYoutubeUrl { get; set; }
+        //public long OcultarIndicadorStock { get; set; }
+        //public long ProductoPermiteReservacion { get; set; }
+        //public long LimiteParaReservarEnCarrito { get; set; }
+        //public long PorcentajeParaReservar { get; set; }
+        //public long ImpuestoProducto { get; set; }
+        //public long GradoImportancia { get; set; }
+        //public long UsarGifEnHomepage { get; set; }
+        //public long GifTiempoTransicion { get; set; }
+        public Dictionary<string, int> Categorias { get; set; }
+        //public List<object> SeoTags { get; set; }
+        //public List<object> Tags { get; set; }
+        //public List<object> CodigosAlternos { get; set; }
+        ////public Cabys Cabys { get; set; }
+        //public List<Traduccione> Traducciones { get; set; }
+    }
+    //public partial class Cabys
+    //{
+    //    public string CabysCabys { get; set; }
+    //    public string CodigoTarifa { get; set; }
+    //    public long? SkipFactura { get; set; }
+    //}
+    //public partial class Traduccione
+    //{
+    //    public long LangId { get; set; }
+    //    public string Nombre { get; set; }
+    //    public object ProductDescShort { get; set; }
+    //    public string Descripcion { get; set; }
+    //}
+    #endregion
 }

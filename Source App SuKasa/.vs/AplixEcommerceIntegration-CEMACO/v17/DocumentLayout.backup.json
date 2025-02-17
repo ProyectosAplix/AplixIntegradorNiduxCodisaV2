@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{40B24967-3E86-4BC7-8145-0E4DED7E19D4}|AplixEcommerceIntegration\\AplixEcommerceIntegration-CEMACO.csproj|solutionrelative:aplixecommerceintegration\\nidux\\uc_nidux_sukasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40B24967-3E86-4BC7-8145-0E4DED7E19D4}|AplixEcommerceIntegration\\AplixEcommerceIntegration-CEMACO.csproj|c:\\users\\ljriv\\documents\\aplix\\repos\\aplixintegradorniduxcodisav3\\source app sukasa\\aplixecommerceintegration\\nidux\\clases\\articulosnidux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40B24967-3E86-4BC7-8145-0E4DED7E19D4}|AplixEcommerceIntegration\\AplixEcommerceIntegration-CEMACO.csproj|C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source App SuKasa\\aplixecommerceintegration\\nidux\\clases\\articulosnidux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40B24967-3E86-4BC7-8145-0E4DED7E19D4}|AplixEcommerceIntegration\\AplixEcommerceIntegration-CEMACO.csproj|solutionrelative:aplixecommerceintegration\\nidux\\clases\\articulosnidux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40B24967-3E86-4BC7-8145-0E4DED7E19D4}|AplixEcommerceIntegration\\AplixEcommerceIntegration-CEMACO.csproj|C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source App SuKasa\\aplixecommerceintegration\\nidux\\uc_nidux_sukasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{40B24967-3E86-4BC7-8145-0E4DED7E19D4}|AplixEcommerceIntegration\\AplixEcommerceIntegration-CEMACO.csproj|solutionrelative:aplixecommerceintegration\\nidux\\uc_nidux_sukasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40B24967-3E86-4BC7-8145-0E4DED7E19D4}|AplixEcommerceIntegration\\AplixEcommerceIntegration-CEMACO.csproj|C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source App SuKasa\\aplixecommerceintegration\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{40B24967-3E86-4BC7-8145-0E4DED7E19D4}|AplixEcommerceIntegration\\AplixEcommerceIntegration-CEMACO.csproj|solutionrelative:aplixecommerceintegration\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -36,23 +32,9 @@
               "RelativeDocumentMoniker": "AplixEcommerceIntegration\\Nidux\\Clases\\ArticulosNidux.cs",
               "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source App SuKasa\\AplixEcommerceIntegration\\Nidux\\Clases\\ArticulosNidux.cs",
               "RelativeToolTip": "AplixEcommerceIntegration\\Nidux\\Clases\\ArticulosNidux.cs",
-              "ViewState": "AgIAAOIAAAAAAAAAAAAgwPEAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAANwAAAAAAAAAAAAwwPcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T15:12:03.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source App SuKasa\\AplixEcommerceIntegration\\App.config",
-              "RelativeDocumentMoniker": "AplixEcommerceIntegration\\App.config",
-              "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source App SuKasa\\AplixEcommerceIntegration\\App.config",
-              "RelativeToolTip": "AplixEcommerceIntegration\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-01-15T19:49:26.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T15:12:03.51Z"
             },
             {
               "$type": "Document",
@@ -62,7 +44,7 @@
               "RelativeDocumentMoniker": "AplixEcommerceIntegration\\Nidux\\UC_Nidux_SUKASA.cs",
               "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source App SuKasa\\AplixEcommerceIntegration\\Nidux\\UC_Nidux_SUKASA.cs",
               "RelativeToolTip": "AplixEcommerceIntegration\\Nidux\\UC_Nidux_SUKASA.cs",
-              "ViewState": "AgIAABMGAAAAAAAAAAAUwAMGAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAPcDAAAAAAAAAAAkwDkFAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T15:47:51.531Z",
               "EditorCaption": ""
@@ -70,14 +52,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UC_Nidux_SUKASA.cs [Design]",
+              "Title": "UC_Nidux_SUKASA.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source App SuKasa\\AplixEcommerceIntegration\\Nidux\\UC_Nidux_SUKASA.cs",
               "RelativeDocumentMoniker": "AplixEcommerceIntegration\\Nidux\\UC_Nidux_SUKASA.cs",
-              "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source App SuKasa\\AplixEcommerceIntegration\\Nidux\\UC_Nidux_SUKASA.cs [Design]",
-              "RelativeToolTip": "AplixEcommerceIntegration\\Nidux\\UC_Nidux_SUKASA.cs [Design]",
+              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\Source App SuKasa\\AplixEcommerceIntegration\\Nidux\\UC_Nidux_SUKASA.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\Source App SuKasa\\AplixEcommerceIntegration\\Nidux\\UC_Nidux_SUKASA.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T15:43:25.007Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-28T15:43:25.007Z"
             }
           ]
         }
