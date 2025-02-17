@@ -331,7 +331,6 @@ namespace AplixEcommerceIntegration.Nidux.Clases
     {
         public Producto Producto { get; set; }
     }
-
     #region Para la consulta a NIDUX de datos en art padres
     //Para la consulta a NIDUX de datos en art padres
     //lo que esta comentado es para evitar errores ya que solo necesito en este caso el id y la descripcion
@@ -368,14 +367,12 @@ namespace AplixEcommerceIntegration.Nidux.Clases
         ////public Cabys Cabys { get; set; }
         //public List<Traduccione> Traducciones { get; set; }
     }
-
     //public partial class Cabys
     //{
     //    public string CabysCabys { get; set; }
     //    public string CodigoTarifa { get; set; }
     //    public long? SkipFactura { get; set; }
     //}
-
     //public partial class Traduccione
     //{
     //    public long LangId { get; set; }

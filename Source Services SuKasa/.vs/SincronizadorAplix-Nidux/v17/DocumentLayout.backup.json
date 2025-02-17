@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|c:\\users\\ljriv\\documents\\aplix\\repos\\aplixintegradorniduxcodisav3\\source services sukasa\\sincronizadoraplix-nidux\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\sincronizadoraplix-nidux\\nidux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\nidux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|c:\\users\\ljriv\\documents\\aplix\\repos\\aplixintegradorniduxcodisav3\\source services sukasa\\sincronizadoraplix-nidux\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|solutionrelative:sincronizadoraplix-nidux\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C060B06-BE37-44BB-81AE-158DFF1B2AB9}|SincronizadorAplix-Nidux\\SincronizadorAplix-Nidux.csproj|C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\sincronizadoraplix-nidux\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Service1.cs",
               "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Service1.cs",
               "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\Service1.cs",
               "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Service1.cs",
               "RelativeToolTip": "SincronizadorAplix-Nidux\\Service1.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwEwAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwEwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-07T01:47:02.171Z",
               "EditorCaption": ""
@@ -70,15 +70,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Nidux.cs",
               "DocumentMoniker": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Nidux.cs",
               "RelativeDocumentMoniker": "SincronizadorAplix-Nidux\\Nidux.cs",
               "ToolTip": "C:\\Users\\ljriv\\Documents\\Aplix\\Repos\\AplixIntegradorNiduxCodisaV3\\Source Services SuKasa\\SincronizadorAplix-Nidux\\Nidux.cs",
               "RelativeToolTip": "SincronizadorAplix-Nidux\\Nidux.cs",
-              "ViewState": "AgIAAJoDAAAAAAAAAAAAAJ8DAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAiwNYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T01:39:35.647Z"
+              "WhenOpened": "2024-09-07T01:39:35.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
