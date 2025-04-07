@@ -12,6 +12,7 @@ using System.Data.SqlClient;
 using System.Threading;
 using Newtonsoft.Json;
 using RestSharp.Serializers;
+using System.Web;
 
 namespace SincronizadorAplix_Nidux
 {
@@ -240,32 +241,49 @@ namespace SincronizadorAplix_Nidux
                         //revisamos el id del articulos, si ya tiene id hay que actualizarlo sino hay que ingresarlo como nuevo
                         if (lista[contadorInterno].id == "")
                         {
+
+                            string name = lista[contadorInterno].nombre.Replace("\"", "\\\"");
+                            string description = lista[contadorInterno].descripcion
+                             .Replace("\"", "\\\"")
+                             .Replace("\r\n", "\\n")
+                             .Replace("\n", "\\n")
+                             .Replace("\t", "\\t");
+                            string code = HttpUtility.HtmlEncode(lista[contadorInterno].sku);
+                            string stockPrincipal = lista[contadorInterno].stock_principal.ToString().Replace(",", ".");
+                            string precio = lista[contadorInterno].precio.ToString().Replace(",", ".");
+                            string costoShipping = lista[contadorInterno].costo_shipping_individual != null
+                                    ? lista[contadorInterno].costo_shipping_individual.ToString().Replace(",", ".") : "0";
+                            string peso = lista[contadorInterno].peso_producto != null
+                                    ? lista[contadorInterno].peso_producto.ToString().Replace(",", ".") : "0";
+                            string porcentaje_oferta = lista[contadorInterno].porcentaje_oferta != null
+                                     ? lista[contadorInterno].porcentaje_oferta.ToString().Replace(",", ".") : "0";
+
                             string jsonBody = $@"{{
-                                ""add"": [
-                                    {{
-                                        ""brand_id"": {lista[contadorInterno].id_marca},
-                                        ""categorias"": [{string.Join(",", lista[contadorInterno].categorias)}],
-                                        ""product_code"": ""{lista[contadorInterno].sku}"",
-                                        ""product_name"": ""{lista[contadorInterno].nombre}"",
-                                        ""product_description"": ""{lista[contadorInterno].descripcion}"",
-                                        ""product_price"": ""{lista[contadorInterno].precio}"",
-                                        ""product_shipping"": {lista[contadorInterno].costo_shipping_individual ?? "0"},
-                                        ""product_weight"": {lista[contadorInterno].peso_producto ?? "0"},
-                                        ""product_sale"": {lista[contadorInterno].porcentaje_oferta ?? "0"},
-                                        ""product_status"": {lista[contadorInterno].estado_de_producto ?? "0"},
-                                        ""product_home"": {lista[contadorInterno].es_destacado ?? "0"},
-                                        ""product_stock"": {lista[contadorInterno].stock_principal},
-                                        ""product_video"": ""{lista[contadorInterno].video_youtube_url}"",
-                                        ""product_hidestock"": {lista[contadorInterno].ocultar_indicador_stock ?? "0"},
-                                        ""product_reserve"": {lista[contadorInterno].producto_permite_reservacion ?? "0"},
-                                        ""product_reserve_limit"": {lista[contadorInterno].limite_para_reservar_en_carrito ?? "0"},
-                                        ""product_reserve_percentage"": {lista[contadorInterno].porcentaje_para_reservar ?? "0"},
-                                        ""product_tax"": {lista[contadorInterno].impuesto_producto},
-                                        ""seo_tags"": [{string.Join(",", lista[contadorInterno].seo_tags.Select(tag => $"\"{tag}\""))}],
-                                        ""tags"": [{string.Join(",", lista[contadorInterno].tags.Select(tag => $"\"{tag}\""))}]
-                                    }}
-                                ]
-                            }}";
+                                        ""add"": [
+                                            {{
+                                                ""brand_id"": {lista[contadorInterno].id_marca},
+                                                ""categorias"": [{string.Join(",", lista[contadorInterno].categorias)}],
+                                                ""product_code"": ""{code}"",
+                                                ""product_name"": ""{name}"",
+                                                ""product_description"": ""{description}"",
+                                                ""product_price"": ""{precio}"",
+                                                ""product_shipping"": {costoShipping},
+                                                ""product_weight"": {peso},
+                                                ""product_sale"": {porcentaje_oferta},
+                                                ""product_status"": {lista[contadorInterno].estado_de_producto ?? "0"},
+                                                ""product_home"": {lista[contadorInterno].es_destacado ?? "0"},
+                                                ""product_stock"": {stockPrincipal},
+                                                ""product_video"": ""{lista[contadorInterno].video_youtube_url}"",
+                                                ""product_hidestock"": {lista[contadorInterno].ocultar_indicador_stock ?? "0"},
+                                                ""product_reserve"": {lista[contadorInterno].producto_permite_reservacion ?? "0"},
+                                                ""product_reserve_limit"": {lista[contadorInterno].limite_para_reservar_en_carrito ?? "0"},
+                                                ""product_reserve_percentage"": {lista[contadorInterno].porcentaje_para_reservar ?? "0"},
+                                                ""product_tax"": {lista[contadorInterno].impuesto_producto},
+                                                ""seo_tags"": [{string.Join(",", lista[contadorInterno].seo_tags.Select(tag => $"\"{tag}\""))}],
+                                                ""tags"": [{string.Join(",", lista[contadorInterno].tags.Select(tag => $"\"{tag}\""))}]   
+                                            }}
+                                        ]
+                                    }}";
 
                             //post articulo
                             var urlPostArticulo = new RestClient(urlBaseNidux);
@@ -296,22 +314,38 @@ namespace SincronizadorAplix_Nidux
                         }
                         else
                         {
+                            string name = lista[contadorInterno].nombre.Replace("\"", "\\\"");
+                            string description = lista[contadorInterno].descripcion
+                             .Replace("\"", "\\\"")
+                             .Replace("\r\n", "\\n")
+                             .Replace("\n", "\\n")
+                             .Replace("\t", "\\t");
+                            string code = HttpUtility.HtmlEncode(lista[contadorInterno].sku);
+                            string stockPrincipal = lista[contadorInterno].stock_principal.ToString().Replace(",", ".");
+                            string precio = lista[contadorInterno].precio.ToString().Replace(",", ".");
+                            string costoShipping = lista[contadorInterno].costo_shipping_individual != null
+                                    ? lista[contadorInterno].costo_shipping_individual.ToString().Replace(",", ".") : "0";
+                            string peso = lista[contadorInterno].peso_producto != null
+                                    ? lista[contadorInterno].peso_producto.ToString().Replace(",", ".") : "0";
+                            string porcentaje_oferta = lista[contadorInterno].porcentaje_oferta != null
+                                     ? lista[contadorInterno].porcentaje_oferta.ToString().Replace(",", ".") : "0";
+
 
                             string jsonBody = $@"{{
-                                        ""id"": ""{lista[contadorInterno].id}"",
-                                        ""operation_type"": ""replace"",
+                                        ""id"": {lista[contadorInterno].id},
                                         ""brand_id"": {lista[contadorInterno].id_marca},
                                         ""categorias"": [{string.Join(",", lista[contadorInterno].categorias)}],
-                                        ""product_code"": ""{lista[contadorInterno].sku}"",
-                                        ""product_name"": ""{lista[contadorInterno].nombre}"",
-                                        ""product_description"": ""{lista[contadorInterno].descripcion}"",
-                                        ""product_price"": ""{lista[contadorInterno].precio}"",
-                                        ""product_shipping"": {lista[contadorInterno].costo_shipping_individual ?? "0"},
-                                        ""product_weight"": {lista[contadorInterno].peso_producto ?? "0"},
-                                        ""product_sale"": {lista[contadorInterno].porcentaje_oferta ?? "0"},
+                                        ""product_code"": ""{code}"",
+                                        ""product_name"": ""{name}"",
+                                        ""operation_type"": ""replace"",
+                                        ""product_description"": ""{description}"",
+                                        ""product_price"": ""{precio}"",
+                                        ""product_shipping"": {costoShipping},
+                                        ""product_weight"": {peso},
+                                        ""product_sale"": {porcentaje_oferta},
                                         ""product_status"": {lista[contadorInterno].estado_de_producto ?? "0"},
                                         ""product_home"": {lista[contadorInterno].es_destacado ?? "0"},
-                                        ""product_stock"": {lista[contadorInterno].stock_principal},
+                                        ""product_stock"": {stockPrincipal},
                                         ""product_video"": ""{lista[contadorInterno].video_youtube_url}"",
                                         ""product_hidestock"": {lista[contadorInterno].ocultar_indicador_stock ?? "0"},
                                         ""product_reserve"": {lista[contadorInterno].producto_permite_reservacion ?? "0"},
@@ -320,8 +354,9 @@ namespace SincronizadorAplix_Nidux
                                         ""product_tax"": {lista[contadorInterno].impuesto_producto},
                                         ""seo_tags"": [{string.Join(",", lista[contadorInterno].seo_tags.Select(tag => $"\"{tag}\""))}],
                                         ""tags"": [{string.Join(",", lista[contadorInterno].tags.Select(tag => $"\"{tag}\""))}]
-                                                                 
-                            }}";
+                                        }}
+                                        ]
+                                    }}";
                             //put articulo
                             var urlPutArticulo = new RestClient(urlBaseNidux);
                             var requestPutArticulo = new RestRequest("v3/products/")
