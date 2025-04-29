@@ -242,8 +242,14 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnGuardarConfiguracion = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
+            this.Bitacora = new MetroFramework.Controls.MetroTabPage();
+            this.buttonBitacora = new System.Windows.Forms.Button();
+            this.textBitacora = new System.Windows.Forms.RichTextBox();
             this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.labelConexionOracle = new System.Windows.Forms.Label();
+            this.labelConexion = new System.Windows.Forms.Label();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
@@ -263,6 +269,8 @@
             this.toolStripPedidos.SuspendLayout();
             this.metroTabPage6.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.Bitacora.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -273,6 +281,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.Controls.Add(this.metroTabPage5);
             this.metroTabControl1.Controls.Add(this.metroTabPage6);
+            this.metroTabControl1.Controls.Add(this.Bitacora);
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
@@ -2016,15 +2025,79 @@
             this.toolStripSeparator21.Name = "toolStripSeparator21";
             this.toolStripSeparator21.Size = new System.Drawing.Size(6, 27);
             // 
+            // Bitacora
+            // 
+            this.Bitacora.Controls.Add(this.buttonBitacora);
+            this.Bitacora.Controls.Add(this.textBitacora);
+            this.Bitacora.HorizontalScrollbarBarColor = true;
+            this.Bitacora.HorizontalScrollbarHighlightOnWheel = false;
+            this.Bitacora.HorizontalScrollbarSize = 10;
+            this.Bitacora.Location = new System.Drawing.Point(4, 38);
+            this.Bitacora.Name = "Bitacora";
+            this.Bitacora.Size = new System.Drawing.Size(1038, 455);
+            this.Bitacora.TabIndex = 6;
+            this.Bitacora.Text = "Bitácora";
+            this.Bitacora.VerticalScrollbarBarColor = true;
+            this.Bitacora.VerticalScrollbarHighlightOnWheel = false;
+            this.Bitacora.VerticalScrollbarSize = 10;
+            // 
+            // buttonBitacora
+            // 
+            this.buttonBitacora.Location = new System.Drawing.Point(827, 16);
+            this.buttonBitacora.Name = "buttonBitacora";
+            this.buttonBitacora.Size = new System.Drawing.Size(135, 23);
+            this.buttonBitacora.TabIndex = 4;
+            this.buttonBitacora.Text = "Seleccionar Archivo";
+            this.buttonBitacora.UseVisualStyleBackColor = true;
+            this.buttonBitacora.Click += new System.EventHandler(this.buttonBitacora_Click);
+            // 
+            // textBitacora
+            // 
+            this.textBitacora.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBitacora.Location = new System.Drawing.Point(0, 0);
+            this.textBitacora.Name = "textBitacora";
+            this.textBitacora.Size = new System.Drawing.Size(1038, 455);
+            this.textBitacora.TabIndex = 3;
+            this.textBitacora.Text = "";
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.labelConexionOracle);
+            this.panel2.Controls.Add(this.labelConexion);
+            this.panel2.Location = new System.Drawing.Point(559, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(939, 34);
+            this.panel2.TabIndex = 3;
+            // 
+            // labelConexionOracle
+            // 
+            this.labelConexionOracle.AutoSize = true;
+            this.labelConexionOracle.Location = new System.Drawing.Point(9, 20);
+            this.labelConexionOracle.Name = "labelConexionOracle";
+            this.labelConexionOracle.Size = new System.Drawing.Size(104, 13);
+            this.labelConexionOracle.TabIndex = 1;
+            this.labelConexionOracle.Text = "labelConexionOracle";
+            // 
+            // labelConexion
+            // 
+            this.labelConexion.AutoSize = true;
+            this.labelConexion.Location = new System.Drawing.Point(9, 2);
+            this.labelConexion.Name = "labelConexion";
+            this.labelConexion.Size = new System.Drawing.Size(73, 13);
+            this.labelConexion.TabIndex = 0;
+            this.labelConexion.Text = "labelConexion";
             // 
             // UC_Nidux_SUKASA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.metroTabControl1);
             this.Name = "UC_Nidux_SUKASA";
             this.Size = new System.Drawing.Size(1046, 497);
@@ -2061,6 +2134,9 @@
             this.metroTabPage6.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.Bitacora.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2282,5 +2358,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn GEO_LATITUD_FAC;
         private System.Windows.Forms.DataGridViewTextBoxColumn GEO_LONGITUD_FAC;
         private System.Windows.Forms.DataGridViewTextBoxColumn CONSECUTIVO;
+        private MetroFramework.Controls.MetroTabPage Bitacora;
+        private System.Windows.Forms.Button buttonBitacora;
+        private System.Windows.Forms.RichTextBox textBitacora;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label labelConexion;
+        private System.Windows.Forms.Label labelConexionOracle;
     }
 }

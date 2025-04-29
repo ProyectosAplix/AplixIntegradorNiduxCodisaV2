@@ -135,6 +135,7 @@
     <Compile Include="Nidux\Clases\filtro_pedidos.cs" />
     <Compile Include="Nidux\Clases\ListaRegalos.cs" />
     <Compile Include="Nidux\Clases\Login.cs" />
+    <Compile Include="Nidux\Clases\Logs.cs" />
     <Compile Include="Nidux\Clases\MarcasNidux.cs" />
     <Compile Include="Nidux\Clases\Pedidos.cs" />
     <Compile Include="Nidux\Clases\Respuesta.cs" />

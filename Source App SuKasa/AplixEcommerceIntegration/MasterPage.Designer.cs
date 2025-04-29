@@ -40,7 +40,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MasterPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Integrador de Comercio Electronico - SuKasa";
+            this.Text = "Integrador de Comercio Electronico - SuKasa - V 2.1.0";
             this.Load += new System.EventHandler(this.MasterPage_Load);
             this.ResumeLayout(false);
 

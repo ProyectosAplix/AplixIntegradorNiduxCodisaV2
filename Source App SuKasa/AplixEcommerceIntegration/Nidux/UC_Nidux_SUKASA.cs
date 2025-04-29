@@ -24,6 +24,7 @@ using AplixEcommerceIntegration.Shopify.Clases;
 using System.Web;
 using System.Xml.Linq;
 
+
 namespace AplixEcommerceIntegration.Nidux
 {
     public partial class UC_Nidux_SUKASA : UserControl
@@ -33,6 +34,7 @@ namespace AplixEcommerceIntegration.Nidux
         static List<Clases.Categorias> lista_categorias_editados = new List<Clases.Categorias>();
         static List<Clases.Marca> lista_marcas_editados = new List<Clases.Marca>();
         static string com = ConfigurationManager.AppSettings["Company_Nidux"];
+        LogsFile logsFile = new LogsFile();
 
 
         //static string valor enviado por combo_box de datagreed
@@ -57,6 +59,7 @@ namespace AplixEcommerceIntegration.Nidux
 
             filtrarArticulos();
             filtrarPedidos();
+            InfoLabelConexion();
         }
 
         /*------------------------ METODOS GENERALES -----------------------------------*/
@@ -102,6 +105,55 @@ namespace AplixEcommerceIntegration.Nidux
             }
         }
 
+        #region Logs
+
+        private FileSystemWatcher watcher;
+        private string rutaArchivoSeleccionado;
+
+
+
+        private void Watcher_Changed(object sender, FileSystemEventArgs e)
+        {
+
+            this.Invoke((MethodInvoker)delegate
+            {
+                try
+                {
+                    System.Threading.Thread.Sleep(100);
+                    textBitacora.Text = File.ReadAllText(rutaArchivoSeleccionado);
+                }
+                catch (IOException)
+                {
+
+                }
+            });
+        }
+
+        #endregion
+
+        #region Inicializar informacion label conexion 
+        public void InfoLabelConexion()
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["conexion"].ConnectionString;
+            var builder = new SqlConnectionStringBuilder(connectionString);
+
+            string server = builder.DataSource;
+            string database = builder.InitialCatalog;
+            string user = builder.UserID;
+
+            labelConexion.Text = $"Conectado a: Server={server}; DB={database}; Usuario={user}";
+
+            string oracleConnStr = ConfigurationManager.ConnectionStrings["conexionOracle"].ConnectionString;
+            var oracleBuilder = new OracleConnectionStringBuilder(oracleConnStr);
+
+            string oracleDataSource = oracleBuilder.DataSource;
+            string oracleUser = oracleBuilder.UserID;
+
+            labelConexionOracle.Text = $"Conectado a Oracle: DataSource={oracleDataSource}; Usuario={oracleUser}";
+        }
+
+        #endregion
+
         private void btnGuardarConfiguracion_Click(object sender, EventArgs e)
         {
             try
@@ -142,6 +194,13 @@ namespace AplixEcommerceIntegration.Nidux
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString(), "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                logsFile.WriteLogs(@"
+                ==================================================
+                🛑 [ERROR AL GUARDAR CONFIGURACIÓN DE DESCUENTOS] 🛑
+                --------------------------------------------------
+                Mensaje: " + ex.Message.ToString() + @"
+                ==================================================");
+
             }
 
             //Actualizacion de valores de configuracion
@@ -329,6 +388,12 @@ namespace AplixEcommerceIntegration.Nidux
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString(), "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                logsFile.WriteLogs(@"
+                ==================================================
+                🛑 [ERROR EN CARGA DE ARTÍCULOS APP] 🛑
+                --------------------------------------------------
+                Mensaje: " + ex.Message.ToString() + @"
+                ==================================================");
             }
         }
 
@@ -683,6 +748,13 @@ namespace AplixEcommerceIntegration.Nidux
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
+                logsFile.WriteLogs($@"
+                ===============================
+                🔍 [ERROR AL BUSCAR ARTÍCULO] 🔍
+                -------------------------------
+                Mensaje: {ex.Message}
+                ===============================");
+
             }
         }
 
@@ -889,107 +961,129 @@ namespace AplixEcommerceIntegration.Nidux
                 }
                 else
                 {
+
+                    logsFile.WriteLogs(@"
+                    ===========================================
+                    💾 [INICIO ACTUALIZACIÓN DE ARTÍCULOS APP] 💾
+                    -------------------------------------------");
                     foreach (Clases.Articulos item in lista_articulos_editados)
                     {
-                        SqlCommand cmd = new SqlCommand();
-                        cmd.Connection = cnn.AbrirConexion();
+                        try { 
 
-                        cmd.CommandText = "" + com + ".ACT_ARTICULOS_APP";
-                        cmd.CommandTimeout = 0;
-                        cmd.CommandType = CommandType.StoredProcedure;
+                            SqlCommand cmd = new SqlCommand();
+                            cmd.Connection = cnn.AbrirConexion();
 
-                        cmd.Parameters.AddWithValue("@ARTICULO", item.sku);
-                        cmd.Parameters.AddWithValue("@NOMBRE_NIDUX", item.nombre_nidux);
-                        cmd.Parameters.AddWithValue("@DESCRIPCION_NIDUX", item.descripcion_nidux);
-                        if (item.costo_shipping_individual == "")
-                        {
-                            cmd.Parameters.AddWithValue("@SHIPPING", 0.00);
-                        }
-                        else
-                        {
-                            cmd.Parameters.AddWithValue("@SHIPPING", Convert.ToDouble(item.costo_shipping_individual)); //item.costo_shipping_individual
-                        }
-                        if (item.porcentaje_para_reservar == "")
-                        {
-                            cmd.Parameters.AddWithValue("@PORCENTAJE", 0.00);
-                        }
-                        else
-                        {
-                            cmd.Parameters.AddWithValue("@PORCENTAJE", Convert.ToDouble(item.porcentaje_para_reservar));//item.porcentaje_para_reservar
-                        }
-                        if (item.limite_para_reservar_en_carrito == "")
-                        {
-                            cmd.Parameters.AddWithValue("@CARRITO", "0");
-                        }
-                        else
-                        {
-                            cmd.Parameters.AddWithValue("@CARRITO", item.limite_para_reservar_en_carrito);
-                        }
-                        if (item.gif_tiempo_transicion == "")
-                        {
-                            cmd.Parameters.AddWithValue("@TIEMPO_GIF", "0");
-                        }
-                        else
-                        {
-                            cmd.Parameters.AddWithValue("@TIEMPO_GIF", item.gif_tiempo_transicion);
-                        }
+                            cmd.CommandText = "" + com + ".ACT_ARTICULOS_APP";
+                            cmd.CommandTimeout = 0;
+                            cmd.CommandType = CommandType.StoredProcedure;
 
-                        cmd.Parameters.AddWithValue("@VIDEO", item.video_youtube_url);
-                        cmd.Parameters.AddWithValue("@NOMBRE_TRA", item.lang_nombre);
-                        cmd.Parameters.AddWithValue("@DESCRIP_TRADUC", item.lang_descripcion);
+                            cmd.Parameters.AddWithValue("@ARTICULO", item.sku);
+                            cmd.Parameters.AddWithValue("@NOMBRE_NIDUX", item.nombre_nidux);
+                            cmd.Parameters.AddWithValue("@DESCRIPCION_NIDUX", item.descripcion_nidux);
+                            if (item.costo_shipping_individual == "")
+                            {
+                                cmd.Parameters.AddWithValue("@SHIPPING", 0.00);
+                            }
+                            else
+                            {
+                                cmd.Parameters.AddWithValue("@SHIPPING", Convert.ToDouble(item.costo_shipping_individual)); //item.costo_shipping_individual
+                            }
+                            if (item.porcentaje_para_reservar == "")
+                            {
+                                cmd.Parameters.AddWithValue("@PORCENTAJE", 0.00);
+                            }
+                            else
+                            {
+                                cmd.Parameters.AddWithValue("@PORCENTAJE", Convert.ToDouble(item.porcentaje_para_reservar));//item.porcentaje_para_reservar
+                            }
+                            if (item.limite_para_reservar_en_carrito == "")
+                            {
+                                cmd.Parameters.AddWithValue("@CARRITO", "0");
+                            }
+                            else
+                            {
+                                cmd.Parameters.AddWithValue("@CARRITO", item.limite_para_reservar_en_carrito);
+                            }
+                            if (item.gif_tiempo_transicion == "")
+                            {
+                                cmd.Parameters.AddWithValue("@TIEMPO_GIF", "0");
+                            }
+                            else
+                            {
+                                cmd.Parameters.AddWithValue("@TIEMPO_GIF", item.gif_tiempo_transicion);
+                            }
 
-                        cmd.Parameters.AddWithValue("@DESCUENTO", Convert.ToDouble(item.porcentaje_oferta));
+                            cmd.Parameters.AddWithValue("@VIDEO", item.video_youtube_url);
+                            cmd.Parameters.AddWithValue("@NOMBRE_TRA", item.lang_nombre);
+                            cmd.Parameters.AddWithValue("@DESCRIP_TRADUC", item.lang_descripcion);
 
-                        cmd.Parameters.AddWithValue("@ESTADO", item.estado_de_producto);
+                            cmd.Parameters.AddWithValue("@DESCUENTO", Convert.ToDouble(item.porcentaje_oferta));
 
-                        if (item.activo.Equals("True"))
-                        {
-                            cmd.Parameters.AddWithValue("@ACTIVO", "S");
-                        }
-                        else
-                        {
-                            cmd.Parameters.AddWithValue("@ACTIVO", "N");
-                        }
-                        if (item.ocultar_indicador_stock.Equals("True"))
-                        {
-                            cmd.Parameters.AddWithValue("@INDICADOR", "S");
-                        }
-                        else
-                        {
-                            cmd.Parameters.AddWithValue("@INDICADOR", "N");
-                        }
-                        if (item.es_destacado.Equals("True"))
-                        {
-                            cmd.Parameters.AddWithValue("@DESTACADO", "S");
-                        }
-                        else
-                        {
-                            cmd.Parameters.AddWithValue("@DESTACADO", "N");
-                        }
-                        if (item.producto_permite_reservacion.Equals("True"))
-                        {
-                            cmd.Parameters.AddWithValue("@RESERVA", "S");
-                        }
-                        else
-                        {
-                            cmd.Parameters.AddWithValue("@RESERVA", "N");
-                        }
-                        if (item.usar_gif_en_homepage.Equals("True"))
-                        {
-                            cmd.Parameters.AddWithValue("@GIF", "S");
-                        }
-                        else
-                        {
-                            cmd.Parameters.AddWithValue("@GIF", "N");
-                        }
+                            cmd.Parameters.AddWithValue("@ESTADO", item.estado_de_producto);
 
-                        cmd.Parameters.AddWithValue("@TAGS", item.tags);
+                            if (item.activo.Equals("True"))
+                            {
+                                cmd.Parameters.AddWithValue("@ACTIVO", "S");
+                            }
+                            else
+                            {
+                                cmd.Parameters.AddWithValue("@ACTIVO", "N");
+                            }
+                            if (item.ocultar_indicador_stock.Equals("True"))
+                            {
+                                cmd.Parameters.AddWithValue("@INDICADOR", "S");
+                            }
+                            else
+                            {
+                                cmd.Parameters.AddWithValue("@INDICADOR", "N");
+                            }
+                            if (item.es_destacado.Equals("True"))
+                            {
+                                cmd.Parameters.AddWithValue("@DESTACADO", "S");
+                            }
+                            else
+                            {
+                                cmd.Parameters.AddWithValue("@DESTACADO", "N");
+                            }
+                            if (item.producto_permite_reservacion.Equals("True"))
+                            {
+                                cmd.Parameters.AddWithValue("@RESERVA", "S");
+                            }
+                            else
+                            {
+                                cmd.Parameters.AddWithValue("@RESERVA", "N");
+                            }
+                            if (item.usar_gif_en_homepage.Equals("True"))
+                            {
+                                cmd.Parameters.AddWithValue("@GIF", "S");
+                            }
+                            else
+                            {
+                                cmd.Parameters.AddWithValue("@GIF", "N");
+                            }
 
-                        cmd.Parameters.AddWithValue("@SEO_TAGS", item.seo_tags);
+                            cmd.Parameters.AddWithValue("@TAGS", item.tags);
 
-                        cmd.ExecuteNonQuery();
-                        cnn.CerrarConexion();
-                    }
+                            cmd.Parameters.AddWithValue("@SEO_TAGS", item.seo_tags);
+
+                            cmd.ExecuteNonQuery();
+                            cnn.CerrarConexion();
+                            logsFile.WriteLogs($"✅ Artículo actualizado: {item.sku}");
+                        }
+                        catch (Exception ex)
+                        {
+                            logsFile.WriteLogs($@"
+                            🛑 [ERROR AL ACTUALIZAR ARTÍCULO APP: {item.sku}]
+                            Mensaje: {ex.Message}
+                            -------------------------------------------");
+                        }
+                     }
+
+
+                    logsFile.WriteLogs(@"
+                    -------------------------------------------
+                    ✅ [FIN ACTUALIZACIÓN DE ARTÍCULOS APP]
+                    ===========================================");
                     MessageBox.Show("Artículos Actualizados con Éxito", "Mensaje de Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     dgvArticulos.Rows.Clear();
                     CargaDatos_Articulos();
@@ -999,6 +1093,13 @@ namespace AplixEcommerceIntegration.Nidux
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.ToString(), "Mensaje de Error.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                logsFile.WriteLogs($@"
+                ===========================================
+                🛑 [ERROR AL GUARDAR ARTÍCULOS] 🛑
+                -------------------------------------------
+                {ex.ToString()}
+                ===========================================");
+
             }
         }
 
@@ -1014,6 +1115,12 @@ namespace AplixEcommerceIntegration.Nidux
         {
             List<Clases.Articulos_Nidux> lista = new List<Clases.Articulos_Nidux>();
             int contador1 = 0;
+
+
+            logsFile.WriteLogs($@"
+           ===========================================
+           ▶️ [INICIO DE SINCRONIZACIÓN DE ARTÍCULOS]
+           ===========================================");
 
             Metodos.LoginNidux obj_metodos = new Metodos.LoginNidux();
 
@@ -1134,6 +1241,14 @@ namespace AplixEcommerceIntegration.Nidux
                                         ]
                                     }}";
 
+                                    logsFile.WriteLogs($@"
+                               ===========================================
+                               ➕ [AGREGANDO NUEVO ARTÍCULO]
+                               -------------------------------------------
+                               SKU: {lista[contador1].sku}
+                               Nombre: {lista[contador1].nombre}              
+                               ===========================================");
+
                                     var client1 = new RestClient("https://api.nidux.dev/v3/products/batch");
                                     client1.Timeout = -1;
                                     var request1 = new RestRequest(Method.POST);
@@ -1160,17 +1275,32 @@ namespace AplixEcommerceIntegration.Nidux
 
                                             if ((int)response3.StatusCode == 200)
                                             {
-                                                //articulo agregado con exito
+                                                logsFile.WriteLogs($@"
+                                               ===========================================
+                                               ✅ [ARTÍCULO AGREGADO CON ÉXITO]
+                                               -------------------------------------------
+                                               SKU: {res.sku} | ID: {res.id}
+                                               ===========================================");
                                             }
                                             else
                                             {
                                                 MessageBox.Show(response3.Content.ToString(), "Mensaje de Error v5", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                logsFile.WriteLogs($@"
+                                               🛑 [ERROR AL AGREGAR ARTÍCULO]
+                                               -------------------------------------------
+                                               Respuesta: {response3.Content}
+                                               ===========================================");
                                             }
                                         }
                                     }
                                     else
                                     {
                                         MessageBox.Show(response2.Content.ToString(), "Mensaje de Error v6", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                        logsFile.WriteLogs($@"
+                                       🛑 [ERROR AL AGREGAR ARTÍCULO]
+                                       -------------------------------------------
+                                       Respuesta: {response2.Content}
+                                       ===========================================");
                                     }
                                 }
                                 else
@@ -1219,6 +1349,14 @@ namespace AplixEcommerceIntegration.Nidux
                                         ]
                                     }}";
 
+                                    logsFile.WriteLogs($@"
+                               ===========================================
+                               ➕ [ACTUALIZANDO ARTÍCULO]
+                               -------------------------------------------
+                               SKU: {lista[contador1].sku}
+                               Nombre: {lista[contador1].nombre}              
+                               ===========================================");
+
                                     var client4 = new RestClient("https://api.nidux.dev/v3/products/"); // nidux pregunta
                                     client4.Timeout = -1;
                                     var request4 = new RestRequest(Method.PATCH);
@@ -1231,6 +1369,11 @@ namespace AplixEcommerceIntegration.Nidux
                                     {
                                         //Articulo editado con exito
                                         Exitopaso += lista[contador1].id + " \\||// ";
+                                        logsFile.WriteLogs($@"
+                                           ===========================================
+                                           ✅ [ID ARTÍCULO ACTUALIZADO CON ÉXITO]
+                                           ===========================================");
+                                    
                                     }
                                     else
                                     {
@@ -1240,6 +1383,11 @@ namespace AplixEcommerceIntegration.Nidux
                                             errorNoPAso += "\n";
                                         }
                                         errorNoPAso += lista[contador1].id + " error fue " + response4.Content.ToString() + " || ";
+                                        logsFile.WriteLogs($@"
+                                       🛑 [ERROR AL ACTUALIZAR ID ARTÍCULO]
+                                       -------------------------------------------
+                                       Respuesta: {response4.Content}
+                                       ===========================================");
                                         //MessageBox.Show(response4.Content.ToString(), "Mensaje de Error v7", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                     }
                                 }
@@ -1254,18 +1402,35 @@ namespace AplixEcommerceIntegration.Nidux
                     else
                     {
                         MessageBox.Show(response1.Content.ToString(), "Mensaje de Error v8", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        logsFile.WriteLogs($@"
+                       🛑 [ERROR AL AGREGAR ARTÍCULO]
+                       -------------------------------------------
+                       Respuesta: {response1.Content}
+                       ===========================================");
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message.ToString(), "Mensaje de Error v9", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    logsFile.WriteLogs($@"
+                       🛑 [ERROR AL AGREGAR ARTÍCULO]
+                       -------------------------------------------
+                       Respuesta: {ex.Message.ToString()}
+                       ===========================================");
                 }
+                logsFile.WriteLogs($@"
+       ===========================================
+       ✅ [ARTÍCULOS SINCRONIZADOS CON NIDUX]
+       ===========================================");
                 #endregion 
                 //agregar articulos hijos
                 #region VARIACIONES
                 try
                 {
-
+                    logsFile.WriteLogs($@"
+                   ===========================================
+                   🔄 [INICIO DE SINCRONIZACIÓN DE VARIACIONES]
+                   ===========================================");
                     var client5 = new RestClient("http://" + ConfigurationManager.AppSettings["Ip"].ToString() + "/api/obtener_articulos_padres");
                     client5.Timeout = -1;
                     var request5 = new RestRequest(Method.GET);
@@ -1291,6 +1456,13 @@ namespace AplixEcommerceIntegration.Nidux
                                 }
 
                                 //Obtenemos los padres
+                                logsFile.WriteLogs($@"
+                               ===========================================
+                               🔍 [CONSULTANDO ATRIBUTOS DEL ARTÍCULO PADRE]
+                               -------------------------------------------
+                               Artículo Padre ID: {lista_padres[contador_padres].padre}
+                               ===========================================");
+
                                 var client6 = new RestClient("http://" + ConfigurationManager.AppSettings["Ip"].ToString() + "/api/agregar_atributos_articulos/" + lista_padres[contador_padres].padre);
                                 client6.Timeout = -1;
                                 var request6 = new RestRequest(Method.GET);
@@ -1360,26 +1532,52 @@ namespace AplixEcommerceIntegration.Nidux
 
                                                 if ((int)response9.StatusCode == 200)
                                                 {
-                                                    //Se actualiza el ID del Hijo
+                                                        //Se actualiza el ID del Hijo
+                                                        logsFile.WriteLogs($@"
+                                                           ===========================================
+                                                           ✅ [VARIACIONES AÑADIDAS AL ARTÍCULO]
+                                                           -------------------------------------------
+                                                           Artículo Padre ID: {lista_padres[contador_padres].ID}
+                                                           ===========================================");
 
-                                                }// fin del if de response 9
+                                                    }// fin del if de response 9
                                                 else
                                                 {
                                                     MessageBox.Show(response9.Content.ToString(), "Mensaje de Error v10", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                                }
+                                                        logsFile.WriteLogs($@"
+                                                           🛑 [ERROR AL AÑADIR VARIACIONES AL ARTÍCULO]
+                                                           -------------------------------------------
+                                                           Respuesta: {response9.Content}
+                                                           ===========================================");
+                                                    }
                                             } // fin del if de response8
                                             else
                                             {
-                                                MessageBox.Show(response8.Content.ToString(), "Mensaje de Error v11", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                    logsFile.WriteLogs($@"
+                                                           🛑 [ERROR AL AÑADIR VARIACIONES AL ARTÍCULO]
+                                                           -------------------------------------------
+                                                           Respuesta: {response8.Content}
+                                                           ===========================================");
+                                                    MessageBox.Show(response8.Content.ToString(), "Mensaje de Error v11", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                             }
                                         }// fin del if de response7
                                         else
                                         {
-                                            MessageBox.Show(response7.Content.ToString(), "Mensaje de Error v12", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                logsFile.WriteLogs($@"
+                                                           🛑 [ERROR AL AÑADIR VARIACIONES AL ARTÍCULO]
+                                                           -------------------------------------------
+                                                           Respuesta: {response7.Content}
+                                                           ===========================================");
+                                                MessageBox.Show(response7.Content.ToString(), "Mensaje de Error v12", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                         }
                                     }
                                     else
                                     {
+                                            logsFile.WriteLogs($@"
+                                                           🛑 [ERROR AL AÑADIR VARIACIONES AL ARTÍCULO]
+                                                           -------------------------------------------
+                                                           Respuesta: {response6.Content}
+                                                           ===========================================");
                                             MessageBox.Show(response6.Content.ToString(), $"[ERR] ERROR AL LIMPIAR ATRIBUTOS: {response_atributos.Content}", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                     }
                                 }
@@ -1387,7 +1585,13 @@ namespace AplixEcommerceIntegration.Nidux
                                 else
                                 {
                                     MessageBox.Show(response6.Content.ToString(), "Mensaje de Error v13", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    logsFile.WriteLogs($@"
+                                                           🛑 [ERROR AL AÑADIR VARIACIONES AL ARTÍCULO]
+                                                           -------------------------------------------
+                                                           Respuesta: {response6.Content}
+                                                           ===========================================");
                                 }
+                                
                                 contadorArticulosHijos++;
                                 contador_padres++;
                             }// fin del while
@@ -1396,13 +1600,23 @@ namespace AplixEcommerceIntegration.Nidux
                     else
                     {
                         MessageBox.Show(response5.Content.ToString(), "Mensaje de Error v14", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        logsFile.WriteLogs($@"
+                                                           🛑 [ERROR AL AÑADIR VARIACIONES AL ARTÍCULO]
+                                                           -------------------------------------------
+                                                           Respuesta: {response5.Content}
+                                                           ===========================================");
                     }
                     MessageBox.Show("Artículos Sincronizados Con Nidux", "Mensaje de Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 } //fin del try
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message.ToString(), "Mensaje de Error v15", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                logsFile.WriteLogs($@"
+                                   ===========================================
+                                   ✅ [VARIACIONES SINCRONIZADOS CON NIDUX]
+                                   ===========================================");
                 #endregion
                 //revisamos si algun articulo que no es padre se metio como tal para luego solo dejarlo como hijo
                 try
@@ -1499,6 +1713,10 @@ namespace AplixEcommerceIntegration.Nidux
             }
             else
             {
+                logsFile.WriteLogs(@"
+                ===========================================
+                📦 [INICIO OBTENCIÓN DE ARTÍCULOS] 📦
+                -------------------------------------------");
                 // Inicio de Articulos
                 var client = new RestClient("https://api.nidux.dev/v3/products/");
                 client.Timeout = -1;
@@ -1517,6 +1735,8 @@ namespace AplixEcommerceIntegration.Nidux
                             int i = 0;
                             while (n < lista_articulos.Products.Count)
                             {
+                                
+
                                 SqlCommand cmd = new SqlCommand();
                                 cmd.Connection = cnn.AbrirConexion();
                                 cmd.CommandText = "" + com + ".INSERTAR_ARTICULOS_TIENDA_APP";
@@ -1524,6 +1744,7 @@ namespace AplixEcommerceIntegration.Nidux
                                 cmd.CommandType = CommandType.StoredProcedure;
 
                                 var product = lista_articulos.Products.ElementAt(n).Value;
+                                logsFile.WriteLogs($"🔄 Insertando artículo SKU: {product.product_code} {product.product_name}");
 
                                 cmd.Parameters.AddWithValue("@ID", product.id);
                                 cmd.Parameters.AddWithValue("@ID_MARCA", (object)product.brand_id ?? 0);
@@ -1586,8 +1807,10 @@ namespace AplixEcommerceIntegration.Nidux
 
                                 if (product.variations != null && product.variations.Count > 0)
                                 {
+                                    logsFile.WriteLogs($"🧬 Variaciones encontradas para: {product.product_code}");
                                     while (i < product.variations.Count)
                                     {
+                                       
                                         var variation = product.variations.Values.ElementAt(i); // Access variation via dictionary
                                         SqlCommand cmd_va = new SqlCommand
                                         {
@@ -1596,7 +1819,7 @@ namespace AplixEcommerceIntegration.Nidux
                                             CommandTimeout = 0,
                                             CommandType = CommandType.StoredProcedure
                                         };
-
+                                        logsFile.WriteLogs($"🧬 Variaciones encontradas para: {variation.Sku}");
                                         cmd_va.Parameters.AddWithValue("@SKU_PADRE", product.product_code);
                                         cmd_va.Parameters.AddWithValue("@ID", variation.VariationId);
                                         cmd_va.Parameters.AddWithValue("@ATRIBUTOS", string.Join(",", variation.Attributes.Values.Select(a => a.value_name)));
@@ -1610,10 +1833,15 @@ namespace AplixEcommerceIntegration.Nidux
                                         i++;
                                     }
                                 }
+                                logsFile.WriteLogs($"✅ Artículo insertado: {product.product_code}");
 
                                 n++;
 
                             }
+                            logsFile.WriteLogs(@"
+                            -------------------------------------------
+                            ✅ [FIN OBTENCIÓN DE ARTÍCULOS EXITOSA]
+                            ===========================================");
                             MessageBox.Show("Artículos agregada con éxito", "Mensaje de Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             dgvArticulos.Rows.Clear();
                             CargaDatos_Articulos();
@@ -1621,6 +1849,10 @@ namespace AplixEcommerceIntegration.Nidux
                         catch (Exception ex)
                         {
                             MessageBox.Show("Error al procesar los artículos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            logsFile.WriteLogs($@"
+                            🛑 [ERROR AL PROCESAR ARTÍCULOS]
+                            Mensaje: {ex.Message}
+                            -------------------------------------------");
                         }
                         
                     }
@@ -1628,6 +1860,7 @@ namespace AplixEcommerceIntegration.Nidux
                 else
                 {
                     MessageBox.Show("Error: " + response.Content, "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    logsFile.WriteLogs("⚠️ [AVISO] No se encontraron artículos en la respuesta de Nidux.");
                 }
             }
         }
@@ -1988,45 +2221,64 @@ namespace AplixEcommerceIntegration.Nidux
         {
             try
             {
+                logsFile.WriteLogs($@"
+       ===========================================
+       ▶️  [INICIO DE SINCRONIZACIÓN DE CATEGORÍAS]
+       ===========================================");
+
                 Metodos.LoginNidux obj_metodos = new Metodos.LoginNidux();
                 string token = obj_metodos.Obtener_Token();
-                //empezamos la sincronizacion de las categorias desde el api de aplix a Nidux
+
+                // Comprobamos si hubo error al obtener el token
                 if (token.Equals("Error en login"))
                 {
+                    logsFile.WriteLogs($@"
+       🛑 [ERROR EN LOGIN]
+       -------------------------------------------
+       Error al obtener el token de Nidux.
+       ===========================================");
+
                     MessageBox.Show("Error en el login", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    //CONECTARME AL API
+                    // Conectamos al API para obtener las categorías
                     var client = new RestClient("http://" + ConfigurationManager.AppSettings["Ip"].ToString() + "/api/actualizar_categorias_nidux_simple");
                     client.Timeout = -1;
                     var request = new RestRequest(Method.GET);
                     IRestResponse response = client.Execute(request);
+
                     if ((int)response.StatusCode == 200)
                     {
                         int cont_cat = 0;
                         List<Clases.Categorias> lista_categorias = JsonConvert.DeserializeObject<List<Clases.Categorias>>(response.Content);
+
                         if (lista_categorias.Count > 0)
                         {
                             while (cont_cat < lista_categorias.Count)
                             {
+                                logsFile.WriteLogs($@"
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: {lista_categorias[cont_cat].nombre} (Código: {lista_categorias[cont_cat].codigo_categoria}).
+       ===========================================");
 
                                 string jsonBody = $@"
-                                {{
-                                   ""category_name"":""{lista_categorias[cont_cat].nombre}"",
-                                   ""category_father"":{lista_categorias[cont_cat].categoria_padre},
-                                   ""category_description"":""<p>{lista_categorias[cont_cat].descripcion}</p>"",
-                                   ""category_status"":1,
-                                   ""category_weight"":0,
-                                   ""mallId"":0,
-                                   ""traducciones"":[
-                                      {{
-                                         ""idioma"":1,
-                                         ""nombre"":""Name Default"",
-                                         ""descripcion"":""<p>Description Default</p>""
-                                      }}
-                                   ]
-                                }}";
+                        {{
+                           ""category_name"":""{lista_categorias[cont_cat].nombre}"",
+                           ""category_father"":{lista_categorias[cont_cat].categoria_padre},
+                           ""category_description"":""<p>{lista_categorias[cont_cat].descripcion}</p>"",
+                           ""category_status"":1,
+                           ""category_weight"":0,
+                           ""mallId"":0,
+                           ""traducciones"":[
+                              {{
+                                 ""idioma"":1,
+                                 ""nombre"":""Name Default"",
+                                 ""descripcion"":""<p>Description Default</p>""
+                              }}
+                           ]
+                        }}";
 
                                 var client2 = new RestClient("https://api.nidux.dev/v3/categories/" + lista_categorias[cont_cat].codigo_categoria);
                                 client2.Timeout = -1;
@@ -2035,36 +2287,104 @@ namespace AplixEcommerceIntegration.Nidux
                                 request2.AddHeader("Content-Type", "application/json");
                                 request2.AddParameter("application/json", jsonBody, ParameterType.RequestBody);
                                 IRestResponse response2 = client2.Execute(request2);
+
+                                if ((int)response2.StatusCode == 200)
+                                {
+                                    logsFile.WriteLogs($@"
+       ✅ [CATEGORÍA SINCRONIZADA EXITOSAMENTE]
+       -------------------------------------------
+       Categoría con código {lista_categorias[cont_cat].codigo_categoria} sincronizada con éxito.
+       ===========================================");
+                                }
+                                else
+                                {
+                                    logsFile.WriteLogs($@"
+       🛑 [ERROR AL SINCRONIZAR CATEGORÍA]
+       -------------------------------------------
+       Error al sincronizar categoría con código {lista_categorias[cont_cat].codigo_categoria}. Respuesta: {response2.Content}
+       ===========================================");
+
+                                    MessageBox.Show("Error al sincronizar categoría", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+
                                 cont_cat++;
                             }
-                            //actualizamos la fecha
+
+                            // Actualizamos la fecha de sincronización
                             var client3 = new RestClient("http://" + ConfigurationManager.AppSettings["Ip"].ToString() + "/api/actualizar_fecha");
                             client3.Timeout = -1;
                             var request3 = new RestRequest(Method.GET);
                             IRestResponse response3 = client3.Execute(request3);
+
+                            if ((int)response3.StatusCode == 200)
+                            {
+                                logsFile.WriteLogs($@"
+       ✅ [FECHA ACTUALIZADA]
+       -------------------------------------------
+       Fecha de sincronización actualizada correctamente.
+       ===========================================");
+                            }
+                            else
+                            {
+                                logsFile.WriteLogs($@"
+       🛑 [ERROR AL ACTUALIZAR FECHA]
+       -------------------------------------------
+       Error al actualizar la fecha de sincronización. Respuesta: {response3.Content}
+       ===========================================");
+
+                                MessageBox.Show("Error al actualizar la fecha", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("No hay Categorias para actualizar", "Mensaje de Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            logsFile.WriteLogs($@"
+       🛑 [SIN CATEGORÍAS PARA ACTUALIZAR]
+       -------------------------------------------
+       No hay categorías disponibles para actualizar.
+       ===========================================");
+
+                            MessageBox.Show("No hay Categorías para actualizar", "Mensaje de Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     else
                     {
+                        logsFile.WriteLogs($@"
+       🛑 [ERROR AL CONECTAR AL API]
+       -------------------------------------------
+       Error al conectar con el API para obtener categorías. Respuesta: {response.Content}
+       ===========================================");
+
                         MessageBox.Show("Error en el Api Propio Método actualizar categorias nidux", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+
+                    logsFile.WriteLogs($@"
+       ===========================================
+       ✅ [SINCRONIZACIÓN DE CATEGORÍAS FINALIZADA]
+       ===========================================");
+                    MessageBox.Show("Categorías Actualizadas con Éxito", "Mensaje de Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                MessageBox.Show("Categorias Actualizadas con Éxito", "Mensaje de Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
+                logsFile.WriteLogs($@"
+       🛑 [EXCEPCIÓN EN SINCRONIZACIÓN DE CATEGORÍAS]
+       -------------------------------------------
+       {ex.ToString()}
+       ===========================================");
+
                 MessageBox.Show(ex.Message.ToString(), "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void btnObtenerCategorias_Click(object sender, EventArgs e)
         {
             try
             {
+                logsFile.WriteLogs($@"
+       ===========================================
+       🔄 [INICIO DE OBTENCIÓN DE CATEGORÍAS NIDUX]
+       ===========================================");
                 Metodos.LoginNidux obj_metodos = new Metodos.LoginNidux();
                 string token = obj_metodos.Obtener_Token();
                 //empezamos la sincronizacion de las categorias desde el api de aplix a Nidux
@@ -2084,6 +2404,8 @@ namespace AplixEcommerceIntegration.Nidux
 
                     if ((int)response.StatusCode == 200)
                     {
+
+
                         //Insertamos con el api las categorias
                         var client2 = new RestClient("http://" + ConfigurationManager.AppSettings["Ip"].ToString() + "/api/insertar_categorias");
                         client2.Timeout = -1;
@@ -2093,17 +2415,35 @@ namespace AplixEcommerceIntegration.Nidux
 
                         if ((int)response2.StatusCode == 200)
                         {
+                            logsFile.WriteLogs($@"
+                       ===========================================
+                       ✅ [CATEGORÍAS INSERTADAS CON ÉXITO]
+                       -------------------------------------------
+                       Categorías insertadas en el sistema con éxito.
+                       ===========================================");
                             MessageBox.Show("Categorias Actualizadas con Éxito", "Mensaje de Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             dgvCategorias.Rows.Clear();
                             CargaDatos_Categorias();
                         }
                         else
                         {
+                            logsFile.WriteLogs($@"
+                               🛑 [ERROR AL INSERTAR CATEGORÍAS]
+                               -------------------------------------------
+                               Error al insertar categorías en el API propio.
+                               Respuesta: {response2.Content}
+                               ===========================================");
                             MessageBox.Show("Error en el Api Propio Método insertar categorias a tablas", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                     else
                     {
+                        logsFile.WriteLogs($@"
+                       🛑 [ERROR AL OBTENER CATEGORÍAS DE NIDUX]
+                       -------------------------------------------
+                       Error al obtener las categorías desde el API de Nidux.
+                       Respuesta: {response.Content}
+                       ===========================================");
                         MessageBox.Show("Error en el Api nidux", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
@@ -2118,6 +2458,10 @@ namespace AplixEcommerceIntegration.Nidux
         {
             try
             {
+                logsFile.WriteLogs($@"
+                   ===========================================
+                   🛑 [INICIO DE ELIMINACIÓN DE CATEGORÍAS]
+                   ===========================================");
                 string codigos = "";
                 string nombre = "";
                 int n = 0;
@@ -2132,6 +2476,11 @@ namespace AplixEcommerceIntegration.Nidux
 
                 if (codigos == "")
                 {
+                    logsFile.WriteLogs($@"
+                   🛑 [NINGUNA CATEGORÍA SELECCIONADA]
+                   -------------------------------------------
+                   No se ha seleccionado ninguna categoría para eliminar.
+                   ===========================================");
                     MessageBox.Show("No se ha seleccionada ninguna categoría para Eliminar", "Mensaje de Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
@@ -2142,6 +2491,12 @@ namespace AplixEcommerceIntegration.Nidux
                     MessageBox.Show("¿Está seguro que desea Eliminar Categorías? Las Categorías que se van a Eliminar son: " + nombre, "Mensaje de Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (result == DialogResult.Yes)
                     {
+                        logsFile.WriteLogs($@"
+                       ===========================================
+                       🔄 [CONFIRMACIÓN DE ELIMINACIÓN]
+                       -------------------------------------------
+                       Categorías seleccionadas para eliminación: {nombre}.
+                       ===========================================");
                         Metodos.LoginNidux obj_metodos = new Metodos.LoginNidux();
                         string token = obj_metodos.Obtener_Token();
                         //empezamos la sincronizacion de las categorias desde el api de aplix a Nidux
@@ -2184,16 +2539,34 @@ namespace AplixEcommerceIntegration.Nidux
                                     cmds.CommandType = CommandType.Text;
                                     cmds.ExecuteNonQuery();
                                     cnn.close();
+
+                                    logsFile.WriteLogs($@"
+                                   ✅ [CATEGORÍA ELIMINADA EXITOSAMENTE]
+                                   -------------------------------------------
+                                   Categoría con código {item} eliminada correctamente.
+                                   ===========================================");
                                 }
                                 else
                                 {
+                                    
                                     Clases.Respuesta_Categoria lista_respuesta = JsonConvert.DeserializeObject<Clases.Respuesta_Categoria>(response.Content);
+                                    logsFile.WriteLogs($@"
+                                   🛑 [ERROR AL ELIMINAR CATEGORÍA]
+                                   -------------------------------------------
+                                   Error al eliminar categoría con código {item}. Comentarios: {lista_respuesta.comentarios}
+                                   ===========================================");
                                     MessageBox.Show(lista_respuesta.comentarios, "Mensaje de Error V2", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
                             }
                             cnn.CerrarConexion();
                             if (n == 1)
                             {
+                                logsFile.WriteLogs($@"
+                                   ===========================================
+                                   ✅ [CATEGORÍAS ELIMINADAS CON ÉXITO]
+                                   -------------------------------------------
+                                   Categorías eliminadas correctamente.
+                                   ===========================================");
                                 MessageBox.Show("Categorías Elimanas con éxito", "Mensaje de Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 lista_categorias_editados.Clear();
                                 dgvCategorias.Rows.Clear();
@@ -2206,6 +2579,11 @@ namespace AplixEcommerceIntegration.Nidux
             }
             catch (Exception ex)
             {
+                logsFile.WriteLogs($@"
+       🛑 [EXCEPCIÓN AL ELIMINAR CATEGORÍAS]
+       -------------------------------------------
+       {ex.ToString()}
+       ===========================================");
                 MessageBox.Show(ex.Message.ToString(), "Mensaje de Error V3", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -2464,41 +2842,58 @@ namespace AplixEcommerceIntegration.Nidux
         {
             try
             {
+                logsFile.WriteLogs($@"
+       ===========================================
+       ▶️ [INICIO DE SINCRONIZACIÓN DE MARCAS]
+       ===========================================");
+
                 Metodos.LoginNidux obj_metodos = new Metodos.LoginNidux();
                 string token = obj_metodos.Obtener_Token();
 
+                // Verificamos si hubo error al obtener el token
                 if (token.Equals("Error en login"))
                 {
+                    logsFile.WriteLogs($@"
+       🛑 [ERROR EN LOGIN]
+       -------------------------------------------
+       Error al obtener el token de Nidux.
+       ===========================================");
+
                     MessageBox.Show("Error en el login", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
                     int cont_marcas = 0;
+
                     // Consume las marcas
                     var client8 = new RestClient("http://" + ConfigurationManager.AppSettings["Ip"].ToString() + "/api/actualizar_marcas_simple");
                     client8.Timeout = -1;
                     var request8 = new RestRequest(Method.GET);
                     IRestResponse response8 = client8.Execute(request8);
+
                     if ((int)response8.StatusCode == 200)
                     {
-                        cont_marcas = 0;
                         List<Clases.Marca> lista_marcas = JsonConvert.DeserializeObject<List<Clases.Marca>>(response8.Content);
+
                         if (lista_marcas.Count > 0)
                         {
                             while (cont_marcas < lista_marcas.Count)
                             {
-
                                 var jsonMarcas = new
                                 {
                                     brand_name = lista_marcas[cont_marcas].nombre
                                 };
 
-                                var jsonBody = JsonConvert.SerializeObject(jsonMarcas, Formatting.Indented);
+                                logsFile.WriteLogs($@"
+                           ----------------------------------------------------------------------
+                            Sincronizando marca: {lista_marcas[cont_marcas].nombre} (Código: {lista_marcas[cont_marcas].codigo_marca}). 
+                           -----------------------------------------------------------------------");
 
+                                var jsonBody = JsonConvert.SerializeObject(jsonMarcas, Formatting.Indented);
 
                                 if (!String.IsNullOrEmpty(lista_marcas[cont_marcas].codigo_marca))
                                 {
-                                    //Insertamos la marca en Nidux
+                                    // Actualizamos la marca en Nidux
                                     var client = new RestClient("https://api.nidux.dev/v3/brands/" + lista_marcas[cont_marcas].codigo_marca);
                                     client.Timeout = -1;
                                     var request = new RestRequest(Method.PUT);
@@ -2506,11 +2901,21 @@ namespace AplixEcommerceIntegration.Nidux
                                     request.AddHeader("Content-Type", "application/json");
                                     request.AddParameter("application/json", jsonBody, ParameterType.RequestBody);
                                     IRestResponse response = client.Execute(request);
-                                    cont_marcas++;
+
+                                    if ((int)response.StatusCode != 200)
+                                    {
+                                        logsFile.WriteLogs($@"
+       🛑 [ERROR AL ACTUALIZAR MARCA]
+       -------------------------------------------
+       Error al actualizar la marca con código {lista_marcas[cont_marcas].codigo_marca}. Respuesta: {response.Content}
+       ===========================================");
+
+                                        MessageBox.Show("Error al actualizar marca", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    }
                                 }
                                 else
                                 {
-                                    //actualizar la marca en Nidux
+                                    // Insertamos la nueva marca en Nidux
                                     var client = new RestClient("https://api.nidux.dev/v3/brands/");
                                     client.Timeout = -1;
                                     var request = new RestRequest(Method.POST);
@@ -2518,6 +2923,7 @@ namespace AplixEcommerceIntegration.Nidux
                                     request.AddHeader("Content-Type", "application/json");
                                     request.AddParameter("application/json", jsonBody, ParameterType.RequestBody);
                                     IRestResponse response = client.Execute(request);
+
                                     if ((int)response.StatusCode == 200)
                                     {
                                         Clases.Respuesta_Marcas lista_respuesta = JsonConvert.DeserializeObject<Clases.Respuesta_Marcas>(response.Content);
@@ -2531,39 +2937,89 @@ namespace AplixEcommerceIntegration.Nidux
                                         cmd.Parameters.AddWithValue("@CODIGO", id);
                                         cmd.ExecuteNonQuery();
                                         cnn.CerrarConexion();
-
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Error al ingresar marcas en Nidux Error: " + response.Content, "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                        logsFile.WriteLogs($@"
+       🛑 [ERROR AL INGRESAR MARCA]
+       -------------------------------------------
+       Error al ingresar marca: {lista_marcas[cont_marcas].nombre}. Respuesta: {response.Content}
+       ===========================================");
+
+                                        MessageBox.Show("Error al ingresar marcas en Nidux", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                     }
-                                    cont_marcas++;
                                 }
+
+                                cont_marcas++;
                             }
-                            //actualizamos la fecha
+
+                            // Actualizamos la fecha
                             var client3 = new RestClient("http://" + ConfigurationManager.AppSettings["Ip"].ToString() + "/api/actualizar_fecha");
                             client3.Timeout = -1;
                             var request3 = new RestRequest(Method.GET);
                             IRestResponse response3 = client3.Execute(request3);
+
+                            if ((int)response3.StatusCode == 200)
+                            {
+                                logsFile.WriteLogs($@"
+       ✅ [FECHA ACTUALIZADA]
+       -------------------------------------------
+       Fecha de sincronización actualizada correctamente.
+       ===========================================");
+                            }
+                            else
+                            {
+                                logsFile.WriteLogs($@"
+       🛑 [ERROR AL ACTUALIZAR FECHA]
+       -------------------------------------------
+       Error al actualizar la fecha de sincronización. Respuesta: {response3.Content}
+       ===========================================");
+
+                                MessageBox.Show("Error al actualizar la fecha", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
                         }
                         else
                         {
+                            logsFile.WriteLogs($@"
+       🛑 [SIN MARCAS PARA ACTUALIZAR]
+       -------------------------------------------
+       No hay marcas disponibles para actualizar.
+       ===========================================");
+
                             MessageBox.Show("No hay marcas para actualizar", "Mensaje de Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
-
                     }
                     else
                     {
+                        logsFile.WriteLogs($@"
+       🛑 [ERROR AL CONECTAR AL API]
+       -------------------------------------------
+       Error al conectar con el API para actualizar marcas. Respuesta: {response8.Content}
+       ===========================================");
+
                         MessageBox.Show("Error en el Api Propio Método actualizar marcas nidux", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+
+                    logsFile.WriteLogs($@"
+       ===========================================
+       ✅ [SINCRONIZACIÓN DE MARCAS FINALIZADA]
+       ===========================================");
+
                     MessageBox.Show("Marcas Actualizadas con Éxito", "Mensaje de Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
             {
+                logsFile.WriteLogs($@"
+       🛑 [EXCEPCIÓN EN SINCRONIZACIÓN DE MARCAS]
+       -------------------------------------------
+       {ex.ToString()}
+       ===========================================");
+
                 MessageBox.Show(ex.Message.ToString(), "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void btnObtenerMarcas_Click(object sender, EventArgs e)
         {
@@ -5617,7 +6073,46 @@ namespace AplixEcommerceIntegration.Nidux
             Buscar_Articulos(txtBuscarArticulos.Text);
         }
 
+        private void buttonBitacora_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "Archivos de texto o log (*.txt;*.log)|*.txt;*.log|Todos los archivos (*.*)|*.*",
+                Title = "Seleccionar archivo de bitácora",
+                DefaultExt = "txt"
+            };
 
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                rutaArchivoSeleccionado = openFileDialog.FileName;
 
+                try
+                {
+                    textBitacora.Text = File.ReadAllText(rutaArchivoSeleccionado);
+
+                    // Detener y eliminar el watcher anterior si existe
+                    if (watcher != null)
+                    {
+                        watcher.EnableRaisingEvents = false;
+                        watcher.Dispose();
+                    }
+
+                    // Crear un nuevo FileSystemWatcher
+                    watcher = new FileSystemWatcher
+                    {
+                        Path = System.IO.Path.GetDirectoryName(rutaArchivoSeleccionado),
+                        Filter = System.IO.Path.GetFileName(rutaArchivoSeleccionado),
+                        NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.Size
+                    };
+
+                    watcher.Changed += Watcher_Changed;
+                    watcher.EnableRaisingEvents = true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al leer el archivo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
