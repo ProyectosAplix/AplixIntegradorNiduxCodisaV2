@@ -252,7 +252,7 @@ namespace AplixEcommerceIntegration.Nidux.Clases
     public class Product
     {
         public int id { get; set; }
-        public int brand_id { get; set; }
+        public int? brand_id { get; set; }
         public string product_code { get; set; }
         public string product_name { get; set; }
         public string product_desc_short { get; set; }
@@ -382,4 +382,21 @@ namespace AplixEcommerceIntegration.Nidux.Clases
     //    public string Descripcion { get; set; }
     //}
     #endregion
+
+    public class Atributos_Padre
+    {
+        public int[] atributos { get; set; }
+    }
+
+    public class Variaciones
+    {
+        public int id { get; set; }
+        public int[] id_valores_atributos { get; set; }
+        public string sku_variacion { get; set; }
+        public decimal peso { get; set; }
+        public int stock { get; set; }
+        public decimal precio { get; set; }
+
+    }
+
 }

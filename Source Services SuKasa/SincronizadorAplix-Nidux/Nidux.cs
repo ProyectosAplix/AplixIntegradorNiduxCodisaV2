@@ -216,21 +216,52 @@ namespace SincronizadorAplix_Nidux
 
         public async Task PostArticulosNidux(string token)
         {
+            int contadorPeticiones = 0;
+            int contadorInterno = 0;
             var url = new RestClient(urlBaseApi);
             var request = new RestRequest("api/actualizar_articulos_editados_simple");
             List<Articulos> lista = await url.GetAsync<List<Articulos>>(request);
-
+            #region PADRES
             if (lista.Count() > 0)
             {
-                int contadorInterno = 0;
-                int contadorPeticiones = 0;
-
                 while (contadorInterno < lista.Count())
                 {
                     try
                     {
 
                         token = await GetTokenNidux("", "", 0);
+
+                        #region Se consulta la Descripcion de NIDUX
+                        //para poder conservar el formato de la descripcion se va a consultar el
+                        //articulo para sacar la descripcion tal cual esta en NIDUX
+                        if (!String.IsNullOrEmpty(lista[contadorInterno].id))
+                        {
+                            if (contadorPeticiones == 99)
+                            {
+                                Thread.Sleep(60000);
+                                contadorPeticiones = 0;
+                            }
+
+                            string id = lista[contadorInterno].id;
+
+                            var client2 = new RestClient(urlBaseNidux);
+                            var request2 = new RestRequest($"v3/products/{id}").AddHeader("Authorization", "Bearer " + token);
+                            var responseget = await client2.GetAsync(request2);
+
+                            if ((int)responseget.StatusCode == 200)
+                            {
+                                //MessageBox.Show(responseget.Content);
+                                Articulos2 lista_articulosget = JsonConvert.DeserializeObject<Articulos2>(responseget.Content);
+                                //logsFile.WriteLogs($"Categorias a asignar: {lista_articulosget.Producto.Categorias}");
+                                lista[contadorInterno].descripcion = lista_articulosget.Producto.product_description;
+
+                            }
+                            else
+                            {
+                                logsFile.WriteLogs($"Fallo al obtener la Categoria de NIDUX del articulo: {lista[contadorInterno].id}");
+                            }
+                        }
+                        #endregion
 
                         if (contadorPeticiones == 295)
                         {
@@ -243,6 +274,7 @@ namespace SincronizadorAplix_Nidux
                         {
 
                             string name = lista[contadorInterno].nombre.Replace("\"", "\\\"");
+                            //name = name.Replace("/", " ");
                             string description = lista[contadorInterno].descripcion
                              .Replace("\"", "\\\"")
                              .Replace("\r\n", "\\n")
@@ -258,11 +290,10 @@ namespace SincronizadorAplix_Nidux
                             string porcentaje_oferta = lista[contadorInterno].porcentaje_oferta != null
                                      ? lista[contadorInterno].porcentaje_oferta.ToString().Replace(",", ".") : "0";
 
-                            string jsonBody = $@"{{
-                                        ""add"": [
+                            string jsonBody = $@"
                                             {{
-                                                ""brand_id"": {lista[contadorInterno].id_marca},
-                                                ""categorias"": [{string.Join(",", lista[contadorInterno].categorias)}],
+                                                {(lista[contadorInterno].id_marca != null && lista[contadorInterno].id_marca != "0" ? $@"""brand_id"": { lista[contadorInterno].id_marca}," : "")}
+                                                ""categorias"": [],
                                                 ""product_code"": ""{code}"",
                                                 ""product_name"": ""{name}"",
                                                 ""product_description"": ""{description}"",
@@ -280,17 +311,21 @@ namespace SincronizadorAplix_Nidux
                                                 ""product_reserve_percentage"": {lista[contadorInterno].porcentaje_para_reservar ?? "0"},
                                                 ""product_tax"": {lista[contadorInterno].impuesto_producto},
                                                 ""seo_tags"": [{string.Join(",", lista[contadorInterno].seo_tags.Select(tag => $"\"{tag}\""))}],
-                                                ""tags"": [{string.Join(",", lista[contadorInterno].tags.Select(tag => $"\"{tag}\""))}]   
-                                            }}
-                                        ]
-                                    }}";
+                                                ""tags"": [{string.Join(",", lista[contadorInterno].tags.Select(tag => $"\"{tag}\""))}],
+                                                ""cabys"": {{
+                                                    ""cabys"": ""0"",
+                                                    ""codigoTarifa"": ""01"",
+                                                    ""skipFactura"": ""0""
+                                                    }}
+                                                }}";
 
                             //post articulo
                             var urlPostArticulo = new RestClient(urlBaseNidux);
-                            var requestPostArticulo = new RestRequest("v3/products")
+                            var requestPostArticulo = new RestRequest("v3/products/")
                                 .AddHeader("Authorization", "Bearer " + token)
-                                .AddStringBody(jsonBody, ContentType.Json);
-                            var responseArticulo = await urlPostArticulo.PostAsync(requestPostArticulo);
+                                .AddStringBody(jsonBody, "application/json");
+                            //var responseArticulo = await urlPostArticulo.PostAsync(requestPostArticulo);
+                            var responseArticulo = await urlPostArticulo.ExecutePostAsync(requestPostArticulo);
 
                             if (responseArticulo.StatusCode == System.Net.HttpStatusCode.OK)
                             {
@@ -332,9 +367,9 @@ namespace SincronizadorAplix_Nidux
 
 
                             string jsonBody = $@"{{
-                                        ""id"": {lista[contadorInterno].id},
-                                        ""brand_id"": {lista[contadorInterno].id_marca},
-                                        ""categorias"": [{string.Join(",", lista[contadorInterno].categorias)}],
+                                        ""id"": ""{lista[contadorInterno].id}"",
+                                        {(lista[contadorInterno].id_marca != null && lista[contadorInterno].id_marca != "0" ? $@"""brand_id"": { lista[contadorInterno].id_marca}," : "")}
+                                         {($@"""categorias"": [{string.Join(",", lista[contadorInterno].categorias)}],")}
                                         ""product_code"": ""{code}"",
                                         ""product_name"": ""{name}"",
                                         ""operation_type"": ""replace"",
@@ -353,16 +388,26 @@ namespace SincronizadorAplix_Nidux
                                         ""product_reserve_percentage"": {lista[contadorInterno].porcentaje_para_reservar ?? "0"},
                                         ""product_tax"": {lista[contadorInterno].impuesto_producto},
                                         ""seo_tags"": [{string.Join(",", lista[contadorInterno].seo_tags.Select(tag => $"\"{tag}\""))}],
-                                        ""tags"": [{string.Join(",", lista[contadorInterno].tags.Select(tag => $"\"{tag}\""))}]
+                                        ""tags"": [{string.Join(",", lista[contadorInterno].tags.Select(tag => $"\"{tag}\""))}],
+                                        ""cabys"": {{
+                                        ""cabys"": ""0"",
+                                        ""codigoTarifa"": ""01"",
+                                        ""skipFactura"": ""0""
                                         }}
-                                        ]
-                                    }}";
+                                        }}";
                             //put articulo
+                            //var urlPutArticulo = new RestClient(urlBaseNidux);
+                            //var requestPutArticulo = new RestRequest("v3/products/")
+                            //    .AddHeader("Authorization", "Bearer " + token)
+                            //    .AddStringBody(jsonBody, "application/json");
+                            //var responseArticulo = await urlPutArticulo.PatchAsync(requestPutArticulo);
+
                             var urlPutArticulo = new RestClient(urlBaseNidux);
-                            var requestPutArticulo = new RestRequest("v3/products/")
+                            var requestPutArticulo = new RestRequest("v3/products", Method.Patch)
                                 .AddHeader("Authorization", "Bearer " + token)
-                                .AddStringBody(jsonBody, ContentType.Json);
-                            var responseArticulo = await urlPutArticulo.PatchAsync(requestPutArticulo);
+                                .AddStringBody(jsonBody, "application/json");
+
+                            var responseArticulo = await urlPutArticulo.ExecuteAsync(requestPutArticulo);
 
                             if (responseArticulo.StatusCode != System.Net.HttpStatusCode.OK)
                             {
@@ -410,8 +455,427 @@ namespace SincronizadorAplix_Nidux
             {
                 logsFile.WriteLogs("Mensaje: no hay articulos para actualizar");
             }
+            #endregion
 
+            //agregar articulos hijos
+            #region VARIACIONES
+
+            try
+            {
+
+                //Obtiene de los articulos modificados solo los padres a los que pertenecen esos articulos
+                //Puede obtener(padres e hijos) pero al final se filtra en DB para obetener solo los padres
+                var listaPadres = Devolver_Padres_Variaciones();
+
+                //contenido.Clear();
+                logsFile.WriteLogs($"");
+                logsFile.WriteLogs($"VARIACIONES:");
+
+                if (listaPadres.Count == 0)
+                {
+                    logsFile.WriteLogs($"");
+                    logsFile.WriteLogs($"No hay variaciones por actualizar");
+                }
+
+                foreach (var padre in listaPadres)
+                {
+                    token = await GetTokenNidux("", "", 0);
+
+                    logsFile.WriteLogs($"");
+                    logsFile.WriteLogs($"PADRE A CONFIGURAR: {padre.sku}");
+
+                    var atributos = new Atributos_Padre();
+                    //Obtiene los atributos de ese padre a configurar
+                    atributos.atributos = Devolver_Atributos_Padre(padre.sku);
+
+                    string cadena_atributos = "";
+
+                    if (atributos.atributos == null || atributos.atributos.Length == 0)
+                    {
+                        logsFile.WriteLogs($"[MSG] El ARTICULO {padre.id} NO TIENE VARIACIONES A CONFIGURAR");
+                        continue;
+                    }
+
+
+                    foreach (var atributo in atributos.atributos)
+                    {
+                        cadena_atributos += $"[{atributo}]";
+                    }
+
+                    string json_atributos = JsonConvert.SerializeObject(atributos, Formatting.Indented);
+                    //Console.WriteLine(json_atributos);
+
+                    logsFile.WriteLogs($"AL PADRE : {padre.sku} - ID: {padre.id} SE LE CONFIGURARAN LOS ATRIBUTOS: {cadena_atributos}");
+                    //logsFile.WriteLogs($"AL PADRE JSON: {json_atributos}"); 
+
+                    //Se suma uno al contador porque es una consulta que se va a hacer a NIDUX
+                    contadorPeticiones++;
+                    if (contadorPeticiones == 89)
+                    {
+                        Thread.Sleep(61000);
+                        contadorPeticiones = 0;
+                    }
+
+                    bool articuloNuevo = string.IsNullOrEmpty(padre.id);
+                    string mensajeError;
+
+                    if (!articuloNuevo && !EliminarAtributosProducto(padre.id, token, out mensajeError))
+                    {
+                        logsFile.WriteLogs($"[ERR] ERROR AL LIMPIAR ATRIBUTOS: {mensajeError}");
+                        continue;
+                    }
+
+                    //Configura los atributos de un articulo
+                    var urlPostAtrib = new RestClient(urlBaseNidux);
+                    var requestPutArticulo = new RestRequest($"v3/products/{padre.id}/attribs", Method.Post)
+                        .AddHeader("Authorization", "Bearer " + token)
+                    .AddStringBody(json_atributos, "application/json");
+                    var response_atributos2 = await urlPostAtrib.ExecuteAsync(requestPutArticulo);
+
+                    //var client_atributos2 = new RestClient($"https://api.nidux.dev/v3/products/{padre.id}/attribs");
+                    //client_atributos2.Timeout = -1;
+                    //var request_atributos2 = new RestRequest(Method.POST);
+                    //request_atributos2.AddHeader("Authorization", "Bearer " + token);
+                    //request_atributos2.AddHeader("Content-Type", "application/json");
+                    //request_atributos2.AddParameter("application/json", json_atributos, ParameterType.RequestBody);
+                    //IRestResponse response_atributos2 = client_atributos2.Execute(request_atributos2);
+
+                    if ((int)response_atributos2.StatusCode == 200)
+                    {
+
+                        logsFile.WriteLogs($"[OK] SE CONFIGURARON LOS ATRIBUTOS");
+
+                        var variaciones = Devolver_Variaciones_Por_Padre(padre.sku);
+
+                        logsFile.WriteLogs($"SE INGRESARAN LAS VARIACIONES: ");
+
+                        //Agrega los atributos de variacion a cada articulo
+                        foreach (var variacion in variaciones)
+                        {
+                            string cadena_valores = "";
+                            variacion.id_valores_atributos = Devolver_Atributos_Articulo(variacion.sku_variacion);
+                            foreach (var valor in variacion.id_valores_atributos)
+                            {
+                                cadena_valores += $"[{valor}]";
+                            }
+                            logsFile.WriteLogs($"SKU: {variacion.sku_variacion} VALORES ATRIBUTO: {cadena_valores}");
+                        }
+
+                        var encapsulador_json_variacion = new
+                        {
+                            action = "replace",
+                            variations = variaciones
+                        };
+
+
+                        if (encapsulador_json_variacion.variations.Count != 0)
+                        {
+                            string json_variacion = JsonConvert.SerializeObject(encapsulador_json_variacion, Formatting.Indented);
+
+                            contadorPeticiones++;
+                            if (contadorPeticiones == 89)
+                            {
+                                Thread.Sleep(61000);
+                                contadorPeticiones = 0;
+                            }
+
+                            var urlPostVari = new RestClient(urlBaseNidux);
+                            var requestPostVari = new RestRequest($"v3/products/{padre.id}/variations", Method.Post)
+                                .AddHeader("Authorization", "Bearer " + token)
+                            .AddStringBody(json_variacion, "application/json");
+                            var response_variacion = await urlPostVari.ExecuteAsync(requestPostVari);
+
+                            //var client_variacion = new RestClient($"https://api.nidux.dev/v3/products/{padre.id}/variations");
+                            //client_variacion.Timeout = -1;
+                            //var request_variacion = new RestRequest(Method.POST);
+                            //request_variacion.AddHeader("Authorization", "Bearer " + token);
+                            //request_variacion.AddHeader("Content-Type", "application/json");
+                            //request_variacion.AddParameter("application/json", json_variacion, ParameterType.RequestBody);
+                            //IRestResponse response_variacion = client_variacion.Execute(request_variacion);
+
+                            if ((int)response_variacion.StatusCode == 200)
+                            {
+                                contadorInterno--;
+                                logsFile.WriteLogs($"[OK] SE AGREGARON LAS VARIACIONES");
+
+                                //Debe de buscar articulos simples que quedaron como una variacion para que se eliminen
+                                foreach (var variacion in variaciones)
+                                {
+                                    Conexion cnn = new Conexion();
+                                    SqlCommand cmd = new SqlCommand();
+                                    cmd.Connection = cnn.AbrirConexion();
+                                    cmd.CommandText = "" + schema + ".ActualizarBanderaArticulo";
+                                    cmd.CommandTimeout = 0;
+                                    cmd.CommandType = CommandType.StoredProcedure;
+                                    cmd.Parameters.AddWithValue("@SKU", variacion.sku_variacion);
+                                    cmd.ExecuteNonQuery();
+
+                                    //MessageBox.Show("HOLI6");
+                                    if (variacion.sku_variacion != padre.sku)
+                                    {
+
+                                        contadorPeticiones++;
+                                        if (contadorPeticiones == 89)
+                                        {
+                                            Thread.Sleep(61000);
+                                            contadorPeticiones = 0;
+                                        }
+
+                                        //var client_delete = new RestClient($"https://api.nidux.dev/v3/products/{variacion.id}");
+                                        //client_delete.Timeout = -1;
+                                        //var request_delete = new RestRequest(Method.DELETE);
+                                        //request_delete.AddHeader("Authorization", "Bearer " + token);
+                                        //request_delete.AddHeader("Content-Type", "application/json");
+                                        //IRestResponse response_delete = client_delete.Execute(request_delete);
+
+                                        var urlDeleteVari = new RestClient(urlBaseNidux);
+                                        var request_delete = new RestRequest($"v3/products/{variacion.id}", Method.Delete)
+                                            .AddHeader("Authorization", "Bearer " + token);
+                                        //.AddStringBody(jsonBody, "application/json");
+                                        var response_delete = await urlDeleteVari.ExecuteAsync(request_delete);
+
+                                        if ((int)response_delete.StatusCode == 200)
+                                        {
+
+                                            logsFile.WriteLogs($"[OK] ARTICULO PADRE ELIMINADO DE NIDUX : {variacion.sku_variacion}, AHORA ES VARIACION DE: {padre.sku}");
+                                            EliminarUnaVariacionQueFuePadreAlInsertarse(variacion.sku_variacion);
+                                        }
+                                        else
+                                        {
+                                            logsFile.WriteLogs($"[ERR] ERROR AL ELIMINAR ARTICULO: {variacion.sku_variacion} - {response_delete.Content}");
+                                        }
+                                    }
+                                    //MessageBox.Show("HOLI7");
+                                }
+                            }
+                            else
+                            {
+                                logsFile.WriteLogs($"[ERR] ERROR AL AGREGAR VARIACIONES: {response_variacion.Content}");
+                            }
+                        }
+                        else
+                        {
+                            logsFile.WriteLogs($"[MSG] El ARTICULO {padre.id} NO TIENE VARIACIONES A CONFIGURAR");
+                        }
+                    }
+                    else
+                    {
+                        logsFile.WriteLogs($"[ERR] ERROR AL CONFIGURAR ATRIBUTOS: {response_atributos2.Content}");
+                    }
+
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                logsFile.WriteLogs($"[ERROR TRY] Catch de variaciones : error: {ex.Message.ToString()}");
+            }
+            finally
+            {
+                //Bitacora(path, contenido.ToString());
+            }
+
+            //TSWART.Close();
+
+            #endregion
         }
+        #region Variaciones
+        public List<Articulos> Devolver_Padres_Variaciones()
+        {
+            Conexion con = new Conexion();
+            SqlCommand cmd = new SqlCommand();
+            var listaPadres = new List<Articulos>();
+
+            try
+            {
+                cmd.Connection = con.AbrirConexion();
+                cmd.CommandText = $"{schema}.CONSULTAR_PADRES_VARIACIONES";
+                cmd.CommandTimeout = 0;
+                cmd.CommandType = CommandType.StoredProcedure;
+                var datos = cmd.ExecuteReader();
+                while (datos.Read())
+                {
+                    var articulo = new Articulos();
+                    articulo.sku = datos[0].ToString();
+                    articulo.id = datos[1].ToString();
+                    listaPadres.Add(articulo);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                con.CerrarConexion();
+            }
+
+            return listaPadres;
+        }
+
+        public int[] Devolver_Atributos_Padre(string padre)
+        {
+            Conexion con = new Conexion();
+            SqlCommand cmd = new SqlCommand();
+            int[] id_atributos = new int[] { };
+
+            try
+            {
+                cmd.Connection = con.AbrirConexion();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = $"{schema}.CONSULTAR_ATRIBUTOS_POR_PADRE";
+                cmd.Parameters.AddWithValue("@ARTICULO", padre);
+                SqlDataReader rdr = cmd.ExecuteReader();
+
+                var atributos = new List<int>();
+
+                while (rdr.Read())
+                {
+                    if (!String.IsNullOrEmpty(rdr["ID_ATRIBUTO"].ToString()))
+                    {
+                        atributos.Add(int.Parse(rdr["ID_ATRIBUTO"].ToString()));
+                    }
+
+                }
+
+                id_atributos = atributos.ToArray();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                con.CerrarConexion();
+            }
+
+            return id_atributos;
+        }
+
+        private bool EliminarAtributosProducto(string productoId, string token, out string mensajeError)
+        {
+            var urlDeleteArticulo = new RestClient(urlBaseNidux);
+            var requestPutArticulo = new RestRequest($"v3/products/{productoId}/attribs", Method.Delete)
+                .AddHeader("Authorization", "Bearer " + token);
+            //.AddStringBody(jsonBody, "application/json");
+            var response_atributos = urlDeleteArticulo.ExecuteAsync(requestPutArticulo).GetAwaiter().GetResult();
+
+            if ((int)response_atributos.StatusCode == 200)
+            {
+                mensajeError = "";
+                return true;
+            }
+
+            mensajeError = response_atributos.Content;
+            return false;
+        }
+
+        public List<Variaciones> Devolver_Variaciones_Por_Padre(string padre)
+        {
+            Conexion v_Conexion = new Conexion();
+            SqlCommand cmd = new SqlCommand();
+            var listaVariaciones = new List<Variaciones>();
+
+            try
+            {
+                cmd.Connection = v_Conexion.AbrirConexion();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = $"{schema}.CONSULTAR_VARIACIONES_POR_PADRE";
+                cmd.Parameters.AddWithValue("@ID_PADRE", padre);
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    Variaciones list = new Variaciones();
+                    list.id = rdr["ID"] != DBNull.Value ? Convert.ToInt32(Convert.ToDecimal(rdr["ID"].ToString())) : 0;
+                    list.sku_variacion = rdr["ARTICULO"].ToString();
+                    list.peso = Convert.ToDecimal(string.Format("{0:0.000}", rdr["PESO"]));
+                    list.stock = Convert.ToInt32(Convert.ToDecimal(rdr["CANTIDAD"].ToString()));
+                    list.precio = Convert.ToDecimal(string.Format("{0:0.000}", rdr["PRECIO"].ToString()));
+                    var valoresAtributos = rdr["ID_VALORES_ATRIBUTOS"].ToString();
+                    list.id_valores_atributos = valoresAtributos.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                                                .Select(val => int.Parse(val))
+                                                                .ToArray();
+                    listaVariaciones.Add(list);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+
+                v_Conexion.CerrarConexion();
+
+            }
+
+            return listaVariaciones;
+        }
+
+        public void EliminarUnaVariacionQueFuePadreAlInsertarse(string sku)
+        {
+            DateTime thisDay = DateTime.Now;
+
+            Conexion v_Conexion = new Conexion();
+            SqlCommand v_Comando = new SqlCommand();
+            try
+            {
+                v_Comando.Connection = v_Conexion.AbrirConexion();
+                v_Comando.CommandText = schema + ".ACTUALIZAR_ARTICULO_DESPUES_DE_INSERTARSE_COMO_VARIACION";
+                v_Comando.CommandType = CommandType.StoredProcedure;
+                v_Comando.Parameters.AddWithValue("@SKU", sku);
+                v_Comando.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                v_Conexion.CerrarConexion();
+            }
+        }
+
+        public int[] Devolver_Atributos_Articulo(string sku)
+        {
+            Conexion v_Conexion = new Conexion();
+            SqlCommand cmd = new SqlCommand();
+            int[] id_atributos = new int[] { };
+
+            try
+            {
+                cmd.Connection = v_Conexion.AbrirConexion();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = $"{schema}.CONSULTAR_VALORES_ATRIBUTOS_POR_ARTICULO";
+                cmd.Parameters.AddWithValue("@ID_PADRE", sku);
+                SqlDataReader rdr = cmd.ExecuteReader();
+
+                var atributos = new List<int>();
+
+                while (rdr.Read())
+                {
+                    if (!String.IsNullOrEmpty(rdr["ID_ATRIBUTO"].ToString()))
+                    {
+                        atributos.Add(int.Parse(rdr["ID_ATRIBUTO"].ToString()));
+                    }
+                }
+
+                id_atributos = atributos.ToArray();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                v_Conexion.CerrarConexion();
+            }
+
+            return id_atributos;
+        }
+        #endregion
 
         public async Task UpdateDate()
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,13 +9,17 @@ namespace AplixEcommerceIntegration.Nidux.Clases
 {
     public class Atributos_Nidux
     {
-        public IList<Atributo_Nidux> atributos { get; set; }
+        //public IList<Atributo_Nidux> atributos { get; set; }
+        public Dictionary<string, Atributo_Nidux> atributos { get; set; }
     }
     public class Atributo_Nidux
     {
+        //public int id { get; set; }
+        //public string nombre { get; set; }
+        //public string estilo { get; set; }
         public int id { get; set; }
-        public string nombre { get; set; }
-        public string estilo { get; set; }
+        public string attribute_name { get; set; }
+        public string attribute_style { get; set; }
     }
 
     public class Atributo
@@ -31,13 +36,14 @@ namespace AplixEcommerceIntegration.Nidux.Clases
 
     public class Atributo_Valores
     {
-        public IList<Valores_Atributos> atributo_valores { get; set; }
+        //public IList<Valores_Atributos> atributo_valores { get; set; }
+        public Dictionary<string, Valores_Atributos> atributo_valores { get; set; }
     }
 
     public class Valores_Atributos
     {
         public int id { get; set; }
-        public string nombre { get; set; }
+        public string value_name { get; set; }
         public string activo { get; set; }
         public string atributo { get; set; }
 

@@ -40,8 +40,8 @@
             // 
             // serviceInstaller1
             // 
-            this.serviceInstaller1.Description = "Sincronizador SUKASA con Nidux por Grupo AplixV2.3";
-            this.serviceInstaller1.ServiceName = "Aplix Sincronizador SUKASA V2.3";
+            this.serviceInstaller1.Description = "Sincronizador PRUEBAS V2";
+            this.serviceInstaller1.ServiceName = "Aplix Sincronizador PRUEBAS V2";
             this.serviceInstaller1.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.serviceInstaller1_AfterInstall);
             // 
             // ProjectInstaller

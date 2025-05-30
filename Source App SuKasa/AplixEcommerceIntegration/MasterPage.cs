@@ -14,7 +14,7 @@ namespace AplixEcommerceIntegration
 {
     public partial class MasterPage : Form
     {
-        UC_Nidux_SUKASA nidux;
+        UC_Nidux_CODISA nidux;
         UC_Woocommerce woo;
         Shopify.UC_Shopify shopify;
         public string tienda_select;
@@ -29,7 +29,7 @@ namespace AplixEcommerceIntegration
             //Segun el login y la tienda que haya escogido se inicia el UserControl
             if (tienda_select.Equals("Nidux"))
             {
-                nidux = new UC_Nidux_SUKASA();
+                nidux = new UC_Nidux_CODISA();
                 Controls.Add(nidux);
                 nidux.BringToFront();
                 nidux.Dock = DockStyle.Fill;

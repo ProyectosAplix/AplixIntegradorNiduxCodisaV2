@@ -70,7 +70,7 @@ namespace SincronizadorAplix_Nidux
 
                         //Sincronizar articulos de Oracle a SQL
                         logsFile.WriteLogs("Sincronizacion de la Vista de Oracle -> Sincronizador:");
-                        nidux.GetArticulosOracle();
+                        //nidux.GetArticulosOracle();
 
                         //Sincronizar articulos simple
                         logsFile.WriteLogs("Sincronizacion de articulos del Sincronizador -> Nidux:");

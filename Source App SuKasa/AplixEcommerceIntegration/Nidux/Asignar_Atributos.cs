@@ -87,7 +87,7 @@ namespace AplixEcommerceIntegration.Nidux
                     else
                     {
                         dgvAtributos.Rows[n].Cells[0].Value = product.id;
-                        dgvAtributos.Rows[n].Cells[1].Value = product.nombre;
+                        dgvAtributos.Rows[n].Cells[1].Value = product.value_name;
                         dgvAtributos.Rows[n].Cells[2].Value = product.atributo;
                         dgvAtributos.Rows[n].Cells[3].Value = product.activo;
                     }
@@ -112,7 +112,7 @@ namespace AplixEcommerceIntegration.Nidux
                 Clases.Valores_Atributos atributo = new Clases.Valores_Atributos();
 
                 atributo.id = Convert.ToInt32(this.dgvAtributos.CurrentRow.Cells[0].Value.ToString());
-                atributo.nombre = this.dgvAtributos.CurrentRow.Cells[1].Value.ToString();
+                atributo.value_name = this.dgvAtributos.CurrentRow.Cells[1].Value.ToString();
                 atributo.atributo = this.dgvAtributos.CurrentRow.Cells[2].Value.ToString();
                 atributo.activo = this.dgvAtributos.CurrentRow.Cells[3].Value.ToString();
 

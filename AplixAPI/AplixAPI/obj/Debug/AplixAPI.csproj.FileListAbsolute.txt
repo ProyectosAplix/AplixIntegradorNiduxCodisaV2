@@ -1,0 +1,369 @@
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csproj.CoreCompileInputs.cache
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\AplixAPI.dll.config
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\AplixAPI.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\AplixAPI.pdb
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\csc.exe
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\csc.exe.config
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\csc.rsp
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\csi.exe
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\csi.exe.config
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\csi.rsp
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.AppContext.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Console.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.IO.Compression.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.IO.Pipes.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Security.Claims.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.ValueTuple.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\vbc.exe
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\vbc.exe.config
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\vbc.rsp
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\Newtonsoft.Json.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\System.Web.Http.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\Newtonsoft.Json.xml
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\System.Web.Http.xml
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csproj.CopyComplete
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\obj\Debug\AplixAPI.dll
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\obj\Debug\AplixAPI.pdb
+C:\Users\jcorrales\Desktop\APLIX_WEB_API\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csprojAssemblyReference.cache
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\AplixAPI.dll.config
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\AplixAPI.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\AplixAPI.pdb
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\csc.exe
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\csc.exe.config
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\csc.rsp
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\csi.exe
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\csi.exe.config
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\csi.rsp
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.AppContext.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Console.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.IO.Compression.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.IO.Pipes.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Security.Claims.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.ValueTuple.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\vbc.exe
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\vbc.exe.config
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\vbc.rsp
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\Newtonsoft.Json.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\System.Web.Http.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\Newtonsoft.Json.xml
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\System.Web.Http.xml
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csprojAssemblyReference.cache
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csproj.CoreCompileInputs.cache
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csproj.CopyComplete
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\obj\Debug\AplixAPI.dll
+C:\Users\jcorrales\Desktop\AppConsultaUDF\API\AplixAPI\AplixAPI\obj\Debug\AplixAPI.pdb
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\AplixAPI.dll.config
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\AplixAPI.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\AplixAPI.pdb
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\csc.exe
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\csc.exe.config
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\csc.rsp
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\csi.exe
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\csi.exe.config
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\csi.rsp
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.AppContext.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Console.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.IO.Compression.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.IO.Pipes.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Security.Claims.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.ValueTuple.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\vbc.exe
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\vbc.exe.config
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\vbc.rsp
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\Newtonsoft.Json.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\System.Web.Http.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\Newtonsoft.Json.xml
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\System.Web.Http.xml
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csproj.CoreCompileInputs.cache
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csproj.CopyComplete
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\obj\Debug\AplixAPI.dll
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\obj\Debug\AplixAPI.pdb
+C:\Users\jcorrales\Desktop\IntegradorComercioElectronico\API-Nidux\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csprojAssemblyReference.cache
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\AplixAPI.dll.config
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\AplixAPI.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\AplixAPI.pdb
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\csc.exe
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\csc.exe.config
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\csc.rsp
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\csi.exe
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\csi.exe.config
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\csi.rsp
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.AppContext.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Console.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.IO.Compression.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.IO.Pipes.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.Claims.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.ValueTuple.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\vbc.exe
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\vbc.exe.config
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\vbc.rsp
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\Newtonsoft.Json.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\System.Web.Http.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\Newtonsoft.Json.xml
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\System.Web.Http.xml
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csprojAssemblyReference.cache
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csproj.CoreCompileInputs.cache
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csproj.CopyComplete
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\obj\Debug\AplixAPI.dll
+C:\Users\jcorrales\Desktop\La Rocalla\AplixAPI\AplixAPI\obj\Debug\AplixAPI.pdb
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\AplixAPI.dll.config
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\AplixAPI.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\AplixAPI.pdb
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\csc.exe
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\csc.exe.config
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\csc.rsp
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\csi.exe
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\csi.exe.config
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\csi.rsp
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.AppContext.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Console.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.IO.Compression.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.IO.Pipes.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.Claims.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.ValueTuple.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\vbc.exe
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\vbc.exe.config
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\vbc.rsp
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\Newtonsoft.Json.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\System.Web.Http.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\Newtonsoft.Json.xml
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\System.Web.Http.xml
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csprojAssemblyReference.cache
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csproj.CoreCompileInputs.cache
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csproj.CopyComplete
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\obj\Debug\AplixAPI.dll
+C:\Users\jcorrales\Desktop\Proyectos por Clientes- Jeico Corrales\Sincronizador Nidux\La Rocalla\AplixAPI\AplixAPI\obj\Debug\AplixAPI.pdb
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\AplixAPI.dll.config
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\AplixAPI.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\AplixAPI.pdb
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\csc.exe
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\csc.exe.config
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\csc.rsp
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\csi.exe
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\csi.exe.config
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\csi.rsp
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\System.Buffers.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\System.Memory.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\vbc.exe
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\vbc.exe.config
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\vbc.rsp
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\Newtonsoft.Json.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\System.Web.Http.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\Newtonsoft.Json.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\System.Web.Http.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csprojAssemblyReference.cache
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\obj\Debug\AplixAPI.csproj.CopyComplete
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\obj\Debug\AplixAPI.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\AplixAPI\AplixAPI\obj\Debug\AplixAPI.pdb

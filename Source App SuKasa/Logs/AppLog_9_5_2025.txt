@@ -1,0 +1,296 @@
+2025-05-09 08:22:11 - 
+       ===========================================
+       🔄 [INICIO DE OBTENCIÓN DE CATEGORÍAS NIDUX]
+       ===========================================
+2025-05-09 08:22:12 - 
+                       ===========================================
+                       ✅ [CATEGORÍAS INSERTADAS CON ÉXITO]
+                       -------------------------------------------
+                       Categorías insertadas en el sistema con éxito.
+                       ===========================================
+2025-05-09 13:46:06 - 
+       ===========================================
+       ▶️ [INICIO DE SINCRONIZACIÓN DE MARCAS]
+       ===========================================
+2025-05-09 13:46:07 - 
+                           ----------------------------------------------------------------------
+                            Sincronizando marca: MARCA PRUEBA APLIX ACT (Código: 201). 
+                           -----------------------------------------------------------------------
+2025-05-09 13:46:08 - 
+                           ----------------------------------------------------------------------
+                            Sincronizando marca: MARCA PRUEBA APLIX 2 (Código: 202). 
+                           -----------------------------------------------------------------------
+2025-05-09 13:46:08 - 
+       🛑 [ERROR AL ACTUALIZAR FECHA]
+       -------------------------------------------
+       Error al actualizar la fecha de sincronización. Respuesta: {"isSuccessful":false,"message":"System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'ACT_FECHA_CONSULTA' expects parameter '@FECHA', which was not supplied.\r\n   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)\r\n   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)\r\n   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)\r\n   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)\r\n   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)\r\n   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)\r\n   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()\r\n   at AplixAPI.Controllers.HomeController.Update_Registro_Fecha() in C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Controllers\\HomeController.cs:line 986\r\nClientConnectionId:7fd3b724-d9c8-4919-99ca-80ee32075954\r\nError Number:201,State:4,Class:16"}
+       ===========================================
+2025-05-09 13:46:11 - 
+       ===========================================
+       ✅ [SINCRONIZACIÓN DE MARCAS FINALIZADA]
+       ===========================================
+2025-05-09 13:49:15 - 
+       ===========================================
+       ▶️ [INICIO DE SINCRONIZACIÓN DE MARCAS]
+       ===========================================
+2025-05-09 13:49:17 - 
+                           ----------------------------------------------------------------------
+                            Sincronizando marca: MARCA PRUEBA APLIX ACT (Código: 201). 
+                           -----------------------------------------------------------------------
+2025-05-09 13:49:17 - 
+                           ----------------------------------------------------------------------
+                            Sincronizando marca: MARCA PRUEBA APLIX 2 (Código: 202). 
+                           -----------------------------------------------------------------------
+2025-05-09 15:51:21 - 
+       ===========================================
+       ▶️ [INICIO DE SINCRONIZACIÓN DE MARCAS]
+       ===========================================
+2025-05-09 15:51:24 - 
+                           ----------------------------------------------------------------------
+                            Sincronizando marca: MARCA PRUEBA APLIX ACTUALIZADA (Código: 201). 
+                           -----------------------------------------------------------------------
+2025-05-09 15:51:24 - 
+                           ----------------------------------------------------------------------
+                            Sincronizando marca: MARCA PRUEBA APLIX 2 (Código: 202). 
+                           -----------------------------------------------------------------------
+2025-05-09 15:51:24 - 
+       ===========================================
+       ✅ [SINCRONIZACIÓN DE MARCAS FINALIZADA]
+       ===========================================
+2025-05-09 21:44:53 - 
+       ===========================================
+       🔄 [INICIO DE OBTENCIÓN DE CATEGORÍAS NIDUX]
+       ===========================================
+2025-05-09 21:45:00 - 
+                       ===========================================
+                       ✅ [CATEGORÍAS INSERTADAS CON ÉXITO]
+                       -------------------------------------------
+                       Categorías insertadas en el sistema con éxito.
+                       ===========================================
+2025-05-09 21:46:49 - 
+       ===========================================
+       ▶️  [INICIO DE SINCRONIZACIÓN DE CATEGORÍAS]
+       ===========================================
+2025-05-09 21:46:50 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: Familia (Código: 548).
+       ===========================================
+2025-05-09 21:46:50 - 
+       🛑 [ERROR AL SINCRONIZAR CATEGORÍA]
+       -------------------------------------------
+       Error al sincronizar categoría con código 548. Respuesta: {"estado":"ERROR","comentarios":{"traducciones.0.lang_id":{"0":"El campo traducciones.0.lang_id es obligatorio."},"traducciones.0.category_name":{"0":"El campo traducciones.0.category_name es obligatorio."},"traducciones.0.category_description":{"0":"El campo traducciones.0.category_description es obligatorio."}}}
+       ===========================================
+2025-05-09 21:46:52 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: SubFamilia (Código: 549).
+       ===========================================
+2025-05-09 21:46:53 - 
+       🛑 [ERROR AL SINCRONIZAR CATEGORÍA]
+       -------------------------------------------
+       Error al sincronizar categoría con código 549. Respuesta: {"estado":"ERROR","comentarios":{"traducciones.0.lang_id":{"0":"El campo traducciones.0.lang_id es obligatorio."},"traducciones.0.category_name":{"0":"El campo traducciones.0.category_name es obligatorio."},"traducciones.0.category_description":{"0":"El campo traducciones.0.category_description es obligatorio."}}}
+       ===========================================
+2025-05-09 21:46:54 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: SubFamilia (Código: 550).
+       ===========================================
+2025-05-09 21:46:55 - 
+       🛑 [ERROR AL SINCRONIZAR CATEGORÍA]
+       -------------------------------------------
+       Error al sincronizar categoría con código 550. Respuesta: {"estado":"ERROR","comentarios":{"traducciones.0.lang_id":{"0":"El campo traducciones.0.lang_id es obligatorio."},"traducciones.0.category_name":{"0":"El campo traducciones.0.category_name es obligatorio."},"traducciones.0.category_description":{"0":"El campo traducciones.0.category_description es obligatorio."}}}
+       ===========================================
+2025-05-09 21:46:56 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: Cat PruebaPadre (Código: 551).
+       ===========================================
+2025-05-09 21:46:56 - 
+       🛑 [ERROR AL SINCRONIZAR CATEGORÍA]
+       -------------------------------------------
+       Error al sincronizar categoría con código 551. Respuesta: {"estado":"ERROR","comentarios":{"traducciones.0.lang_id":{"0":"El campo traducciones.0.lang_id es obligatorio."},"traducciones.0.category_name":{"0":"El campo traducciones.0.category_name es obligatorio."},"traducciones.0.category_description":{"0":"El campo traducciones.0.category_description es obligatorio."}}}
+       ===========================================
+2025-05-09 21:46:57 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: Cat hija Prueba (Código: 552).
+       ===========================================
+2025-05-09 21:46:57 - 
+       🛑 [ERROR AL SINCRONIZAR CATEGORÍA]
+       -------------------------------------------
+       Error al sincronizar categoría con código 552. Respuesta: {"estado":"ERROR","comentarios":{"traducciones.0.lang_id":{"0":"El campo traducciones.0.lang_id es obligatorio."},"traducciones.0.category_name":{"0":"El campo traducciones.0.category_name es obligatorio."},"traducciones.0.category_description":{"0":"El campo traducciones.0.category_description es obligatorio."}}}
+       ===========================================
+2025-05-09 21:46:59 - 
+       🛑 [ERROR AL ACTUALIZAR FECHA]
+       -------------------------------------------
+       Error al actualizar la fecha de sincronización. Respuesta: {"isSuccessful":false,"message":"System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'ACT_FECHA_CONSULTA' expects parameter '@FECHA', which was not supplied.\r\n   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)\r\n   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)\r\n   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)\r\n   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)\r\n   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)\r\n   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)\r\n   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()\r\n   at AplixAPI.Controllers.HomeController.Update_Registro_Fecha() in C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Controllers\\HomeController.cs:line 986\r\nClientConnectionId:f0d2095f-9e92-47b9-ae86-74326cf8f43c\r\nError Number:201,State:4,Class:16"}
+       ===========================================
+2025-05-09 21:46:59 - 
+       ===========================================
+       ✅ [SINCRONIZACIÓN DE CATEGORÍAS FINALIZADA]
+       ===========================================
+2025-05-09 21:47:29 - 
+       ===========================================
+       ▶️  [INICIO DE SINCRONIZACIÓN DE CATEGORÍAS]
+       ===========================================
+2025-05-09 21:50:03 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: Familia (Código: 548).
+       ===========================================
+2025-05-09 21:50:26 - 
+       🛑 [ERROR AL SINCRONIZAR CATEGORÍA]
+       -------------------------------------------
+       Error al sincronizar categoría con código 548. Respuesta: {"estado":"ERROR","comentarios":{"traducciones.0.lang_id":{"0":"El campo traducciones.0.lang_id es obligatorio."},"traducciones.0.category_name":{"0":"El campo traducciones.0.category_name es obligatorio."},"traducciones.0.category_description":{"0":"El campo traducciones.0.category_description es obligatorio."}}}
+       ===========================================
+2025-05-09 21:51:06 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: SubFamilia (Código: 549).
+       ===========================================
+2025-05-09 21:51:20 - 
+       🛑 [ERROR AL SINCRONIZAR CATEGORÍA]
+       -------------------------------------------
+       Error al sincronizar categoría con código 549. Respuesta: {"estado":"ERROR","comentarios":{"traducciones.0.lang_id":{"0":"El campo traducciones.0.lang_id es obligatorio."},"traducciones.0.category_name":{"0":"El campo traducciones.0.category_name es obligatorio."},"traducciones.0.category_description":{"0":"El campo traducciones.0.category_description es obligatorio."}}}
+       ===========================================
+2025-05-09 21:55:15 - 
+       ✅ [CATEGORÍA SINCRONIZADA EXITOSAMENTE]
+       -------------------------------------------
+       Categoría con código 549 sincronizada con éxito.
+       ===========================================
+2025-05-09 21:55:23 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: SubFamilia (Código: 550).
+       ===========================================
+2025-05-09 21:55:28 - 
+       ✅ [CATEGORÍA SINCRONIZADA EXITOSAMENTE]
+       -------------------------------------------
+       Categoría con código 550 sincronizada con éxito.
+       ===========================================
+2025-05-09 21:55:28 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: Cat PruebaPadre (Código: 551).
+       ===========================================
+2025-05-09 21:55:29 - 
+       ✅ [CATEGORÍA SINCRONIZADA EXITOSAMENTE]
+       -------------------------------------------
+       Categoría con código 551 sincronizada con éxito.
+       ===========================================
+2025-05-09 21:55:29 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: Cat hija Prueba (Código: 552).
+       ===========================================
+2025-05-09 21:55:29 - 
+       ✅ [CATEGORÍA SINCRONIZADA EXITOSAMENTE]
+       -------------------------------------------
+       Categoría con código 552 sincronizada con éxito.
+       ===========================================
+2025-05-09 21:55:29 - 
+       ===========================================
+       ✅ [SINCRONIZACIÓN DE CATEGORÍAS FINALIZADA]
+       ===========================================
+2025-05-09 21:56:31 - 
+                   ===========================================
+                   🛑 [INICIO DE ELIMINACIÓN DE CATEGORÍAS]
+                   ===========================================
+2025-05-09 21:56:32 - 
+                       ===========================================
+                       🔄 [CONFIRMACIÓN DE ELIMINACIÓN]
+                       -------------------------------------------
+                       Categorías seleccionadas para eliminación: Cat hija Prueba.
+                       ===========================================
+2025-05-09 21:56:35 - 
+       🛑 [EXCEPCIÓN AL ELIMINAR CATEGORÍAS]
+       -------------------------------------------
+       System.InvalidOperationException: Operación no válida; se ha terminado la conexión.
+   en System.Data.OracleClient.OracleCommand.GetStatementHandle()
+   en System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   en System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   en AplixEcommerceIntegration.Nidux.UC_Nidux_CODISA.btnEliminarCategorias_Click(Object sender, EventArgs e)
+       ===========================================
+2025-05-09 21:56:41 - 
+                   ===========================================
+                   🛑 [INICIO DE ELIMINACIÓN DE CATEGORÍAS]
+                   ===========================================
+2025-05-09 21:56:42 - 
+                       ===========================================
+                       🔄 [CONFIRMACIÓN DE ELIMINACIÓN]
+                       -------------------------------------------
+                       Categorías seleccionadas para eliminación: Cat hija Prueba.
+                       ===========================================
+2025-05-09 21:56:54 - 
+                                   🛑 [ERROR AL ELIMINAR CATEGORÍA]
+                                   -------------------------------------------
+                                   Error al eliminar categoría con código 552. Comentarios: No se encuentra la categoría
+                                   ===========================================
+2025-05-09 21:57:15 - 
+       ===========================================
+       ▶️  [INICIO DE SINCRONIZACIÓN DE CATEGORÍAS]
+       ===========================================
+2025-05-09 21:57:18 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: Familia (Código: 548).
+       ===========================================
+2025-05-09 21:57:19 - 
+       ✅ [CATEGORÍA SINCRONIZADA EXITOSAMENTE]
+       -------------------------------------------
+       Categoría con código 548 sincronizada con éxito.
+       ===========================================
+2025-05-09 21:57:19 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: SubFamilia (Código: 549).
+       ===========================================
+2025-05-09 21:57:20 - 
+       ✅ [CATEGORÍA SINCRONIZADA EXITOSAMENTE]
+       -------------------------------------------
+       Categoría con código 549 sincronizada con éxito.
+       ===========================================
+2025-05-09 21:57:20 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: SubFamilia (Código: 550).
+       ===========================================
+2025-05-09 21:57:20 - 
+       ✅ [CATEGORÍA SINCRONIZADA EXITOSAMENTE]
+       -------------------------------------------
+       Categoría con código 550 sincronizada con éxito.
+       ===========================================
+2025-05-09 21:57:20 - 
+       🔄 [SINCRONIZANDO CATEGORÍA]
+       -------------------------------------------
+       Sincronizando categoría: Cat PruebaPadre (Código: 551).
+       ===========================================
+2025-05-09 21:57:21 - 
+       ✅ [CATEGORÍA SINCRONIZADA EXITOSAMENTE]
+       -------------------------------------------
+       Categoría con código 551 sincronizada con éxito.
+       ===========================================
+2025-05-09 21:57:21 - 
+       ===========================================
+       ✅ [SINCRONIZACIÓN DE CATEGORÍAS FINALIZADA]
+       ===========================================
+2025-05-09 21:57:48 - 
+                   ===========================================
+                   🛑 [INICIO DE ELIMINACIÓN DE CATEGORÍAS]
+                   ===========================================
+2025-05-09 21:57:49 - 
+                       ===========================================
+                       🔄 [CONFIRMACIÓN DE ELIMINACIÓN]
+                       -------------------------------------------
+                       Categorías seleccionadas para eliminación: Cat PruebaPadre.
+                       ===========================================
+2025-05-09 21:57:51 - 
+       🛑 [EXCEPCIÓN AL ELIMINAR CATEGORÍAS]
+       -------------------------------------------
+       System.InvalidOperationException: Operación no válida; se ha terminado la conexión.
+   en System.Data.OracleClient.OracleCommand.GetStatementHandle()
+   en System.Data.OracleClient.OracleCommand.ExecuteNonQueryInternal(Boolean needRowid, OciRowidDescriptor& rowidDescriptor)
+   en System.Data.OracleClient.OracleCommand.ExecuteNonQuery()
+   en AplixEcommerceIntegration.Nidux.UC_Nidux_CODISA.btnEliminarCategorias_Click(Object sender, EventArgs e)
+       ===========================================

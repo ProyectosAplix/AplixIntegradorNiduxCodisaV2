@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40B24967-3E86-4BC7-8145-0E4DED7E19D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AplixEcommerceIntegrationPrueba</RootNamespace>
+    <AssemblyName>AplixEcommerceIntegrationPrueba</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoAplix-ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="EPPlus.Core, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.Core.1.5.4\lib\net46\EPPlus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="RestSharp, Version=106.11.7.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.11.7\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Globales\Conexion.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Designer.cs">
+      <DependentUpon>MasterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nidux\Activar_Articulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nidux\Activar_Articulos.Designer.cs">
+      <DependentUpon>Activar_Articulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nidux\Agregar_Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nidux\Agregar_Categorias.Designer.cs">
+      <DependentUpon>Agregar_Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nidux\Agregar_Marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nidux\Agregar_Marcas.Designer.cs">
+      <DependentUpon>Agregar_Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nidux\Asignar_Atributos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nidux\Asignar_Atributos.Designer.cs">
+      <DependentUpon>Asignar_Atributos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nidux\Asignar_Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nidux\Asignar_Categorias.Designer.cs">
+      <DependentUpon>Asignar_Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nidux\Asignar_Marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nidux\Asignar_Marcas.Designer.cs">
+      <DependentUpon>Asignar_Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nidux\Asignar_Padres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nidux\Asignar_Padres.Designer.cs">
+      <DependentUpon>Asignar_Padres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nidux\Clases\ArticulosNidux.cs" />
+    <Compile Include="Nidux\Clases\AtributosNidux.cs" />
+    <Compile Include="Nidux\Clases\CategoriasExcel.cs" />
+    <Compile Include="Nidux\Clases\CategoriasNidux.cs" />
+    <Compile Include="Nidux\Clases\Cliente.cs" />
+    <Compile Include="Nidux\Clases\Estado.cs" />
+    <Compile Include="Nidux\Clases\filtro_articulos.cs" />
+    <Compile Include="Nidux\Clases\filtro_pedidos.cs" />
+    <Compile Include="Nidux\Clases\ListaRegalos.cs" />
+    <Compile Include="Nidux\Clases\Login.cs" />
+    <Compile Include="Nidux\Clases\Logs.cs" />
+    <Compile Include="Nidux\Clases\MarcasNidux.cs" />
+    <Compile Include="Nidux\Clases\Pedidos.cs" />
+    <Compile Include="Nidux\Clases\Respuesta.cs" />
+    <Compile Include="Nidux\Errores_Excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nidux\Errores_Excel.Designer.cs">
+      <DependentUpon>Errores_Excel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nidux\frm_filtro_articulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nidux\frm_filtro_articulos.Designer.cs">
+      <DependentUpon>frm_filtro_articulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nidux\frm_filtro_pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nidux\frm_filtro_pedidos.Designer.cs">
+      <DependentUpon>frm_filtro_pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nidux\Metodos\LoginNidux.cs" />
+    <Compile Include="Nidux\Metodos\Metodos de Excel.cs" />
+    <Compile Include="Nidux\Metodos\met_filtro_articulos.cs" />
+    <Compile Include="Nidux\Metodos\met_filtro_pedidos.cs" />
+    <Compile Include="Nidux\Pedido_Linea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nidux\Pedido_Linea.Designer.cs">
+      <DependentUpon>Pedido_Linea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nidux\UC_Nidux_CODISA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Nidux\UC_Nidux_CODISA.Designer.cs">
+      <DependentUpon>UC_Nidux_CODISA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shopify\AgregarColecciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shopify\AgregarColecciones.Designer.cs">
+      <DependentUpon>AgregarColecciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shopify\AgregarVariantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shopify\AgregarVariantes.Designer.cs">
+      <DependentUpon>AgregarVariantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shopify\Clases\Articulos.cs" />
+    <Compile Include="Shopify\Clases\Colecciones.cs" />
+    <Compile Include="Shopify\Clases\Credenciales.cs" />
+    <Compile Include="Shopify\Clases\Variantes.cs" />
+    <Compile Include="Shopify\MantenimientoArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shopify\MantenimientoArticulos.Designer.cs">
+      <DependentUpon>MantenimientoArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shopify\AgregarArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shopify\AgregarArticulos.Designer.cs">
+      <DependentUpon>AgregarArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shopify\MantenimientoColecciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shopify\MantenimientoColecciones.Designer.cs">
+      <DependentUpon>MantenimientoColecciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shopify\MantenimientoEditarArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shopify\MantenimientoEditarArticulos.Designer.cs">
+      <DependentUpon>MantenimientoEditarArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shopify\MantenimientoVariantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shopify\MantenimientoVariantes.Designer.cs">
+      <DependentUpon>MantenimientoVariantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shopify\Metodos\Metodos_Articulos.cs" />
+    <Compile Include="Shopify\Metodos\Metodos_Colecciones.cs" />
+    <Compile Include="Shopify\Metodos\Metodos_Opciones.cs" />
+    <Compile Include="Shopify\Metodos\Metodos_Pedidos.cs" />
+    <Compile Include="Shopify\Metodos\Metodo_Credenciales.cs" />
+    <Compile Include="Shopify\MostrarPedidoLinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shopify\MostrarPedidoLinea.Designer.cs">
+      <DependentUpon>MostrarPedidoLinea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shopify\UC_Shopify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shopify\UC_Shopify.Designer.cs">
+      <DependentUpon>UC_Shopify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\Agregar_Categoria_Woocomerce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\Agregar_Categoria_Woocomerce.Designer.cs">
+      <DependentUpon>Agregar_Categoria_Woocomerce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\Agregar_Nuevo_Atributo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\Agregar_Nuevo_Atributo.Designer.cs">
+      <DependentUpon>Agregar_Nuevo_Atributo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\Agregar_Terminos_Atributo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\Agregar_Terminos_Atributo.Designer.cs">
+      <DependentUpon>Agregar_Terminos_Atributo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\Articulos_variaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\Articulos_variaciones.Designer.cs">
+      <DependentUpon>Articulos_variaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\AsignarCategoriasArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\AsignarCategoriasArticulos.Designer.cs">
+      <DependentUpon>AsignarCategoriasArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\Asignar_Terminos_Variaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\Asignar_Terminos_Variaciones.Designer.cs">
+      <DependentUpon>Asignar_Terminos_Variaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\Categorias_Padre_Woocomerce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\Categorias_Padre_Woocomerce.Designer.cs">
+      <DependentUpon>Categorias_Padre_Woocomerce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\Clases\ArticulosWoocomerce.cs" />
+    <Compile Include="WooCommerce\Clases\AtributosWoocomerce.cs" />
+    <Compile Include="WooCommerce\Clases\BitacorasWoocomerce.cs" />
+    <Compile Include="WooCommerce\Clases\CategoriasWoocomerce.cs" />
+    <Compile Include="WooCommerce\Clases\ConfiguracionWoocomerce.cs" />
+    <Compile Include="WooCommerce\Clases\EnvioWoocomerce.cs" />
+    <Compile Include="WooCommerce\Clases\PedidosWoocomerce.cs" />
+    <Compile Include="WooCommerce\Clases\TerminosAtributoWoocomerce.cs" />
+    <Compile Include="WooCommerce\Clases\VariacionesWoocomerce.cs" />
+    <Compile Include="WooCommerce\Envios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\Envios.Designer.cs">
+      <DependentUpon>Envios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\Metodos\MetodosArticulosWoocomerce.cs" />
+    <Compile Include="WooCommerce\Metodos\MetodosAtributosWoocomerce.cs" />
+    <Compile Include="WooCommerce\Metodos\MetodosBitacorasWoocomerce.cs" />
+    <Compile Include="WooCommerce\Metodos\MetodosCategoriasWoocomerce.cs" />
+    <Compile Include="WooCommerce\Metodos\MetodosConfiguracionWoocomerce.cs" />
+    <Compile Include="WooCommerce\Metodos\MetodosEnvioWoocomerce.cs" />
+    <Compile Include="WooCommerce\Metodos\MetodosPedidosWoocomerce.cs" />
+    <Compile Include="WooCommerce\Metodos\MetodosTerminoAtributosWoocomerce.cs" />
+    <Compile Include="WooCommerce\Metodos\MetodosVariacionesWoocomerce.cs" />
+    <Compile Include="WooCommerce\Mostrar_Articulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\Mostrar_Articulos.Designer.cs">
+      <DependentUpon>Mostrar_Articulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\Mostrar_Articulos_Envio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\Mostrar_Articulos_Envio.Designer.cs">
+      <DependentUpon>Mostrar_Articulos_Envio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\Pedido_Linea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\Pedido_Linea.Designer.cs">
+      <DependentUpon>Pedido_Linea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\UC_Woocommerce.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\UC_Woocommerce.Designer.cs">
+      <DependentUpon>UC_Woocommerce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WooCommerce\Variaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WooCommerce\Variaciones.Designer.cs">
+      <DependentUpon>Variaciones.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPage.resx">
+      <DependentUpon>MasterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nidux\Activar_Articulos.resx">
+      <DependentUpon>Activar_Articulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nidux\Agregar_Categorias.resx">
+      <DependentUpon>Agregar_Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nidux\Agregar_Marcas.resx">
+      <DependentUpon>Agregar_Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nidux\Asignar_Atributos.resx">
+      <DependentUpon>Asignar_Atributos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nidux\Asignar_Categorias.resx">
+      <DependentUpon>Asignar_Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nidux\Asignar_Marcas.resx">
+      <DependentUpon>Asignar_Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nidux\Asignar_Padres.resx">
+      <DependentUpon>Asignar_Padres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nidux\Errores_Excel.resx">
+      <DependentUpon>Errores_Excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nidux\frm_filtro_articulos.resx">
+      <DependentUpon>frm_filtro_articulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nidux\frm_filtro_pedidos.resx">
+      <DependentUpon>frm_filtro_pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nidux\Pedido_Linea.resx">
+      <DependentUpon>Pedido_Linea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nidux\UC_Nidux_CODISA.resx">
+      <DependentUpon>UC_Nidux_CODISA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Shopify\AgregarColecciones.resx">
+      <DependentUpon>AgregarColecciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shopify\AgregarVariantes.resx">
+      <DependentUpon>AgregarVariantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shopify\MantenimientoArticulos.resx">
+      <DependentUpon>MantenimientoArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shopify\AgregarArticulos.resx">
+      <DependentUpon>AgregarArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shopify\MantenimientoColecciones.resx">
+      <DependentUpon>MantenimientoColecciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shopify\MantenimientoEditarArticulos.resx">
+      <DependentUpon>MantenimientoEditarArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shopify\MantenimientoVariantes.resx">
+      <DependentUpon>MantenimientoVariantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shopify\MostrarPedidoLinea.resx">
+      <DependentUpon>MostrarPedidoLinea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shopify\UC_Shopify.resx">
+      <DependentUpon>UC_Shopify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\Agregar_Categoria_Woocomerce.resx">
+      <DependentUpon>Agregar_Categoria_Woocomerce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\Agregar_Nuevo_Atributo.resx">
+      <DependentUpon>Agregar_Nuevo_Atributo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\Agregar_Terminos_Atributo.resx">
+      <DependentUpon>Agregar_Terminos_Atributo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\Articulos_variaciones.resx">
+      <DependentUpon>Articulos_variaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\AsignarCategoriasArticulos.resx">
+      <DependentUpon>AsignarCategoriasArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\Asignar_Terminos_Variaciones.resx">
+      <DependentUpon>Asignar_Terminos_Variaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\Categorias_Padre_Woocomerce.resx">
+      <DependentUpon>Categorias_Padre_Woocomerce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\Envios.resx">
+      <DependentUpon>Envios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\Mostrar_Articulos.resx">
+      <DependentUpon>Mostrar_Articulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\Mostrar_Articulos_Envio.resx">
+      <DependentUpon>Mostrar_Articulos_Envio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\Pedido_Linea.resx">
+      <DependentUpon>Pedido_Linea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\UC_Woocommerce.resx">
+      <DependentUpon>UC_Woocommerce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WooCommerce\Variaciones.resx">
+      <DependentUpon>Variaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LogoAplix-ico.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using System.Data.OracleClient;
+using System.Windows.Forms;
 
 namespace AplixEcommerceIntegration.Globales
 {
@@ -19,6 +20,8 @@ namespace AplixEcommerceIntegration.Globales
         //Metodo para abrir la conexion con base de datos
         public SqlConnection AbrirConexion()
         {
+            //MessageBox.Show($"SQL {ConfigurationManager.ConnectionStrings["conexion"].ConnectionString} \n ORACLE {ConfigurationManager.ConnectionStrings["conexionOracle"].ConnectionString} ");
+
             try
             {
                 if (v_Conexion.State == ConnectionState.Closed) v_Conexion.Open();

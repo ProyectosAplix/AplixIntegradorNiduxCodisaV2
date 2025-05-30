@@ -510,3 +510,35 @@ C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Productio
 C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source Services SuKasa\SincronizadorAplix-Nidux\obj\Release\SincronizadorAplix-Nidux.csproj.CopyComplete
 C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source Services SuKasa\SincronizadorAplix-Nidux\obj\Release\SincronizadorAplix-Nidux.exe
 C:\Users\Diego\Desktop\Mega\Aplix Proyectos BitBucket\CEMACO-BEBEMUNDO\Production Sources\Source Services SuKasa\SincronizadorAplix-Nidux\obj\Release\SincronizadorAplix-Nidux.pdb
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\SincronizadorAplix-Nidux.exe.config
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\SincronizadorAplix-Nidux.exe
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\SincronizadorAplix-Nidux.pdb
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\Newtonsoft.Json.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\RestSharp.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Buffers.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Memory.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Numerics.Vectors.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Text.Json.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.ValueTuple.dll
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\Newtonsoft.Json.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\RestSharp.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Buffers.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Memory.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Numerics.Vectors.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Text.Json.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\bin\Release\System.ValueTuple.xml
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\obj\Release\SincronizadorAplix_Nidux.ProjectInstaller.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\obj\Release\SincronizadorAplix_Nidux.Service1.resources
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\obj\Release\SincronizadorAplix-Nidux.csproj.GenerateResource.cache
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\obj\Release\SincronizadorAplix-Nidux.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\obj\Release\SincronizadorAplix-Nidux.csproj.CopyComplete
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\obj\Release\SincronizadorAplix-Nidux.exe
+C:\Users\Diego\Desktop\Mega\Aplix Proyectos Githud\AplixIntegracionCodisa\AplixIntegradorNiduxCodisaV3\Source Services SuKasa\SincronizadorAplix-Nidux\obj\Release\SincronizadorAplix-Nidux.pdb

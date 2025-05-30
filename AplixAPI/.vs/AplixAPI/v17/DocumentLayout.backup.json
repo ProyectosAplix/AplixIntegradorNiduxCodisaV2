@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|c:\\users\\diego\\desktop\\mega\\aplix proyectos githud\\aplixintegracioncodisa\\aplixintegradorniduxcodisav3\\aplixapi\\aplixapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|solutionrelative:aplixapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\aplixapi\\models\\atributo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|solutionrelative:aplixapi\\models\\atributo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\aplixapi\\models\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|solutionrelative:aplixapi\\models\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\aplixapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|solutionrelative:aplixapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\aplixapi\\menuapi.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|solutionrelative:aplixapi\\menuapi.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\aplixapi\\models\\eliminar_art.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|solutionrelative:aplixapi\\models\\eliminar_art.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\aplixapi\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|solutionrelative:aplixapi\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\aplixapi\\models\\articulos_act.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|solutionrelative:aplixapi\\models\\articulos_act.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\aplixapi\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47445977-E3E1-4A22-9C04-AFE4870C24AE}|AplixAPI\\AplixAPI.csproj|solutionrelative:aplixapi\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Atributo.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Models\\Atributo.cs",
+              "RelativeDocumentMoniker": "AplixAPI\\Models\\Atributo.cs",
+              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Models\\Atributo.cs",
+              "RelativeToolTip": "AplixAPI\\Models\\Atributo.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAQwCoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T22:21:40.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Marcas.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Models\\Marcas.cs",
+              "RelativeDocumentMoniker": "AplixAPI\\Models\\Marcas.cs",
+              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Models\\Marcas.cs",
+              "RelativeToolTip": "AplixAPI\\Models\\Marcas.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T20:17:40.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Global.asax.cs",
+              "RelativeDocumentMoniker": "AplixAPI\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Global.asax.cs",
+              "RelativeToolTip": "AplixAPI\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T18:27:34.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuApi.aspx",
+              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\MenuApi.aspx",
+              "RelativeDocumentMoniker": "AplixAPI\\MenuApi.aspx",
+              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\MenuApi.aspx",
+              "RelativeToolTip": "AplixAPI\\MenuApi.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-02-14T14:51:35.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Web.config",
+              "RelativeDocumentMoniker": "AplixAPI\\Web.config",
+              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Web.config",
+              "RelativeToolTip": "AplixAPI\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-22T14:23:42.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\packages.config",
+              "RelativeDocumentMoniker": "AplixAPI\\packages.config",
+              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\packages.config",
+              "RelativeToolTip": "AplixAPI\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-22T14:23:36.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Eliminar_Art.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Models\\Eliminar_Art.cs",
+              "RelativeDocumentMoniker": "AplixAPI\\Models\\Eliminar_Art.cs",
+              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Models\\Eliminar_Art.cs",
+              "RelativeToolTip": "AplixAPI\\Models\\Eliminar_Art.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T20:36:07.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Articulos_Act.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Models\\Articulos_Act.cs",
+              "RelativeDocumentMoniker": "AplixAPI\\Models\\Articulos_Act.cs",
+              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Models\\Articulos_Act.cs",
+              "RelativeToolTip": "AplixAPI\\Models\\Articulos_Act.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T15:41:26.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AplixAPI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Diego\\Desktop\\Mega\\Aplix Proyectos Githud\\AplixIntegracionCodisa\\AplixIntegradorNiduxCodisaV3\\AplixAPI\\AplixAPI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AplixAPI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T22:38:14.872Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

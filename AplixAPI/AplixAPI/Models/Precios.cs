@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace AplixAPI.Models
+{
+    public class Precios
+    {
+        public string sku { get; set; }
+        public decimal price { get; set; }
+    }
+}

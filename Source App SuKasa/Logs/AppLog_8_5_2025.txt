@@ -1,0 +1,27 @@
+2025-05-08 09:59:03 - 
+                ==================================================
+                🛑 [ERROR EN CARGA DE ARTÍCULOS APP] 🛑
+                --------------------------------------------------
+                Mensaje: Cannot open database "APLIX_ECOMERCE" requested by the login. The login failed.
+Login failed for user 'sa'.
+                ==================================================
+2025-05-08 14:07:11 - 
+                ==================================================
+                🛑 [ERROR EN CARGA DE ARTÍCULOS APP] 🛑
+                --------------------------------------------------
+                Mensaje: Cannot open database "APLIX_ECOMERCE" requested by the login. The login failed.
+Login failed for user 'sa'.
+                ==================================================
+2025-05-08 14:26:59 - 
+                ===========================================
+                📦 [INICIO OBTENCIÓN DE ARTÍCULOS] 📦
+                -------------------------------------------
+2025-05-08 15:15:13 - 
+                ===========================================
+                📦 [INICIO OBTENCIÓN DE ARTÍCULOS] 📦
+                -------------------------------------------
+2025-05-08 15:16:19 - 🔄 Insertando artículo SKU: 001701 Bolso Multiuso
+2025-05-08 15:16:27 - 
+                            🛑 [ERROR AL PROCESAR ARTÍCULOS]
+                            Mensaje: Procedure or function INSERTAR_ARTICULOS_TIENDA_APP has too many arguments specified.
+                            -------------------------------------------
